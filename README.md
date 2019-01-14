@@ -1,7 +1,7 @@
 # Date/Time
 April 3, 2018, 1/2 day
 
-# Organizers (affiliations and contact information):
+# Organizers
 - Junichi Tokuda, Brigham and Women’s Hospital and Harvard Medical School (tokuda@bwh.harvard.edu)
 - Tamas Ungi, Queen’s University (ungi@queensu.ca)
 - Axel Krieger, University of Maryland (axel@umd.edu)
@@ -18,7 +18,7 @@ The session will consist of presentations by several experts in the field, follo
 - Software-hardware integration
 - Surgical CAD/CAM
 
-# List of confirmed speakers
+# Confirmed speakers
 - Junichi Tokuda, Ph.D., Brigham and Women’s Hospital, Software System for Medical Robotics using 3D Slicer, OpenIGTLink and ROS
 - Tamas Ungi, M.D., Ph.D., Queen’s University, Prototyping Software for Image-Guided Therapy
 - Axel Krieger, Ph.D., University of Maryland, Software Systems for Autonomous Surgery
