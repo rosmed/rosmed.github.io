@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="frame_name" default="needle"/>
+  <node pkg="tf"
+	type="static_transform_publisher"
+	name="needle_tf"
+	args="0 0 0.175 0 0 0 $(arg frame_name) needle 10"/>
+  <param name="cutter_description" command="$(find xacro)/xacro --inorder '$(find isrm19)/urdf/needle.urdf.xacro' frame_name:=$(arg frame_name)"/>
+</launch>
+

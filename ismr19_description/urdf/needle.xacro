@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="needle" params="frame_name">
+
+    <joint name="needle_holder" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="${frame_name}"/>
+      <child link="needle_holder"/>
+    </joint>
+    
+    <link name='needle_holder'>
+      <origin pose='0.0 0.0 0.0 0.0 0.0 0.0'/>
+      <visual>
+	<geometry>
+          <mesh filename="package://ismr19_description/meshes/needle_holder_side.stl" />
+	</geometry>
+      </visual>
+    </link>
+
+    <joint name="needle" type="fixed">
+      <origin xyz="0 -0.3 0.19" rpy="1.5708 0 0"/>
+      <parent link="needle_holder"/>
+      <child link="needle"/>
+    </joint>
+
+    <link name='needle'>
+      <origin pose='0.0 0.0 0.0 0.0 0.0 0.0'/>
+    </link>
+    
+  </xacro:macro>
+
+</robot>
