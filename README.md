@@ -37,7 +37,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 
 
 # Links
-- [SSMR/ISMR'19 Workshop](www.ismr.gatech.edu)
+- [SSMR/ISMR'19 Workshop](http://www.ismr.gatech.edu)
 - [Venu: Marcus Nanotechnology Building at Georgia Tech](http://www.ismr.gatech.edu/venue)
 
 # Contact
