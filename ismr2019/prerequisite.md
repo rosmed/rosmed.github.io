@@ -1,7 +1,72 @@
-If you are planning to participate in our workshop, we recommend to download/install the following package prior to the workshop, as it may take some time to download them. 
+Prerequisite
+============
+
+We encourage all participants to bring their own laptops to follow the tutorial. This page outlines hardware/software requirements. If you are planning to participate in our workshop, we recommend to download/install the following package before the workshop, as it may take some time to download them. 
+
+
+Hardware
+--------
+
+An Intel-based computer that can run either Windows, MacOS X, or Linux with
+- At least 4GB RAM (8+GB recommended)
+- Hardware that supports virtualization (For PC, virtualization must be turned on from BIOS. Please refer to [Intel's support page](https://www.intel.com/content/www/us/en/support/articles/000007139/server-products.html) for detail).
+
+We also recommend bringing a mouse, as it makes it easier to maneuver 3D graphics on the GUI.
+
+Operating System
+----------------
+
+One of the followings:
+- Windows 7 or higher (Windows 10 recommended)
+- macOS Sierra 10.12 or higher
+- Linux 16.04 or higher
+
+
+Docker
+------
+
+We will use [Robot Operating System](http://www.ros.org/), which requires a Linux operating system (Ubuntu 15.10 or 16.04, or Debian 8.11 Jessie). If you are using a Windows or Mac computer, or a computer with a Linux distribution other than those listed here, you will need to run a Linux operating system using virtualization software, [Docker](https://www.docker.com/). Please go to the Docker's page, and install either:
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) (Windows 10, macOS Sierra 10.12 or above)
+- [Docker Toolbox](https://docs.docker.com/toolbox/) (older Windows and Mac)
+- [Docker CE](https://docs.docker.com/install/) (Linux)
+
+
+Installing Docker Image for the Tutorial
+----------------------------------------
+
+The base Docker image (vnc-ros-kinetic-full) developed by Christian Henkel was derived from [a Docker Hub repository](https://hub.docker.com/r/ct2034/vnc-ros-kinetic-full/). This Docker image comes with:
+- Ubuntu 16.04
+- ROS Kinetic
+- HTML5 VNC Server
+
+Our Docker image contains the following additional packages:
+- ROS-Industrial
+- ROS Universal Robot package
+- ROS MoveIt! package
+- OpenIGTLink
+- ROS-IGTL-Bridge
+
+Our Dockerfile is available at [GitHub](https://github.com/rosmed/docker-ros-igtl) and its image is distributed at [Docker Hub](https://cloud.docker.com/u/rosmed/repository/docker/rosmed/docker-ros-igtl).
+
+
+~~~~
+sudo docker pull rosmed/docker-ros-igtl
+sudo docker run -it --rm -p 6080:80 -p 28944:18944 rosmed/docker-ros-igtl
+~~~~
+
+In this example, the HTTP port (port 80) and the OpenIGTLink port (port 18944) on the docker container are mapped to ports 6080 and 28944 on the host computer respectively. The '--rm' option will remove the container upon termination.
+
+To access the desktop, open a web browser (compatible with HTML5) on the same computer, and type the following address in the address bar:
+~~~~
+http://localhost:6080
+~~~~
+If the Docker image container is successfully running, the browser should show the desktop screen.
+
+This docker image includes all the software required for the tutorial and does not require to install other packages (i.e. OpenIGTLink and ROS-IGTL-Bridge)
+
 
 3D Slicer
-=========
+---------
 
 In this tutorial, we will use 3D Slicer version 4.8.1 Binaries are available from the following links:
 - [Slicer 4.8.1 for Linux (Intel 64-bit)](http://slicer.kitware.com/midas3/download/item/330417/Slicer-4.8.1-linux-amd64.tar.gz)
@@ -19,5 +84,40 @@ After installing and launching 3D Slicer, open the Extension Manager ("View" -> 
 After restarting the 3D Slicer, you should see plug-in modules included in the extension under "IGT" section of the modules menu.
 
 
+3D Slicer Scene
+---------------
 
+First, download [the Slicer scene for ISMR19](http://bit.ly/2UZ8OaR). This scene contains:
+- Scene description file (Scene-ISMR19.mrml)
+- MR image of the patient (MRI.nrrd)
+- 3D model of the patient (SkullDrilled1.stl)
+- 3D model of the links of the robot (*.stl except for SkullDrilled1.stl)
+- Transformation matrix for the links (*.h5)
+
+Decompress the zip file using a zip tool. On a terminal on Linux/Mac, this can be done by:
+~~~~
+$ unzip SlicerScene-ISMR19.zip
+Archive:  SlicerScene-ISMR19.zip
+  inflating: SlicerScene/MRI.nrrd    
+  inflating: SlicerScene/Scene-ISMR19.mrml  
+  inflating: SlicerScene/Scene-ISMR19.png  
+  inflating: SlicerScene/SkullDrilled1_mm.stl  
+  inflating: SlicerScene/base_mm.stl  
+  inflating: SlicerScene/forearm_link.h5  
+  inflating: SlicerScene/forearm_mm.stl  
+  inflating: SlicerScene/needle.h5   
+  inflating: SlicerScene/needle_holder.h5  
+  inflating: SlicerScene/needle_holder_mm.stl  
+  inflating: SlicerScene/shoulder_link.h5  
+  inflating: SlicerScene/shoulder_mm.stl  
+  inflating: SlicerScene/tool0.h5    
+  inflating: SlicerScene/upper_arm_link.h5  
+  inflating: SlicerScene/upperarm_mm.stl  
+  inflating: SlicerScene/wrist1_mm.stl  
+  inflating: SlicerScene/wrist2_mm.stl  
+  inflating: SlicerScene/wrist3_mm.stl  
+  inflating: SlicerScene/wrist_1_link.h5  
+  inflating: SlicerScene/wrist_2_link.h5  
+  inflating: SlicerScene/wrist_3_link.h5  
+~~~~
 

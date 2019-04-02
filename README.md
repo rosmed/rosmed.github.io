@@ -1,5 +1,6 @@
 Wednesday, April 3, 2018, 1:30-5:00pm
 
+Please see [prerequiste](ismr2019/prerequisite), if you are planning to participate.
 
 # Table of Contents
 - [Overview](#overview)
@@ -63,5 +64,4 @@ Brigham and Women's Hospital / Harvard Medical School
 tokuda at bwh.harvard.edu
 
 
-Please see [prerequiste](ismr2019/prerequisite), if you are planning to participate.
 
