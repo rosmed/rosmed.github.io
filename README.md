@@ -32,7 +32,7 @@ The session will consist of presentations by several experts in the field, follo
 - Software-hardware integration
 - Surgical CAD/CAM
 
-# Time Table (Subject to Change)
+# Time Table
 
 - 1:30pm-1:40pm : Opening Remarks and Introduction Junichi Tokuda, Brigham and Women's Hospital/Harvard Medical School
 - 1:40pm-2:30pm : Invited Talks
@@ -61,4 +61,7 @@ Assistant Professor of Radiology
 Brigham and Women's Hospital / Harvard Medical School
 
 tokuda at bwh.harvard.edu
+
+
+Please see [prerequiste](ismr2019/Prerequisite), if you are planning to participate.
 
