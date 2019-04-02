@@ -96,28 +96,6 @@ First, download [the Slicer scene for ISMR19](http://bit.ly/2UZ8OaR). This scene
 
 Decompress the zip file using a zip tool. On a terminal on Linux/Mac, this can be done by:
 ~~~~
-$ unzip SlicerScene-ISMR19.zip
-Archive:  SlicerScene-ISMR19.zip
-  inflating: SlicerScene/MRI.nrrd    
-  inflating: SlicerScene/Scene-ISMR19.mrml  
-  inflating: SlicerScene/Scene-ISMR19.png  
-  inflating: SlicerScene/SkullDrilled1_mm.stl  
-  inflating: SlicerScene/base_mm.stl  
-  inflating: SlicerScene/forearm_link.h5  
-  inflating: SlicerScene/forearm_mm.stl  
-  inflating: SlicerScene/needle.h5   
-  inflating: SlicerScene/needle_holder.h5  
-  inflating: SlicerScene/needle_holder_mm.stl  
-  inflating: SlicerScene/shoulder_link.h5  
-  inflating: SlicerScene/shoulder_mm.stl  
-  inflating: SlicerScene/tool0.h5    
-  inflating: SlicerScene/upper_arm_link.h5  
-  inflating: SlicerScene/upperarm_mm.stl  
-  inflating: SlicerScene/wrist1_mm.stl  
-  inflating: SlicerScene/wrist2_mm.stl  
-  inflating: SlicerScene/wrist3_mm.stl  
-  inflating: SlicerScene/wrist_1_link.h5  
-  inflating: SlicerScene/wrist_2_link.h5  
-  inflating: SlicerScene/wrist_3_link.h5  
+unzip SlicerScene-ISMR19.zip
 ~~~~
 
