@@ -60,6 +60,19 @@ Researchers, engineers, and students working in the field of medical robotics an
 - Tauscher S, Tokuda J, Schreiber G, Neff T, Hata N, Ortmaier T. [OpenIGTLink interface for state control and visualisation of a robot for image-guided therapy systems](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4265315/). Int J Comput Assist Radiol Surg. 2015 Mar;10(3):285-92. doi: 10.1007/s11548-014-1081-1. Epub 2014 Jun 13. PubMed PMID: 24923473; PubMed Central PMCID: PMC4265315. 
 - Tokuda J, Fischer GS, Papademetris X, Yaniv Z, Ibanez L, Cheng P, Liu H, Blevins J, Arata J, Golby AJ, Kapur T, Pieper S, Burdette EC, Fichtinger G, Tempany CM, Hata N. [OpenIGTLink: an open network protocol for image-guided therapy environment](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2811069/). Int J Med Robot. 2009 Dec;5(4):423-34. doi: 10.1002/rcs.274. PubMed PMID: 19621334; PubMed Central PMCID: PMC2811069. 
 - Ungi T, Lasso A, Fichtinger G. [Open-source platforms for navigated image-guided interventions](https://www.ncbi.nlm.nih.gov/pubmed/?term=27344106). Med Image Anal. 2016 Oct;33:181-186. doi: 10.1016/j.media.2016.06.011. Epub 2016 Jun 15. Review. PubMed PMID: 27344106.
+
+# Acknowledgements
+
+This work is supported in part by:
+- U.S. National Institutes of Health (R01EB020667, R01EB020610, P41EB015898)
+- Ontario Consortium for Adaptive Interventions in Radiation Oncology (OCAIRO)
+- SparKit project
+- CANARIE’s Research Software Program
+
+Contributors:
+- Tobias Frank, M.Sc. Leibniz Universität Hannover
+- Niravkumar Patel, Ph.D., Johns Hopkins University
+
 # Contact
 
 [Junichi Tokuda, Ph.D.](https://scholar.harvard.edu/tokuda)
