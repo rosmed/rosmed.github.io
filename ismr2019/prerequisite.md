@@ -50,8 +50,8 @@ Our Dockerfile is available at [GitHub](https://github.com/rosmed/docker-ros-igt
 
 
 ~~~~
-sudo docker pull rosmed/docker-ros-igtl
-sudo docker run -it --rm -p 6080:80 -p 28944:18944 rosmed/docker-ros-igtl
+docker pull rosmed/docker-ros-igtl
+docker run -it --rm -p 6080:80 -p 28944:18944 rosmed/docker-ros-igtl
 ~~~~
 
 In this example, the HTTP port (port 80) and the OpenIGTLink port (port 18944) on the docker container are mapped to ports 6080 and 28944 on the host computer respectively. The '--rm' option will remove the container upon termination.
