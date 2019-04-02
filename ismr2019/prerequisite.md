@@ -87,7 +87,7 @@ After restarting the 3D Slicer, you should see plug-in modules included in the e
 3D Slicer Scene
 ---------------
 
-First, download [the Slicer scene for ISMR19](http://bit.ly/2UZ8OaR). This scene contains:
+First, download [the Slicer scene for ISMR19](http://bit.ly/2HTFHTl). This scene contains:
 - Scene description file (Scene-ISMR19.mrml)
 - MR image of the patient (MRI.nrrd)
 - 3D model of the patient (SkullDrilled1.stl)
