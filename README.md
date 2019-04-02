@@ -63,5 +63,5 @@ Brigham and Women's Hospital / Harvard Medical School
 tokuda at bwh.harvard.edu
 
 
-Please see [prerequiste](ismr2019/Prerequisite), if you are planning to participate.
+Please see [prerequiste](ismr2019/prerequisite), if you are planning to participate.
 
