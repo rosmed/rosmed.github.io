@@ -94,7 +94,7 @@ docker pull rosmed/docker-ros-igtl
 If you load Docker image from an offline file,
 
 ~~~~
-docker docker load -i docker-ros-igtl.docker
+docker load -i docker-ros-igtl.docker
 ~~~~
 
 Then, run the image:
