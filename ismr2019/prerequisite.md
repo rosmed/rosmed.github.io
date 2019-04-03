@@ -3,8 +3,9 @@ Back to [Tutorial Home](https://rosmed.github.io/)
 Prerequisite
 ============
 
-We encourage all participants to bring their own laptops to follow the tutorial. This page outlines hardware/software requirements. If you are planning to participate in our workshop, we recommend to download/install the following package before the workshop, as it may take some time to download them. 
+We encourage all participants to bring their own laptops to follow the tutorial. This page outlines hardware/software requirements. If you are planning to participate in our workshop, we recommend to download/install the following package before the workshop, as it may take some time to download them.
 
+We provide a Docker image of Linux/ROS environment for the tutorial; however, if you prefer to build your own ROS environment on a native Linux system, please refer to [Setting Up ROS Environment for Tutorial](ros_environment).
 
 Hardware
 --------
@@ -22,49 +23,6 @@ One of the followings:
 - Windows 7 or higher (Windows 10 recommended)
 - macOS Sierra 10.12 or higher
 - Linux 16.04 or higher
-
-
-Docker
-------
-
-We will use [Robot Operating System](http://www.ros.org/), which requires a Linux operating system (Ubuntu 15.10 or 16.04, or Debian 8.11 Jessie). If you are using a Windows or Mac computer, or a computer with a Linux distribution other than those listed here, you will need to run a Linux operating system using virtualization software, [Docker](https://www.docker.com/). Please go to the Docker's page, and install either:
-- [Docker Desktop](https://www.docker.com/products/docker-desktop) (Windows 10, macOS Sierra 10.12 or above)
-- [Docker Toolbox](https://docs.docker.com/toolbox/) (older Windows and Mac)
-- [Docker CE](https://docs.docker.com/install/) (Linux)
-
-
-Installing Docker Image for the Tutorial
-----------------------------------------
-
-The base Docker image (vnc-ros-kinetic-full) developed by Christian Henkel was derived from [a Docker Hub repository](https://hub.docker.com/r/ct2034/vnc-ros-kinetic-full/). This Docker image comes with:
-- Ubuntu 16.04
-- ROS Kinetic
-- HTML5 VNC Server
-
-Our Docker image contains the following additional packages:
-- ROS-Industrial
-- ROS Universal Robot package
-- ROS MoveIt! package
-- OpenIGTLink
-- ROS-IGTL-Bridge
-
-Our Dockerfile is available at [GitHub](https://github.com/rosmed/docker-ros-igtl) and its image is distributed at [Docker Hub](https://cloud.docker.com/u/rosmed/repository/docker/rosmed/docker-ros-igtl).
-
-
-~~~~
-docker pull rosmed/docker-ros-igtl
-docker run -it --rm -p 6080:80 -p 28944:18944 rosmed/docker-ros-igtl
-~~~~
-
-In this example, the HTTP port (port 80) and the OpenIGTLink port (port 18944) on the docker container are mapped to ports 6080 and 28944 on the host computer respectively. The '--rm' option will remove the container upon termination.
-
-To access the desktop, open a web browser (compatible with HTML5) on the same computer, and type the following address in the address bar:
-~~~~
-http://localhost:6080
-~~~~
-If the Docker image container is successfully running, the browser should show the desktop screen.
-
-This docker image includes all the software required for the tutorial and does not require to install other packages (i.e. OpenIGTLink and ROS-IGTL-Bridge)
 
 
 3D Slicer
@@ -100,4 +58,61 @@ Decompress the zip file using a zip tool. On a terminal on Linux/Mac, this can b
 ~~~~
 unzip SlicerScene-ISMR19.zip
 ~~~~
+
+
+Docker
+------
+
+We will use [Robot Operating System](http://www.ros.org/), which requires a Linux operating system (Ubuntu 15.10 or 16.04, or Debian 8.11 Jessie). If you are using a Windows or Mac computer, or a computer with a Linux distribution other than those listed here, you will need to run a Linux operating system using virtualization software, [Docker](https://www.docker.com/). Please go to the Docker's page, and install either:
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) (Windows 10, macOS Sierra 10.12 or above)
+- [Docker Toolbox](https://docs.docker.com/toolbox/) (older Windows and Mac)
+- [Docker CE](https://docs.docker.com/install/) (Linux)
+
+
+Installing Docker Image for the Tutorial
+----------------------------------------
+
+
+The base Docker image (vnc-ros-kinetic-full) developed by Christian Henkel was derived from [a Docker Hub repository](https://hub.docker.com/r/ct2034/vnc-ros-kinetic-full/). This Docker image comes with:
+- Ubuntu 16.04
+- ROS Kinetic
+- HTML5 VNC Server
+
+Our Docker image contains the following additional packages:
+- ROS-Industrial
+- ROS Universal Robot package
+- ROS MoveIt! package
+- OpenIGTLink
+- ROS-IGTL-Bridge
+
+Our Dockerfile is available at [GitHub](https://github.com/rosmed/docker-ros-igtl) and its image is distributed at [Docker Hub](https://cloud.docker.com/u/rosmed/repository/docker/rosmed/docker-ros-igtl).
+
+~~~~
+docker pull rosmed/docker-ros-igtl
+~~~~
+
+If you load Docker image from an offline file,
+
+~~~~
+docker docker load -i docker-ros-igtl.docker
+~~~~
+
+Then, run the image:
+
+~~~~
+docker run -it --rm -p 6080:80 -p 28944:18944 rosmed/docker-ros-igtl
+~~~~
+
+In this example, the HTTP port (port 80) and the OpenIGTLink port (port 18944) on the docker container are mapped to ports 6080 and 28944 on the host computer respectively. The '--rm' option will remove the container upon termination.
+
+
+
+To access the desktop, open a web browser (compatible with HTML5) on the same computer, and type the following address in the address bar:
+~~~~
+http://localhost:6080
+~~~~
+If the Docker image container is successfully running, the browser should show the desktop screen.
+
+This docker image includes all the software required for the tutorial and does not require to install other packages (i.e. OpenIGTLink and ROS-IGTL-Bridge)
+
 
