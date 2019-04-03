@@ -6,6 +6,7 @@ Please see [prerequiste](ismr2019/prerequisite), if you are planning to particip
 - [Overview](#overview)
 - [Organizers](#organizers)
 - [Time Table](#time)
+- [Tutorial](#tutorial)
 - [Intended Audience](#audience)
 - [Links](#links)
 - [Contact](#contact)
@@ -38,11 +39,25 @@ The session will consist of presentations by several experts in the field, follo
   - 2:00pm : Axel Kriekger, Ph.D., University of Maryland
   - 2:10pm : Gregory Fischer, Ph.D., Worcester Polytechnic Institute
   - 2:20pm : Tamas Ungi, M.D., Ph.D., Queen's University
-- 2:30pm - 3:00pm : Tutorial Session 1
+- 2:30pm - 3:00pm : Hands-on Tutorial Session 1
 - 3:00pm - 3:30pm : Coffee Break
-- 3:30pm - 5:00pm : Tutorial Session 2
+- 3:30pm - 5:00pm : Hands-on Tutorial Session 2
+
+
+# Tutorial
+
+Please download Tutorial Slide from [here](http://bit.ly/2YIBW8l).
+
+In the Hands-on Tutorial sessions, we will build a virtual needle-guide robot as an example of image-guided robot-assisted interventions systems. The tutorial includes the following steps:
+
+- Setting up ROS and 3D Slicer
+- Setting up Universal Robot on ROS
+- Planning Procedure on 3D Slicer
+- Robot-to-image registration
+- Execution of the plan
 
 # Intended audience
+
 Researchers, engineers, and students working in the field of medical robotics and image-guided interventions are welcomed to join. The tutorial would be particularly useful for those who are already engaged or will be engaged in the design, implementation, and clinical translation of a system for image-guided robot-assisted interventions. We strongly recommend the audience to bring their own laptop computers to follow the hands-on tutorial during the session. While the tutorial will not involve coding, some experience of running commands on a UNIX-like system and compiling open-source software using Make or CMake would be helpful.
 
 
