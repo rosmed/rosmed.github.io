@@ -36,7 +36,7 @@ The session will consist of presentations by several experts in the field, follo
 - 1:40pm-2:30pm : Invited Talks
   - 1:40pm : James Ferguson, Vanderbilt University
   - 1:50pm : Nobuhiko Hata, Ph.D., Brigham and Women's Hospital/Harvard Medical School
-  - 2:00pm : Axel Kriekger, Ph.D., University of Maryland
+  - 2:00pm : Axel Krieger, Ph.D., University of Maryland
   - 2:10pm : Gregory Fischer, Ph.D., Worcester Polytechnic Institute
   - 2:20pm : Tamas Ungi, M.D., Ph.D., Queen's University
 - 2:30pm - 3:00pm : Hands-on Tutorial Session 1
