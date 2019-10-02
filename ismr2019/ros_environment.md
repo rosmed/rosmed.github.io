@@ -67,14 +67,14 @@ Installing ROS packages
 
 (You may skip this step, if you set up the ROS environment using the Docker image provided in this tutorial.)
 
-On the ROS computer, we open a terminal and copy two ROS packages into the katkin workspace:
+On the ROS computer, open a terminal and copy two ROS packages into the katkin workspace:
 ~~~~
 cd ~/catkin_ws/src
 git clone https://github.com/rosmed/ismr19_description
 git clone https://github.com/rosmed/ismr19_moveit
 git clone https://github.com/rosmed/ismr19_control
 ~~~~
-Additionally, we also copy IGTL Exporter, which streams the transformations of the robot link to 3D Slicer via ROS-IGTL-Bridge. 
+Additionally, copy IGTL Exporter, which streams the transformations of the robot link to 3D Slicer via ROS-IGTL-Bridge. 
 ~~~~
 cd ~/catkin_ws/src
 git clone https://github.com/tokjun/ros_bx_robot_bridge
@@ -86,5 +86,12 @@ catkin_make
 source devel/setup.bash
 ~~~~
 
+We will also use a scene file for rviz. You can download it with the following commands:
+~~~~
+cd ~/
+mkdir models
+cd models
+wget -O ismr19.scene https://bit.ly/2OpSdKM
+~~~~
 
 
