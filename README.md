@@ -46,7 +46,7 @@ The session will consist of presentations by several experts in the field, follo
 
 # Tutorial
 
-Please download Tutorial Slide from [here](http://bit.ly/2YIBW8l).
+Please download Tutorial Slide from [here](https://bit.ly/2ooZdOU).
 
 In the Hands-on Tutorial sessions, we will build a virtual needle-guide robot as an example of image-guided robot-assisted interventions systems. The tutorial includes the following steps:
 
