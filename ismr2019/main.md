@@ -1,8 +1,9 @@
-November 17-19, 2021
+Back to [Tutorial Home](https://rosmed.github.io/)
 
-<!-- Please see [prerequiste](ismr2019/prerequisite), if you are planning to participate.-->
 
-[ISMRM 2019](ismr2019/main)
+Wednesday, April 3, 2018, 1:30-5:00pm
+
+Please see [prerequiste](ismr2019/prerequisite), if you are planning to participate.
 
 # Table of Contents
 - [Overview](#overview)
@@ -13,12 +14,12 @@ November 17-19, 2021
 - [Links](#links)
 - [Contact](#contact)
 
+
 # Overview
 
-The goal of this half-day hands-on tutorial is to learn how to integrate medical image computing software into a system for image-guided robot-assisted interventions, in which 2D/3D medical images are used for planning, navigation, monitoring, and validation. Examples of such robot-assisted systems include image-guided robotic needle-guide systems and surgical CAD/CAM systems. Those systems often require a wide range of image computing capabilities such as segmentation of anatomical structures, registration of multiple images, 2D/3D image visualization, image-based planning, and data sharing with the robot controller and the hospital’s picture archiving and communication systems (PACS). Integration of a solid medical image computing platform into a robotic system is becoming more important than ever with the growing interest in AI-based treatment planning and guidance. 
-However, the engineering effort to implement those features is often underestimated in academic research due to limited engineering resources or the scope of the project. Fortunately, many of those features have already been implemented and validated in the research community and often distributed as open-source software. Therefore it has become essential for academic researchers to take advantage of those existing tools and incorporate them into their own research instead of reinventing the wheel. 
-Following our successful hands-on tutorial hosted at ISMR 2019 and the continued demand for the training materials which was made available online, the team is planning a hands-on tutorial with new contents featuring up-to-date software platforms and AI-based planning/guidance. Like the previous tutorial, the session will consist of presentations by several experts in the field, followed by a hands-on tutorial. The presentations will review the software systems for image-guided robot-assisted interventions with real-world use-cases in the context of academic research. In the tutorial session, the participants will build a system for image-guided robot-assisted interventions on their own laptop computers using state-of-the-art research platforms for medical imaging and robotics, namely 3D Slicer 4.13 and Robot Operating System 2 (ROS2). The two platforms will be integrated using an open network communication protocol, OpenIGTLink. Then the participant will build a demo system that allows a user to plan a procedure on a 3D image using AI-based segmentation, execute the plan using a virtual robot, and visualize the 3D model of the robot along with reformatted images of the patient as feedback. At the end of the tutorial, the participants are expected to have a working demo system on their laptops, which could potentially be used as a template for their own research project.
-The workshop will be organized in conjunction with a separate half-day workshop on “Image-guided percutaneous interventions” which will feature a number of talks from experts in this research field. Participants who attend both workshops can gain knowledge about ongoing research topics and hands-on skills to tackle the existing problems. 
+The goal of this hands-on tutorial is to learn how to integrate medical image computing software into a system for image-guided robot-assisted interventions, in which 2D/3D medical images are used for planning, navigation, monitoring, and validation. Examples of such robot-assisted systems include image-guided robotic needle-guide systems and surgical CAD/CAM systems. Those systems often require a wide range of image computing features such as segmentation of anatomical structures, registration of multiple images, 2D/3D image visualization, image-based planning, and data sharing with the robot controller and the hospital’s picture archiving and communication systems (PACS). However, the engineering effort to implement those features is often ignored or underestimated in academic research due to limited engineering resources or the scope of the project. Fortunately, many of those features have already been implemented and validated by other researchers in the research community and often provided as open-source software toolkits. Therefore it has become essential for academic researchers to take advantage of those existing tools and incorporate them into their own research instead of reinventing the wheel.
+
+The session will consist of presentations by several experts in the field, followed by a hands-on tutorial. The presentations will overview the software systems for image-guided robot-assisted interventions with real-world use-cases in the context of academic research. In the tutorial session, the participants will build a system for image-guided robot-assisted interventions on their own laptop computers using popular research platforms for medical imaging and robotics, namely 3D Slicer and Robot Operating System (ROS). The two platforms will be seamlessly integrated using an open network communication protocol OpenIGTLink. Then the participant will build a demo system that allows a user to plan a procedure on a 3D image, execute the plan using a virtual robot, and visualize the feedback from the robot with the 3D image. At the end of the tutorial, the participants are expected to have a working demo system on their laptop, which could potentially be used as a template for their own research project.
 
 **Keywords**: Image-guided interventions, Navigation, Open-source software, Software-hardware integration, Surgical CAD/CAM
 
@@ -29,17 +30,34 @@ The workshop will be organized in conjunction with a separate half-day workshop 
 
 - [Junichi Tokuda, Ph.D.](https://scholar.harvard.edu/tokuda), Brigham and Women’s Hospital and Harvard Medical School
 - [Tamas Ungi, M.D., Ph.D.](http://perk.cs.queensu.ca/users/ungi), Queen’s University
-- [Axel Krieger, Ph.D.](https://me.jhu.edu/faculty/axel-krieger/), University of Maryland
+- [Axel Krieger, Ph.D.](https://mrelab.com/professor-axel-krieger/), University of Maryland
 - [Simon Leonard, Ph.D.](https://www.cs.jhu.edu/faculty/simon-leonard/), Johns Hopkins University
-- [Mark Fuge, Ph.D.](http://ideal.umd.edu/team/mark-fuge), University of Maryland
 
 # Time Table
 
-TBD
+- 1:30pm-1:40pm : Opening Remarks and Introduction Junichi Tokuda, Brigham and Women's Hospital/Harvard Medical School
+- 1:40pm-2:30pm : Invited Talks
+  - 1:40pm : James Ferguson, Vanderbilt University
+  - 1:50pm : Nobuhiko Hata, Ph.D., Brigham and Women's Hospital/Harvard Medical School
+  - 2:00pm : Axel Krieger, Ph.D., University of Maryland
+  - 2:10pm : Gregory Fischer, Ph.D., Worcester Polytechnic Institute
+  - 2:20pm : Tamas Ungi, M.D., Ph.D., Queen's University
+- 2:30pm - 3:00pm : Hands-on Tutorial Session 1
+- 3:00pm - 3:30pm : Coffee Break
+- 3:30pm - 5:00pm : Hands-on Tutorial Session 2
+
 
 # Tutorial
 
-In preparation
+Please download Tutorial Slide from [here](https://bit.ly/2ooZdOU).
+
+In the Hands-on Tutorial sessions, we will build a virtual needle-guide robot as an example of image-guided robot-assisted interventions systems. The tutorial includes the following steps:
+
+- Setting up ROS and 3D Slicer
+- Setting up Universal Robot on ROS
+- Planning Procedure on 3D Slicer
+- Robot-to-image registration
+- Execution of the plan
 
 # Intended audience
 
@@ -77,7 +95,7 @@ Contributors:
 
 [Junichi Tokuda, Ph.D.](https://scholar.harvard.edu/tokuda)
 
-Associate Professor of Radiology
+Assistant Professor of Radiology
 Brigham and Women's Hospital / Harvard Medical School
 
 tokuda at bwh.harvard.edu
