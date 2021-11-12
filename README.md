@@ -1,8 +1,6 @@
-November 17-19, 2021
+November 19, 2021
 
 <!-- Please see [prerequiste](ismr2019/prerequisite), if you are planning to participate.-->
-
-[ISMRM 2019](ismr2019/main)
 
 # Table of Contents
 - [Overview](#overview)
@@ -35,11 +33,24 @@ The workshop will be organized in conjunction with a separate half-day workshop 
 
 # Time Table
 
-TBD
+- 08:30am : Opening remarks and introduction (Junichi Tokuda)
+- 08:40am : Building navigation software using 3D Slicer, PLUS, and SlicerIGT (Tamas Ungi)
+- 08:50am : Robot-Assisted Vertoplasty (Axel Kerieger)
+- 09:00am : Tutorial Session 1: Building a patient model from ultrasound image using 3D Slicer
+- 10:00am: (Break)
+- 10:30am: Tutorial Session 2: Integrating ROS and 3D Slicer
 
 # Tutorial
 
-In preparation
+- Step 1: Setting up environment
+  - 3D Slicer + Extensions
+  - ROS (on Docker)
+- Step 2: Creating a 3D model for surgical planning
+  - AI-based model reconstruction from ultrasound images
+- Step 3: Setting up Universal Robot Arm on ROS
+- Step 4: (Optional) Robot-to-image registration
+- Step 5: Planning Procedure on 3D Slicer
+- Step 6: TargetingIn preparation
 
 # Intended audience
 
@@ -47,9 +58,9 @@ Researchers, engineers, and students working in the field of medical robotics an
 
 
 # Links
-- [SSMR/ISMR'19 Workshop](http://www.ismr.gatech.edu)
+- [SSMR/ISMR'21 Workshop](http://www.ismr.gatech.edu)
 - [Venu: Marcus Nanotechnology Building at Georgia Tech](http://www.ismr.gatech.edu/venue)
-- [Prerequiste for this tutorial](ismr2019/prerequisite)
+- [Prerequiste for this tutorial](prerequisite)
 - [3D Slicer](https://www.slicer.org/)
 - [Robot Operating System](http://www.ros.org/)
 
