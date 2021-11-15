@@ -17,5 +17,24 @@ After installing and launching 3D Slicer, open the Extension Manager ("View" -> 
 - ParallelProcesses
 
 
+Installing SegmentationUNet
+---------------------------
+
+SegmentationUNet module is available as part of SlicerIGT/aigt at [GitHub]. You can either clone the repository using a git command:
+~~~~
+git clone https://github.com/SlicerIGT/aigt
+~~~~
+or download [a zip file](https://github.com/SlicerIGT/aigt/archive/refs/heads/master.zip) and extract files. The source code for SegmentationUNet (`SegmentationUNet.py`) can be found under `aigt/SlicerExtension/LiveUltrasoundAi/SegmentationUNet/`. To install the SegmentationUNet to your 3D Slicer:
+
+- Open Slicer / Edit / Application Settings / Modules
+- Drop the SegmentationUNet.py file in the area in Slicer settings called Additional module paths
+- Press OK on the Settings window and restart Slicer application
+
+
+
+
+
+
+
 
 

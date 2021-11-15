@@ -5,7 +5,7 @@ Prerequisite
 
 We encourage all participants to bring their own laptops to follow the tutorial. This page outlines hardware/software requirements. If you are planning to participate in our workshop, we recommend to download/install the following package before the workshop, as it may take some time to download them.
 
-We provide a Docker image of Linux/ROS environment for the tutorial; however, if you prefer to build your own ROS environment on a native Linux system, please refer to [Setting Up ROS Environment for Tutorial](ros_environment).
+We provide a Docker image of Linux/ROS environment for the tutorial; however, if you prefer to build your own ROS environment on a native Linux system, please refer to [Setting Up ROS Environment for Tutorial](ros_env).
 
 Hardware
 --------
