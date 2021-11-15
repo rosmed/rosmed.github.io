@@ -27,9 +27,11 @@ The workshop will be organized in conjunction with a separate half-day workshop 
 
 - [Junichi Tokuda, Ph.D.](https://scholar.harvard.edu/tokuda), Brigham and Women’s Hospital and Harvard Medical School
 - [Tamas Ungi, M.D., Ph.D.](http://perk.cs.queensu.ca/users/ungi), Queen’s University
-- [Axel Krieger, Ph.D.](https://me.jhu.edu/faculty/axel-krieger/), University of Maryland
+- [Axel Krieger, Ph.D.](https://me.jhu.edu/faculty/axel-krieger/), Johns Hopkins University
 - [Simon Leonard, Ph.D.](https://www.cs.jhu.edu/faculty/simon-leonard/), Johns Hopkins University
 - [Mark Fuge, Ph.D.](http://ideal.umd.edu/team/mark-fuge), University of Maryland
+- Lydia Al-Zogbi, Johns Hopkins University
+- Pedro Moreira, Ph.D., Brigham and Women's Hospital and Harvard Medical School
 
 # Time Table
 
@@ -41,16 +43,16 @@ The workshop will be organized in conjunction with a separate half-day workshop 
 - 10:30am: Tutorial Session 2: Integrating ROS and 3D Slicer
 
 # Tutorial
-
+- Step 0: [Prerequisite](ismr2021/prerequisite.md)
 - Step 1: Setting up environment
-  - 3D Slicer + Extensions
-  - ROS (on Docker)
+  - [3D Slicer + Extensions](slicer_env.md)
+  - [ROS](ismr2021/ros_env.md)
 - Step 2: Creating a 3D model for surgical planning
-  - AI-based model reconstruction from ultrasound images
-- Step 3: Setting up Universal Robot Arm on ROS
-- Step 4: (Optional) Robot-to-image registration
-- Step 5: Planning Procedure on 3D Slicer
-- Step 6: TargetingIn preparation
+  - [AI-based model reconstruction from ultrasound images](ismr2021/slicer_model.md)
+- Step 3: [Setting up Universal Robot Arm on ROS](ismr2021/ros_setup.md)
+- Step 4: (Optional) [Robot-to-image registration](ismr2021/registration.md)
+- Step 5: [Planning Procedure on 3D Slicer](ismr2021/slicer_planning.md)
+- Step 6: [Targeting](ismr2021/targeting.md)
 
 # Intended audience
 
@@ -75,7 +77,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 # Acknowledgements
 
 This work is supported in part by:
-- U.S. National Institutes of Health (R01EB020667, R01EB020610, P41EB015898)
+- U.S. National Institutes of Health (R01EB020667, R01EB020610, P41EB028741)
 - Ontario Consortium for Adaptive Interventions in Radiation Oncology (OCAIRO)
 - SparKit project
 - CANARIE’s Research Software Program
