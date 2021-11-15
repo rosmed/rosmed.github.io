@@ -1,7 +1,7 @@
 Back to [Tutorial Home](https://rosmed.github.io/)
 
-Introduction
-============
+Setting Up ROS 2 Environment for Tutorial
+=========================================
 In this tutorial, we will use ROS Foxy, which supports Ubuntu Linux (Focal Fossa -20.04) 64-bit and Debian Linux (Buster - 10) 64-bit. It also supports other operating systems, but the installation on those operating systems is not as straightforward as on the Linux environment. See [Installation page](https://docs.ros.org/en/foxy/Installation.html) for detail.
 
 If you are new to ROS2, we encourage to use our Docker image. If you want to set up your own ROS environment for the tutorial, please refer to section [Installing ROS on Dedicated ROS Computer](#native_ros)
@@ -14,8 +14,8 @@ If you are new to ROS2, we encourage to use our Docker image. If you want to set
 [Docker](https://www.docker.com/) must be installed prior to the installation. To install the Docker image for the tutorial, open the terminal and run the following command:
 
 ~~~~
-sudo docker pull rosmed/docker-ubuntu-vnc-desktop-ros2:ismr2021
-sudo docker run -it --rm -p 6080:80 -p 28944:18944 rosmed/docker-ubuntu-vnc-desktop-ros2:ismr2021
+docker pull rosmed/docker-ubuntu-vnc-desktop-ros2:ismr2021
+docker run -it --rm -p 6080:80 -p 28944:18944 rosmed/docker-ubuntu-vnc-desktop-ros2:ismr2021
 ~~~~
 
 In this example, the HTTP port (port 80) and the OpenIGTLink port (port 18944) on the docker container are mapped to ports 6080 and 28944 on the host computer respectively. The '--rm' option will remove the container upon termination.
