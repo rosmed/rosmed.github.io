@@ -45,14 +45,14 @@ The workshop will be organized in conjunction with a separate half-day workshop 
 # Tutorial
 - Step 0: [Prerequisite](ismr2021/prerequisite.md)
 - Step 1: Setting up environment
-  - [3D Slicer + Extensions](slicer_env.md)
+  - [3D Slicer + Extensions](ismr2021/slicer_env.md)
   - [ROS](ismr2021/ros_env.md)
 - Step 2: Creating a 3D model for surgical planning
-  - [AI-based model reconstruction from ultrasound images](ismr2021/slicer_model.md)
-- Step 3: [Setting up Universal Robot Arm on ROS](ismr2021/ros_setup.md)
-- Step 4: (Optional) [Robot-to-image registration](ismr2021/registration.md)
-- Step 5: [Planning Procedure on 3D Slicer](ismr2021/slicer_planning.md)
-- Step 6: [Targeting](ismr2021/targeting.md)
+  - AI-based model reconstruction from ultrasound images
+- Step 3: Setting up Universal Robot Arm on ROS
+- Step 4: (Optional) Robot-to-image registration
+- Step 5: Planning Procedure on 3D Slicer
+- Step 6: Targeting
 
 # Intended audience
 
