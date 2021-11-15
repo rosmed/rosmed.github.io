@@ -30,6 +30,20 @@ or download [a zip file](https://github.com/SlicerIGT/aigt/archive/refs/heads/ma
 - Drop the SegmentationUNet.py file in the area in Slicer settings called Additional module paths
 - Press OK on the Settings window and restart Slicer application
 
+Installing TensorFlow in 3D Slicer
+----------------------------------
+
+If you want TensorFlow to use your GPU, install CUDA v. 11.3 and CuDNN v. 8.2. For downloads and further instructions, check out the [NVidia website](https://developer.nvidia.com/cuda-toolkit-archive).
+
+In Slicer / View/ Python Interactor use command:
+~~~~
+>>> pip_install('tensorflow')
+~~~~
+Once install process ends, you may test your environment:
+~~~~
+>>> import tensorflow as tf
+>>> tf.config.list_physical_devices()
+~~~~
 
 
 Files for Tutorial
