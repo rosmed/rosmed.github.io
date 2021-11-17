@@ -48,8 +48,7 @@ The workshop will be organized in conjunction with a separate half-day workshop 
   - [3D Slicer](ismr2021/slicer_env.md)
   - [ROS](ismr2021/ros_env.md)
 - Step 2: [Testing OpenIGTLink Communication Between Slicer and ROS](ismr2021/ros_igtl_test.md)
-- Step 3: Creating a 3D model for surgical planning
-  - AI-based model reconstruction from ultrasound images
+- Step 3: [Creating a 3D model for surgical planning](ismr2021/slicer_planning.md)
 - Step 4: Setting up [Universal Robot Arm on ROS](ismr2021/fake_robot.md)
 - Step 5: (Optional) Robot-to-image registration
 - Step 6: Planning Procedure on 3D Slicer
