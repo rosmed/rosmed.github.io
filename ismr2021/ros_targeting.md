@@ -1,6 +1,14 @@
 Back to [Tutorial Home](https://rosmed.github.io/)
 
 
+Slicer Scene
+============
+
+If you didn't complte the planning process on 3D Slicer, download the planning scene from the following link
+
+- [Final Scene](https://1drv.ms/u/s!AhiABcbe1DByhKsG9_tS46YvcfMj2Q?e=8s73FX)
+
+
 Launch a fake UR10 on RViz
 ==========================
 

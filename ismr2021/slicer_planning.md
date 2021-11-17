@@ -19,7 +19,7 @@ Load Slicer Scene with Data
 ===========================
 
 Before loading the file, make sure to download the following files:
-- [A Slicer scene file including tracked ultrasound images (Q006_SagittalSpineScan_Demo.mrb)](https://1drv.ms/u/s!AhiABcbe1DByhKVbAdzf_qwwhPdbTw?e=DY0l0y)
+- [A Slicer scene file including tracked ultrasound images (Q006_SagittalSpineScan_Demo.mrb)](https://1drv.ms/u/s!AhiABcbe1DByhKVbAdzf_qwwhPdbTw?e=mbFLzt)
 - [Trained AI model for segmentation (SagittalSpine_05.h5)](https://1drv.ms/u/s!AhiABcbe1DByhKVRv4S0PaaxXTiz8w?e=Rk3csS)
 
 

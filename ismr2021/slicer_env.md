@@ -65,7 +65,7 @@ Files for Tutorial
 ------------------
 
 We will use the following files for the tutorial:
-- Scene file: [Q006_SagittalSpineScan_Demo.mrb](https://1drv.ms/u/s!AhiABcbe1DByhKVbAdzf_qwwhPdbTw?e=DY0l0y)
+- Scene file: [Q006_SagittalSpineScan_Demo.mrb](https://1drv.ms/u/s!AhiABcbe1DByhKVbAdzf_qwwhPdbTw?e=mbFLzt)
 - Trained AI model: [SagittalSpine_05.h5 ](https://1drv.ms/u/s!AhiABcbe1DByhKVRv4S0PaaxXTiz8w?e=Rk3csS)
 
 
