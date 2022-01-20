@@ -60,7 +60,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 # Links
 - [SSMR/ISMR'21 Workshop](http://www.ismr.gatech.edu)
 - [Venu: Marcus Nanotechnology Building at Georgia Tech](http://www.ismr.gatech.edu/venue)
-- [Prerequiste for this tutorial](prerequisite)
+- [Prerequisite for this tutorial](prerequisite.md)
 - [3D Slicer](https://www.slicer.org/)
 - [Robot Operating System](http://www.ros.org/)
 

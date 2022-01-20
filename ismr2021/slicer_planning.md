@@ -42,7 +42,7 @@ Segmentation module can be opened from the "Modules" menu by selecting "Ultrasou
   - Input volume: Select "Image_Image"
   - Prediction volume: Select "Create new Volume as...". In the dialog box, enter "Prediction" as a new name.
 - Optional parameters
-  - Prediction transform: Select "Create new Volume as...". In the dialog box, enter "PredictionToRas" as a new name.
+  - Prediction transform: Select "Create new Transform as...". In the dialog box, enter "PredictionToRas" as a new name.
   - Use separate process: In the current version of the module, this option might cause an error on mac. If you are using Mac, it is safe to turn this off. (This may slow down the reconstruction process.)
 
 Initialize Prediction by Updating Input
