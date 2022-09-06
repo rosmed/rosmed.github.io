@@ -18,19 +18,29 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "SlicerROS"
+title: "ROS for Medical Robotics"
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  3D Slicer + ROS for Medical Robotics Research
+  ROS for Medical Robotics Research
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rosmed.github.com/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: rosmed
-github_username:  rosmed
+#github_username:  rosmed
+copyright: "The ROS-MED Community"
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+header_pages:
+#  - index.markdown
+  - tutorials.markdown
+  - software.markdown
+  - events.markdown
+  - team.markdown
+  - refs.markdown
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
