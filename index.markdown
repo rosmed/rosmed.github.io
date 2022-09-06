@@ -5,7 +5,7 @@ image: images/slicer-ros-architecture.png
 ---
 
 
-# What is ROS for Medical Robotics (ROS-MED) Project
+# What is ROS for Medical Robotics (ROS-MED) Project?
 
 The ROS-MED project is an open-source software project to provide an open-source software platform for medical robotics research. Specifically, the project focuses on architectures to seamlessly integrate a robot system with medical image computing software using two popular open-source software packages: Robot Operating System (ROS) and 3D Slicer.
 
