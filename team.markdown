@@ -7,10 +7,10 @@ permalink: /team/
 # Core Members
 
 - [Junichi Tokuda, Ph.D.](https://scholar.harvard.edu/tokuda), Brigham and Women’s Hospital and Harvard Medical School
-- [Tamas Ungi, M.D., Ph.D.](http://perk.cs.queensu.ca/users/ungi), Queen’s University
 - [Axel Krieger, Ph.D.](https://me.jhu.edu/faculty/axel-krieger/), Johns Hopkins University
 - [Simon Leonard, Ph.D.](https://www.cs.jhu.edu/faculty/simon-leonard/), Johns Hopkins University
 - [Mark Fuge, Ph.D.](http://ideal.umd.edu/team/mark-fuge), University of Maryland
+- [Tamas Ungi, M.D., Ph.D.](http://perk.cs.queensu.ca/users/ungi), Queen’s University
 - [Anton Deguet](https://malonecenter.jhu.edu/people/anton-deguet/), Johns Hopkins University
 
 # Contributors
@@ -20,11 +20,18 @@ permalink: /team/
 - Tobias Frank, M.Sc. Leibniz Universität Hannover
 - Niravkumar Patel, Ph.D., Johns Hopkins University
 
+![BWH](/images/BWH_Logo.png){:class="img-responsive" width="360px"}
+![HMS](/images/HMS_Logo.png){:class="img-responsive" width="200px"}
+![BWH](/images/JHU_Logo.png){:class="img-responsive" width="240px"}
+![HMS](/images/UMD_Logo.png){:class="img-responsive" width="240px"}
+![HMS](/images/Queens_Logo.png){:class="img-responsive" width="200px"}
+
+
 # Acknowledgements
 
-This work is supported in part by:
-- U.S. National Institutes of Health (R01EB020667, R01EB020610, P41EB028741)
-- Ontario Consortium for Adaptive Interventions in Radiation Oncology (OCAIRO)
-- SparKit project
-- CANARIE’s Research Software Program
+The project is supported by [the National Institute of Biomedical Imaging and Bioengineering](https://www.nibib.nih.gov) of [the U.S. National Institutes of Health (NIH)](https://www.nih.gov) under award number R01EB020667, R01EB020610, P41EB028741, and Ontario Consortium for Adaptive Interventions in Radiation Oncology (OCAIRO). The content is solely the responsibility of the authors and does not necessarily represent the official views of the NIH and OCAIRO.
+
+
+
+
 

@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rosmed.github.com/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: rosmed
 #github_username:  rosmed
-copyright: "The ROS-MED Community"
+copyright: "The ROS-MED Project"
 
 # Build settings
 theme: minima
@@ -40,6 +40,9 @@ header_pages:
   - events.markdown
   - team.markdown
   - refs.markdown
+
+# Google Analytics 4
+google_analytics_4: 'G-0XYP6TJ9ET'
 
 
 # Exclude from processing.

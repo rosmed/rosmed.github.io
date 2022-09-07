@@ -8,4 +8,7 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics_4 -%}
+    {%- include google-analytics-4.html -%}
+  {%- endif -%}
 </head>
