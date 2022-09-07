@@ -29,7 +29,7 @@ permalink: /team/
 
 # Acknowledgements
 
-The project is supported by [the National Institute of Biomedical Imaging and Bioengineering](https://www.nibib.nih.gov) of [the U.S. National Institutes of Health (NIH)](https://www.nih.gov) under award number R01EB020667, R01EB020610, P41EB028741, and Ontario Consortium for Adaptive Interventions in Radiation Oncology (OCAIRO). The content is solely the responsibility of the authors and does not necessarily represent the official views of the NIH and OCAIRO.
+The project is supported by [the National Institute of Biomedical Imaging and Bioengineering](https://www.nibib.nih.gov) of [the U.S. National Institutes of Health (NIH)](https://www.nih.gov) under award number R01EB020667, R01EB020610, and P41EB028741. Part of the project is also supported by Ontario Consortium for Adaptive Interventions in Radiation Oncology (OCAIRO). The content is solely the responsibility of the authors and does not necessarily represent the official views of the NIH and OCAIRO.
 
 
 
