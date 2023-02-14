@@ -1,4 +1,9 @@
-Back to [Tutorial Home](https://rosmed.github.io/)
+---
+layout: page
+title:  ISMR19 Workshop
+---
+
+Back to [Tutorial Home](index)
 
 Prerequisite
 ============

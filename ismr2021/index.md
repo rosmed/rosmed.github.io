@@ -1,3 +1,8 @@
+---
+layout: page
+title:  ISMR2021 Workshop
+---
+
 November 19, 2021
 
 <!-- Please see [prerequiste](ismr2019/prerequisite), if you are planning to participate.-->
@@ -43,14 +48,14 @@ The workshop will be organized in conjunction with a separate half-day workshop 
 - 10:30am: Tutorial Session 2: Integrating ROS and 3D Slicer
 
 # Tutorial
-- Step 0: [Prerequisite](ismr2021/prerequisite.md)
+- Step 0: [Prerequisite](prerequisite)
 - Step 1: Setting up environment
-  - [3D Slicer](ismr2021/slicer_env.md)
-  - [ROS](ismr2021/ros_env.md)
-- Step 2: [Testing OpenIGTLink Communication Between Slicer and ROS](ismr2021/ros_igtl_test.md)
-- Step 3: [Creating a 3D model for surgical planning](ismr2021/slicer_planning.md)
-- Step 4: Setting up [Universal Robot Arm on ROS](ismr2021/fake_robot.md)
-- Step 5: [Targeting](ismr2021/ros_targeting.md)
+  - [3D Slicer](slicer_env)
+  - [ROS](ros_env)
+- Step 2: [Testing OpenIGTLink Communication Between Slicer and ROS](ros_igtl_test)
+- Step 3: [Creating a 3D model for surgical planning](slicer_planning)
+- Step 4: Setting up [Universal Robot Arm on ROS](fake_robot)
+- Step 5: [Targeting](ros_targeting)
 
 # Intended audience
 
@@ -60,7 +65,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 # Links
 - [SSMR/ISMR'21 Workshop](http://www.ismr.gatech.edu)
 - [Venu: Marcus Nanotechnology Building at Georgia Tech](http://www.ismr.gatech.edu/venue)
-- [Prerequisite for this tutorial](prerequisite.md)
+- [Prerequisite for this tutorial](prerequisite)
 - [3D Slicer](https://www.slicer.org/)
 - [Robot Operating System](http://www.ros.org/)
 

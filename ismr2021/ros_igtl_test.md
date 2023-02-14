@@ -1,7 +1,10 @@
-Back to [Tutorial Home](https://rosmed.github.io/)
+---
+layout: page
+title:  ISMR21 > Testing OpenIGTLink Communication Between Slicer and ROS
+---
 
-Testing OpenIGTLink Communication Between Slicer and ROS
-========================================================
+Back to [Tutorial Home](index)
+
 
 Starting ros2_igtl_bridge
 -------------------------

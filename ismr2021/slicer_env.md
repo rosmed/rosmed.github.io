@@ -1,7 +1,10 @@
-Back to [Tutorial Home](https://rosmed.github.io/)
+---
+layout: page
+title:  ISMR2021 > 3D Slicer Environment
+---
 
-3D Slicer
----------
+Back to [Tutorial Home](index)
+
 
 To complete the tutorial, you need to use Slicer a preview version 2021-09-23 or later, which is available at:
 

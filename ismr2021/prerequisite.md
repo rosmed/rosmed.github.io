@@ -1,7 +1,10 @@
-Back to [Tutorial Home](https://rosmed.github.io/)
+---
+layout: page
+title: ISMR2021 > Prerequisite
+---
 
-Prerequisite
-============
+Back to [Tutorial Home](index)
+
 
 We encourage all participants to bring their own laptops to follow the tutorial. This page outlines hardware/software requirements. If you are planning to participate in our workshop, we recommend to download/install the following package before the workshop, as it may take some time to download them.
 

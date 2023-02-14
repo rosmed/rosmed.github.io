@@ -1,6 +1,10 @@
-November 19, 2021
+---
+layout: page
+title:  ISMR23 Workshop / Building Software Systems for Image-Guided Robot-Assisted Interventions with SlicerROS2
+permalink: /ismr2023/
+---
 
-<!-- Please see [prerequiste](ismr2019/prerequisite), if you are planning to participate.-->
+April 19, 2023
 
 # Table of Contents
 - [Overview](#overview)
@@ -13,10 +17,16 @@ November 19, 2021
 
 # Overview
 
-The goal of this half-day hands-on tutorial is to learn how to integrate medical image computing software into a system for image-guided robot-assisted interventions, in which 2D/3D medical images are used for planning, navigation, monitoring, and validation. Examples of such robot-assisted systems include image-guided robotic needle-guide systems and surgical CAD/CAM systems. Those systems often require a wide range of image computing capabilities such as segmentation of anatomical structures, registration of multiple images, 2D/3D image visualization, image-based planning, and data sharing with the robot controller and the hospital’s picture archiving and communication systems (PACS). Integration of a solid medical image computing platform into a robotic system is becoming more important than ever with the growing interest in AI-based treatment planning and guidance. 
-However, the engineering effort to implement those features is often underestimated in academic research due to limited engineering resources or the scope of the project. Fortunately, many of those features have already been implemented and validated in the research community and often distributed as open-source software. Therefore it has become essential for academic researchers to take advantage of those existing tools and incorporate them into their own research instead of reinventing the wheel. 
-Following our successful hands-on tutorial hosted at ISMR 2019 and the continued demand for the training materials which was made available online, the team is planning a hands-on tutorial with new contents featuring up-to-date software platforms and AI-based planning/guidance. Like the previous tutorial, the session will consist of presentations by several experts in the field, followed by a hands-on tutorial. The presentations will review the software systems for image-guided robot-assisted interventions with real-world use-cases in the context of academic research. In the tutorial session, the participants will build a system for image-guided robot-assisted interventions on their own laptop computers using state-of-the-art research platforms for medical imaging and robotics, namely 3D Slicer 4.13 and Robot Operating System 2 (ROS2). The two platforms will be integrated using an open network communication protocol, OpenIGTLink. Then the participant will build a demo system that allows a user to plan a procedure on a 3D image using AI-based segmentation, execute the plan using a virtual robot, and visualize the 3D model of the robot along with reformatted images of the patient as feedback. At the end of the tutorial, the participants are expected to have a working demo system on their laptops, which could potentially be used as a template for their own research project.
-The workshop will be organized in conjunction with a separate half-day workshop on “Image-guided percutaneous interventions” which will feature a number of talks from experts in this research field. Participants who attend both workshops can gain knowledge about ongoing research topics and hands-on skills to tackle the existing problems. 
+The goal of this half-day hands-on tutorial is to learn how to integrate medical image computing software into a system for image-guided robot-assisted interventions (IGRI), in which 2D/3D medical images are used for planning, navigation, monitoring, and validation of robot-assisted procedures. Those systems often demand the implementation of a wide range of image computing features such as image segmentation, registration, 2D/3D visualization, and informatics, along with robotics features. Today’s growing interest in AI-based treatment planning and guidance is further expanding this demand.
+
+However, the engineering effort to implement common image computing and robotics features is often underestimated in academic research due to limited resources and/or the scope of the project. Fortunately, many of those features have already been implemented, validated, and made available as open-source software in research communities. By combining those features as building blocks, researchers can develop a high-quality IGRI system without reinventing the wheel. Those features are often packaged in a software environment, which provides a unified application program interface (API) and a graphical user interface so that developers and users can combine those blocks with minimal programming effort for their applications. Notable examples for such environemnts are 3D Slicer for medical image computing, and Robot Operating System (ROS) for robotics.
+
+A specific engineering challenge in developing IGRI systems is that no single software environment can support both medical image computing and robotics features. As each software environment has its own internal data representation and data management mechanism, it is not always straightforward to combine two environments and make them work as a single system. This challenge has been partially addressed by ROS-IGTL-Bridge, a software bridge that connects 3D Slicer and ROS via TCP-based socket communication, though this solution merely facilitates low-level data exchange between the two environments. ROS-IGTL-Bridge was demonstrated at our hands-on workshops at ISMR 2019 and 2021.
+
+Following the success of previous workshops and the continued demand for the integration of 3D Slicer and ROS, the team has recently stepped up the effort and developed a brand new 3D Slicer plug-in module called SlicerROS2 . SlicerROS2 directly incorporates ROS version 2’s essential features into 3D Slicer, including messaging middleware (DDS) and a scene graph (tf2), allowing more synchronous and seamless integration between the two platforms than ROS-IGTL-Bridge.
+
+In this last iteration of our tutorial series, the participants will build a simple IGRI system using SlicerROS2 on their own laptop computers. This simple IGRI system will allow a user to plan a procedure on a 3D image, execute the plan using a virtual robot, and visualize the 3D model of the robot along with reformatted images of the patient as feedback. At the end of the tutorial, the participants are expected to have a working demo system on their laptops, which could potentially be used as a template for their own research project. The organizers will also bring a da Vinci Research Kit (dVRK) patient side manipulator (PSM) and have the participants execute their task on a real robot.
+
 
 **Keywords**: Image-guided interventions, Navigation, Open-source software, Software-hardware integration, Surgical CAD/CAM
 
@@ -25,15 +35,19 @@ The workshop will be organized in conjunction with a separate half-day workshop 
 
 # Organizers
 
-- [Junichi Tokuda, Ph.D.](https://scholar.harvard.edu/tokuda), Brigham and Women’s Hospital and Harvard Medical School
-- [Tamas Ungi, M.D., Ph.D.](http://perk.cs.queensu.ca/users/ungi), Queen’s University
-- [Axel Krieger, Ph.D.](https://me.jhu.edu/faculty/axel-krieger/), Johns Hopkins University
-- [Simon Leonard, Ph.D.](https://www.cs.jhu.edu/faculty/simon-leonard/), Johns Hopkins University
-- [Mark Fuge, Ph.D.](http://ideal.umd.edu/team/mark-fuge), University of Maryland
-- Lydia Al-Zogbi, Johns Hopkins University
-- Pedro Moreira, Ph.D., Brigham and Women's Hospital and Harvard Medical School
+- [Junichi Tokuda, Ph.D.](https://scholar.harvard.edu/tokuda), Brigham and Women’s Hospital and Harvard Medical School, Boston, MA
+- [Axel Krieger, Ph.D.](https://me.jhu.edu/faculty/axel-krieger/), Johns Hopkins University, Baltimore, MD
+- [Simon Leonard, Ph.D.](https://www.cs.jhu.edu/faculty/simon-leonard/), Johns Hopkins University, Baltimore, MD
+- [Tamas Ungi, M.D., Ph.D.](http://perk.cs.queensu.ca/users/ungi), Queen’s University, Kingston, ON, Canada
+- Anton Deguet, Johns Hopkins University, Baltimore, MD
+- Laura Connolly, Queen’s University, Kingston, ON, Canada
+- Aravind S Kumar, Johns Hopkins University, Baltimore, MD 
+- Lydia Al-Zogbi, Johns Hopkins University, Baltimore, MD
+- [Mark Fuge, Ph.D.](http://ideal.umd.edu/team/mark-fuge), University of Maryland, College Park, MD
+- Pedro Moreira, Ph.D., Brigham and Women's Hospital and Harvard Medical School, Boston, MA
+- Mariana Bernardes, Brigham and Women’s Hospital and Harvard Medical School, Boston, MA 
 
-# Time Table
+# Time Table (TBD)
 
 - 08:30am : Opening remarks and introduction (Junichi Tokuda)
 - 08:40am : Building navigation software using 3D Slicer, PLUS, and SlicerIGT (Tamas Ungi)
@@ -43,11 +57,11 @@ The workshop will be organized in conjunction with a separate half-day workshop 
 - 10:30am: Tutorial Session 2: Integrating ROS and 3D Slicer
 
 # Tutorial
-- Step 0: [Prerequisite](ismr2021/prerequisite.md)
+- Step 0: [Prerequisite](prerequisite)
 - Step 1: Setting up environment
-  - [3D Slicer](ismr2021/slicer_env.md)
-  - [ROS](ismr2021/ros_env.md)
-- Step 2: [Testing OpenIGTLink Communication Between Slicer and ROS](ismr2021/ros_igtl_test.md)
+  - [3D Slicer](slicer_env)
+  - [ROS](ros_env)
+- Step 2: [Testing OpenIGTLink Communication Between Slicer and ROS](ros_igtl_test)
 - Step 3: [Creating a 3D model for surgical planning](ismr2021/slicer_planning.md)
 - Step 4: Setting up [Universal Robot Arm on ROS](ismr2021/fake_robot.md)
 - Step 5: [Targeting](ismr2021/ros_targeting.md)

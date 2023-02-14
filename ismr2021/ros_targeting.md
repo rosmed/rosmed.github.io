@@ -1,4 +1,9 @@
-Back to [Tutorial Home](https://rosmed.github.io/)
+---
+layout: page
+title:  ISMR21 > Targeting on ROS
+---
+
+Back to [Tutorial Home](index)
 
 
 Slicer Scene

@@ -1,5 +1,10 @@
-Bringup a Fake UR10
-===================
+---
+layout: page
+title:  ISMR2021 > Bringup a Fake UR10
+---
+
+Back to [Tutorial Home](index)
+
 To bring up a fake UR10 try the following commands
 
 ~~~

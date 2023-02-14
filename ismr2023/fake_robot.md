@@ -1,3 +1,8 @@
+---
+layout: page
+title: Bring Up a Fake UR10
+---
+
 Bringup a Fake UR10
 ===================
 To bring up a fake UR10 try the following commands

@@ -1,9 +1,13 @@
-Back to [Tutorial Home](https://rosmed.github.io/)
+---
+layout: page
+title:  ISMR19 Workshop
+---
 
+Back to [Events Home](https://rosmed.github.io/events)
 
 Wednesday, April 3, 2018, 1:30-5:00pm
 
-Please see [prerequiste](ismr2019/prerequisite), if you are planning to participate.
+Please see [prerequiste](prerequisite), if you are planning to participate.
 
 # Table of Contents
 - [Overview](#overview)

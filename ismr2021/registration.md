@@ -1,4 +1,9 @@
-Back to [Tutorial Home](https://rosmed.github.io/)
+---
+layout: page
+title: ISMR2021 > Registration
+---
+
+Back to [Tutorial Home](index)
 
 
 
