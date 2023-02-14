@@ -4,16 +4,22 @@ title:  ISMR23 Workshop / Building Software Systems for Image-Guided Robot-Assis
 permalink: /ismr2023/
 ---
 
-April 19, 2023
+![ISMRPhoto](/images/ismr2019_tutorial.jpg){:class="img-responsive" width="400px"}
+
+
+## Event Date: April 19, 2023
 
 # Table of Contents
 - [Overview](#overview)
-- [Organizers](#organizers)
+- [Intended Audience](#audience)
 - [Time Table](#time)
 - [Tutorial](#tutorial)
-- [Intended Audience](#audience)
 - [Links](#links)
+- [Past Workshops](#past)
+- [Organizers](#organizers)
+- [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
+
 
 # Overview
 
@@ -27,11 +33,55 @@ Following the success of previous workshops and the continued demand for the int
 
 In this last iteration of our tutorial series, the participants will build a simple IGRI system using SlicerROS2 on their own laptop computers. This simple IGRI system will allow a user to plan a procedure on a 3D image, execute the plan using a virtual robot, and visualize the 3D model of the robot along with reformatted images of the patient as feedback. At the end of the tutorial, the participants are expected to have a working demo system on their laptops, which could potentially be used as a template for their own research project. The organizers will also bring a da Vinci Research Kit (dVRK) patient side manipulator (PSM) and have the participants execute their task on a real robot.
 
-
 **Keywords**: Image-guided interventions, Navigation, Open-source software, Software-hardware integration, Surgical CAD/CAM
 
+# Intended audience
 
-[![ROS-IGTL-Bridge Demo](http://img.youtube.com/vi/CA4x5cZQKpk/0.jpg)](https://www.youtube.com/watch?v=CA4x5cZQKpk "ROS-IGTL-Bridge Demo")
+Researchers, engineers, and students working in the field of medical robotics and image-guided interventions are welcomed to join. The tutorial would be particularly useful for those who are already engaged or will be engaged in the design, implementation, and clinical translation of a system for image-guided robot-assisted interventions. We strongly recommend the audience to bring their own laptop computers to follow the hands-on tutorial during the session. While the tutorial will not involve coding, some experience of running commands on a UNIX-like system and compiling open-source software using Make or CMake would be helpful.
+
+
+# Time Table (TBD)
+
+- 5min : Opening remarks and introduction (Junichi Tokuda)
+- 15min : Building navigation software using 3D Slicer, PLUS, and SlicerIGT (Tamas Ungi)
+- 15min : Robot-Assisted Vertoplasty (Axel Kerieger)
+- 1hr : Tutorial Session 1: Building a patient model from ultrasound image using 3D Slicer
+- 10min: (Break)
+- 1hr: Tutorial Session 2: Integrating ROS and 3D Slicer
+
+# Tutorial
+- Step 0: [Prerequisite](prerequisite)
+- Step 1: Setting up environment
+  - [3D Slicer](slicer_env)
+  - [ROS](ros_env)
+- Step 2: [Testing OpenIGTLink Communication Between Slicer and ROS](ros_igtl_test)
+- Step 3: [Creating a 3D model for surgical planning](ismr2021/slicer_planning.md)
+- Step 4: Setting up [Universal Robot Arm on ROS](ismr2021/fake_robot.md)
+- Step 5: [Targeting](ismr2021/ros_targeting.md)
+
+# Links
+- [SSMR/ISMR Workshop](http://www.ismr.gatech.edu)
+- [Prerequisite for this tutorial](prerequisite.md)
+- [3D Slicer](https://www.slicer.org/)
+- [Robot Operating System](http://www.ros.org/)
+- [SlicerROS2](https://github.com/rosmed/slicer_ros2_module)
+
+
+# References
+
+- Connolly L, Deguet A, Leonard S, Tokuda J, Ungi T, Krieger A, Kazanzides P, Mousavi P, Fichtinger G, Taylor RH. [Bridging 3D Slicer and ROS2 for Image-Guided Robotic Interventions. Sensors (Basel)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9324680/). 2022 Jul 17;22(14):5336. doi: 10.3390/s22145336. PMID: 35891016; PMCID: PMC9324680.
+- Fedorov A, Beichel R, Kalpathy-Cramer J, Finet J, Fillion-Robin JC, Pujol S, Bauer C, Jennings D, Fennessy F, Sonka M, Buatti J, Aylward S, Miller JV, Pieper S, Kikinis R. [3D Slicer as an image computing platform for the Quantitative Imaging Network](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3466397/). Magn Reson Imaging. 2012 Nov;30(9):1323-41. doi: 10.1016/j.mri.2012.05.001. Epub 2012 Jul 6. PubMed PMID: 22770690; PubMed Central PMCID: PMC3466397.
+- Frank T, Krieger A, Leonard S, Patel NA, Tokuda J. [ROS-IGTL-Bridge: an open network interface for image-guided therapy using the ROS environment](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5543207/.) Int J Comput Assist Radiol Surg. 2017 Aug;12(8):1451-1460. doi: 10.1007/s11548-017-1618-1. Epub 2017 May 31. PubMed PMID: 28567563; PubMed Central PMCID: PMC5543207. 
+- Tauscher S, Tokuda J, Schreiber G, Neff T, Hata N, Ortmaier T. [OpenIGTLink interface for state control and visualisation of a robot for image-guided therapy systems](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4265315/). Int J Comput Assist Radiol Surg. 2015 Mar;10(3):285-92. doi: 10.1007/s11548-014-1081-1. Epub 2014 Jun 13. PubMed PMID: 24923473; PubMed Central PMCID: PMC4265315. 
+- Tokuda J, Fischer GS, Papademetris X, Yaniv Z, Ibanez L, Cheng P, Liu H, Blevins J, Arata J, Golby AJ, Kapur T, Pieper S, Burdette EC, Fichtinger G, Tempany CM, Hata N. [OpenIGTLink: an open network protocol for image-guided therapy environment](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2811069/). Int J Med Robot. 2009 Dec;5(4):423-34. doi: 10.1002/rcs.274. PubMed PMID: 19621334; PubMed Central PMCID: PMC2811069. 
+- Ungi T, Lasso A, Fichtinger G. [Open-source platforms for navigated image-guided interventions](https://www.ncbi.nlm.nih.gov/pubmed/?term=27344106). Med Image Anal. 2016 Oct;33:181-186. doi: 10.1016/j.media.2016.06.011. Epub 2016 Jun 15. Review. PubMed PMID: 27344106.
+
+
+# Past Workshops
+
+- [ISMR 2019](/ismr2019/index)
+- [ISMR 2021](/ismr2021/index)
+
 
 # Organizers
 
@@ -47,56 +97,23 @@ In this last iteration of our tutorial series, the participants will build a sim
 - Pedro Moreira, Ph.D., Brigham and Women's Hospital and Harvard Medical School, Boston, MA
 - Mariana Bernardes, Brigham and Women’s Hospital and Harvard Medical School, Boston, MA 
 
-# Time Table (TBD)
-
-- 08:30am : Opening remarks and introduction (Junichi Tokuda)
-- 08:40am : Building navigation software using 3D Slicer, PLUS, and SlicerIGT (Tamas Ungi)
-- 08:50am : Robot-Assisted Vertoplasty (Axel Kerieger)
-- 09:00am : Tutorial Session 1: Building a patient model from ultrasound image using 3D Slicer
-- 10:00am: (Break)
-- 10:30am: Tutorial Session 2: Integrating ROS and 3D Slicer
-
-# Tutorial
-- Step 0: [Prerequisite](prerequisite)
-- Step 1: Setting up environment
-  - [3D Slicer](slicer_env)
-  - [ROS](ros_env)
-- Step 2: [Testing OpenIGTLink Communication Between Slicer and ROS](ros_igtl_test)
-- Step 3: [Creating a 3D model for surgical planning](ismr2021/slicer_planning.md)
-- Step 4: Setting up [Universal Robot Arm on ROS](ismr2021/fake_robot.md)
-- Step 5: [Targeting](ismr2021/ros_targeting.md)
-
-# Intended audience
-
-Researchers, engineers, and students working in the field of medical robotics and image-guided interventions are welcomed to join. The tutorial would be particularly useful for those who are already engaged or will be engaged in the design, implementation, and clinical translation of a system for image-guided robot-assisted interventions. We strongly recommend the audience to bring their own laptop computers to follow the hands-on tutorial during the session. While the tutorial will not involve coding, some experience of running commands on a UNIX-like system and compiling open-source software using Make or CMake would be helpful.
-
-
-# Links
-- [SSMR/ISMR'21 Workshop](http://www.ismr.gatech.edu)
-- [Venu: Marcus Nanotechnology Building at Georgia Tech](http://www.ismr.gatech.edu/venue)
-- [Prerequisite for this tutorial](prerequisite.md)
-- [3D Slicer](https://www.slicer.org/)
-- [Robot Operating System](http://www.ros.org/)
-
-# References
-
-- Fedorov A, Beichel R, Kalpathy-Cramer J, Finet J, Fillion-Robin JC, Pujol S, Bauer C, Jennings D, Fennessy F, Sonka M, Buatti J, Aylward S, Miller JV, Pieper S, Kikinis R. [3D Slicer as an image computing platform for the Quantitative Imaging Network](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3466397/). Magn Reson Imaging. 2012 Nov;30(9):1323-41. doi: 10.1016/j.mri.2012.05.001. Epub 2012 Jul 6. PubMed PMID: 22770690; PubMed Central PMCID: PMC3466397.
-- Frank T, Krieger A, Leonard S, Patel NA, Tokuda J. [ROS-IGTL-Bridge: an open network interface for image-guided therapy using the ROS environment](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5543207/.) Int J Comput Assist Radiol Surg. 2017 Aug;12(8):1451-1460. doi: 10.1007/s11548-017-1618-1. Epub 2017 May 31. PubMed PMID: 28567563; PubMed Central PMCID: PMC5543207. 
-- Tauscher S, Tokuda J, Schreiber G, Neff T, Hata N, Ortmaier T. [OpenIGTLink interface for state control and visualisation of a robot for image-guided therapy systems](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4265315/). Int J Comput Assist Radiol Surg. 2015 Mar;10(3):285-92. doi: 10.1007/s11548-014-1081-1. Epub 2014 Jun 13. PubMed PMID: 24923473; PubMed Central PMCID: PMC4265315. 
-- Tokuda J, Fischer GS, Papademetris X, Yaniv Z, Ibanez L, Cheng P, Liu H, Blevins J, Arata J, Golby AJ, Kapur T, Pieper S, Burdette EC, Fichtinger G, Tempany CM, Hata N. [OpenIGTLink: an open network protocol for image-guided therapy environment](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2811069/). Int J Med Robot. 2009 Dec;5(4):423-34. doi: 10.1002/rcs.274. PubMed PMID: 19621334; PubMed Central PMCID: PMC2811069. 
-- Ungi T, Lasso A, Fichtinger G. [Open-source platforms for navigated image-guided interventions](https://www.ncbi.nlm.nih.gov/pubmed/?term=27344106). Med Image Anal. 2016 Oct;33:181-186. doi: 10.1016/j.media.2016.06.011. Epub 2016 Jun 15. Review. PubMed PMID: 27344106.
-
 # Acknowledgements
 
 This work is supported in part by:
-- U.S. National Institutes of Health (R01EB020667, R01EB020610, P41EB028741)
+- U.S. National Institutes of Health (R01EB020667, R01EB020667-05S1(Administrative Supplement), R01EB020610, P41EB028741)
 - Ontario Consortium for Adaptive Interventions in Radiation Oncology (OCAIRO)
 - SparKit project
 - CANARIE’s Research Software Program
 
-Contributors:
-- Tobias Frank, M.Sc. Leibniz Universität Hannover
-- Niravkumar Patel, Ph.D., Johns Hopkins University
+![NIBIB Logo](https://www.nibib.nih.gov/sites/default/files/nibib_logo.png){:class="img-responsive"}
+
+![BWH](/images/BWH_Logo.png){:class="img-responsive" width="360px"}
+![HMS](/images/HMS_Logo.png){:class="img-responsive" width="200px"}
+![JHU](/images/JHU_Logo.png){:class="img-responsive" width="240px"}
+![UMD](/images/UMD_Logo.png){:class="img-responsive" width="240px"}
+![Queens](/images/Queens_Logo.png){:class="img-responsive" width="200px"}
+
+
 
 # Contact
 
