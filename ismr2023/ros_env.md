@@ -36,83 +36,56 @@ The detail of this Docker image is outlined in the following page:
 [Option 2] Installing ROS on Dedicated ROS Computer <a name="native_ros"></a>
 ===================================================
 
-### Installing ROS Foxy
-Please follow [Installation page](https://docs.ros.org/en/foxy/Installation.html).
+### Installing ROS Galactic
+Please follow [Installation page](https://docs.ros.org/en/galactic/Installation.html).
 
 
-### Building a Custom Robot Driver
+### Building dVRK packages
 
-The robot driver for this tutorial is available at:
-- [Universal Robots ROS2 Driver for ISMR 2021 Tutorial](https://github.com/simonleonard/Universal_Robots_ROS2_Driver)
+Specific instruction to build the dVRK packages for ROS2 Galactic are available here:
+- [dVRK ROS 2](https://github.com/jhu-dvrk/sawIntuitiveResearchKit/wiki/BuildROS2)
 
 Please note that the following build process may require a large memory space. If it fails, consider limiting the number of processes using the '--parallel-workers' option.
 
+### Install Moveit! Packages
 
-1. [Install ROS2 Rolling](https://docs.ros.org/en/rolling/Installation/Ubuntu-Install-Debians.html) or [Install ROS2 Galactic](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html). This branch will support both distributions until API breaking changes are made, at which point a `galactic` branch will be forked. For using this driver with ROS2 `foxy` checkout [foxy branch](https://github.com/simonleonard/Universal_Robots_ROS2_Driver/tree/foxy).
+The tutorial uses Moveit! to compute trajectories of the Patient Side Manipulator (PSM). In particular, the [move_group](https://moveit.picknik.ai/humble/doc/concepts/move_group.html) is used to compute Cartesian paths. To install MoveIt! packages use the command
 
-2. Make sure that `colcon`, its extensions and `vcs` are installed:
 ~~~~
-sudo apt install python3-colcon-common-extensions python3-vcstool
-~~~~
-
-3. Create a new ROS2 workspace:
-~~~~
-export COLCON_WS=~/workspace/ros_ur_driver
-mkdir -p $COLCON_WS/src
+sudo apt-get install ros-galactic-moveit*
 ~~~~
 
-4. Pull relevant packages, install dependencies, compile, and source the workspace by using:
+#### Install ISMR 2023 specific packages
+
+This package will serve as in intermediate for converting a pose array sent from Slicer to a service request to the move_group node. Followig this, it sends the resulting trajectory to the dVRK actionlib server to execute the trajectory. 
+
 ~~~~
-cd $COLCON_WS
-git clone https://github.com/simonleonard/Universal_Robots_ROS2_Driver.git src/Universal_Robots_ROS2_Driver
-vcs import src --skip-existing --input src/Universal_Robots_ROS2_Driver/Universal_Robots_ROS2_Driver.repos
-rosdep install --ignore-src --from-paths src -y -r
-colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
+cd ~/ros2_ws
+git clone https://github.com/rosmed/ismr23_planner.git src/ismr23
+git clone https://github.com/Ketan13294/dvrk_psm_moveit2_config.git src
+colcon build
 source install/setup.bash
 ~~~~
 
+## Starting move_group with the PSM
 
-## Using MoveIt
+To start the move_group node that is configured for the PSM try the following commands
 
-To use MoveIt some additional packages should be added into workspace:
 ~~~~
-cd $COLCON_WS
-vcs import src --skip-existing --input src/Universal_Robots_ROS2_Driver/MoveIt_Support.repos
-vcs import src --skip-existing --input src/moveit2/moveit2.repos
-rosdep install --ignore-src --from-paths src -y -r
-colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
+cd ~/ros2_ws
 source install/setup.bash
+ros2 launch ismr23 demo.launch.py
 ~~~~
 
-### Building OpenIGTLink
+This should bring up the PSM with the MoveIt! Rviz plugin. You can use CTRL-C in your terminal.
 
-ros2_igtl_bridge depends on the OpenIGTLink library. We install the source files of the libary under ~/igtl/OpenIGTLink and build files under ~/igtl/OpenIGTLink-build
-~~~~
-cd ~
-mkdir igtl
-cd igtl
-git clone https://github.com/openigtlink/OpenIGTLink.git
-mkdir OpenIGTLink-build
-cd OpenIGTLink-build
-cmake -DBUILD_SHARED_LIBS:BOOL=OFF ../OpenIGTLink
-make
+## Starting the ros2_control for the PSM
+
+The execution of the trajectory is mananaged by [ROS2 control](https://control.ros.org/master/index.html). To start ROS control try the following commands
+
 ~~~~
 
-### Installing ros2_igtl_bridge
-
-First, set up catkin working directory (if it has not been set up).
 ~~~~
-cd $COLCON_WS
-rosdep update
-git clone -b ismr21 https://github.com/openigtlink/ros2_igtl_bridge  src/ros2_igtl_bridge
-rosdep install --ignore-src --from-paths src -y -r
-colcon build --parallel-workers 2 --cmake-args -DOpenIGTLink_DIR:PATH=/root/igtl/OpenIGTLink-build -DCMAKE_BUILD_TYPE=Release'
-~~~~
-
-
-
-
-
 
 
 
