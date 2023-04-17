@@ -1,4 +1,9 @@
-Back to [Tutorial Home](https://rosmed.github.io/)
+---
+layout: page
+title: ROS2 Environment
+---
+
+Back to [Tutorial Home](/ismr2023/)
 
 Setting Up ROS 2 Environment for Tutorial
 =========================================

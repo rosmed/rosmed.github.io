@@ -1,4 +1,10 @@
-Back to [Tutorial Home](https://rosmed.github.io/)
+---
+layout: page
+title: ROS2 Setup
+---
+
+Back to [Tutorial Home](/ismr2023/)
+
 
 
 

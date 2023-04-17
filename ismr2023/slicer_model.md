@@ -1,3 +1,9 @@
-Back to [Tutorial Home](https://rosmed.github.io/)
+---
+layout: page
+title: Slicer Model 
+---
+
+Back to [Tutorial Home](/ismr2023/)
+
 
 

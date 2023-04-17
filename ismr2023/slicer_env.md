@@ -1,4 +1,10 @@
-Back to [Tutorial Home](https://rosmed.github.io/)
+---
+layout: page
+title: Slicer Environment 
+---
+
+Back to [Tutorial Home](/ismr2023/)
+
 
 3D Slicer
 ---------
