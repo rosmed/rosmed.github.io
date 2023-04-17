@@ -2,7 +2,7 @@ Back to [Tutorial Home](https://rosmed.github.io/)
 
 Setting Up ROS 2 Environment for Tutorial
 =========================================
-In this tutorial, we will use ROS Foxy, which supports Ubuntu Linux (Focal Fossa -20.04) 64-bit and Debian Linux (Buster - 10) 64-bit. It also supports other operating systems, but the installation on those operating systems is not as straightforward as on the Linux environment. See [Installation page](https://docs.ros.org/en/foxy/Installation.html) for detail.
+In this tutorial, we will use ROS Galactic, which supports Ubuntu Linux (Focal Fossa -20.04) 64-bit. It also supports other operating systems, but the installation on those operating systems is not as straightforward as on the Linux environment. See [Installation page](https://docs.ros.org/en/galactic/Installation.html) for detail.
 
 If you are new to ROS2, we encourage to use our Docker image. If you want to set up your own ROS environment for the tutorial, please refer to section [Installing ROS on Dedicated ROS Computer](#native_ros)
 
