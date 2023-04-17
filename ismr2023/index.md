@@ -58,7 +58,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 - Step 3: [Creating a 3D model for surgical planning](ismr2021/slicer_planning.md)
 - Step 4: Setting up [Universal Robot Arm on ROS](ismr2021/fake_robot.md)
 - Step 5: [Targeting](ismr2021/ros_targeting.md)
-
+f
 # Links
 - [SSMR/ISMR Workshop](http://www.ismr.gatech.edu)
 - [Prerequisite for this tutorial](prerequisite.md)
@@ -89,13 +89,13 @@ Researchers, engineers, and students working in the field of medical robotics an
 - [Axel Krieger, Ph.D.](https://me.jhu.edu/faculty/axel-krieger/), Johns Hopkins University, Baltimore, MD
 - [Simon Leonard, Ph.D.](https://www.cs.jhu.edu/faculty/simon-leonard/), Johns Hopkins University, Baltimore, MD
 - [Tamas Ungi, M.D., Ph.D.](http://perk.cs.queensu.ca/users/ungi), Queen’s University, Kingston, ON, Canada
-- Anton Deguet, Johns Hopkins University, Baltimore, MD
-- Laura Connolly, Queen’s University, Kingston, ON, Canada
-- Aravind S Kumar, Johns Hopkins University, Baltimore, MD 
-- Lydia Al-Zogbi, Johns Hopkins University, Baltimore, MD
+- [Anton Deguet](https://malonecenter.jhu.edu/people/anton-deguet/), Johns Hopkins University, Baltimore, MD
+- [Laura Connolly](http://perk.cs.queensu.ca/users/connolly), Queen’s University, Kingston, ON, Canada
+- [Aravind S Kumar](https://in.linkedin.com/in/aravind-s-kumar-091571165?original_referer=https%3A%2F%2Fwww.google.com%2F), Johns Hopkins University, Baltimore, MD 
+- [Lydia Al-Zogbi](https://www.linkedin.com/in/lidia-alzogbi), Johns Hopkins University, Baltimore, MD
 - [Mark Fuge, Ph.D.](http://ideal.umd.edu/team/mark-fuge), University of Maryland, College Park, MD
-- Pedro Moreira, Ph.D., Brigham and Women's Hospital and Harvard Medical School, Boston, MA
-- Mariana Bernardes, Brigham and Women’s Hospital and Harvard Medical School, Boston, MA 
+- [Pedro Moreira, Ph.D.](https://scholar.harvard.edu/pedromoreira/home), Brigham and Women's Hospital and Harvard Medical School, Boston, MA
+- [Mariana Bernardes, Ph.D.](https://scholar.harvard.edu/bernardes), Brigham and Women’s Hospital and Harvard Medical School, Boston, MA 
 
 # Acknowledgements
 

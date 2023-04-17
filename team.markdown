@@ -4,7 +4,7 @@ title: Team
 permalink: /team/
 ---
 
-# Core Members
+# Faculties
 
 - [Junichi Tokuda, Ph.D.](https://scholar.harvard.edu/tokuda), Brigham and Women’s Hospital and Harvard Medical School
 - [Axel Krieger, Ph.D.](https://me.jhu.edu/faculty/axel-krieger/), Johns Hopkins University
