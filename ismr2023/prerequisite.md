@@ -3,11 +3,7 @@ layout: page
 title: Prerequisite
 ---
 
-
 Back to [Tutorial Home](/ismr2023/)
-
-Prerequisite
-============
 
 We encourage all participants to bring their own laptops to follow the tutorial. This page outlines hardware/software requirements. If you are planning to participate in our workshop, we recommend to download/install the following package before the workshop, as it may take some time to download them.
 
@@ -27,7 +23,7 @@ or, a Mac with an Apple Silicon CPU (M1 or M2). Please note that part of the tut
 
 We also recommend bringing a mouse, as it makes it easier to maneuver 3D graphics on the GUI.
 
-### Operating System 
+### Operating System
 
 One of the followings:
 - Windows 10 or 11
@@ -37,13 +33,32 @@ One of the followings:
 
 ### Docker
 
-We will use [Robot Operating System](http://www.ros.org/), which requires a Linux operating system (Ubuntu 15.10 or 16.04, or Debian 8.11 Jessie). If you are using a Windows or Mac computer, or a computer with a Linux distribution other than those listed here, you will need to run a Linux operating system using virtualization software, [Docker](https://www.docker.com/). Please go to the Docker's page, and install either:
-- [Docker Desktop](https://www.docker.com/products/docker-desktop) (Windows 10, macOS Sierra 10.12 or above)
-- [Docker CE](https://docs.docker.com/install/) (Linux)
+We will use [Robot Operating System](http://www.ros.org/), which requires a Linux operating system. If you are using a Windows or Mac computer, or a computer with a Linux distribution other than those listed here, you will need to run a Linux operating system using virtualization software, [Docker](https://www.docker.com/).
+
+Once the Docker is setup on your computer, pull the image using the following command:
+~~~~
+$ docker pull rosmed/docker-ubuntu-vnc-desktop-slicerros2-lw:ismr2023
+~~~~
+Please note that this Docker image is a lightweight version and only contains a binary package of 3D Slicer. If you plan to use the Docker image for  3D Slicer module development, you will need a full Docker image with 3D Slicer build files, which can be obtained by:
+~~~~
+$ docker pull rosmed/docker-ubuntu-vnc-desktop-slicerros2:ismr2023
+~~~~
+
+To execute the docker image, run the following command:
+~~~~
+$ docker run -it --rm -p 6080:80 rosmed/docker-ubuntu-vnc-desktop-slicerros2-lw:ismr2023
+~~~~
+(in case of using the full Docker image, specify `rosmed/docker-ubuntu-vnc-desktop-slicerros2:ismr2023` instead).
+
+In this example, the HTTP port (port 80) on the docker container will be mapped to port 6080 on the host computer. The '--rm' option will remove the container upon termination. If the Docker container is successfully started, its desktop environment can be accessed using a web browser by accessing `http://localhost:6080`.
 
 
-Using Native ROS
-----------------
+If you are interested in how those Docker images were built, the details can be found in [this page](ISMR2023-Docker-Image-Instruction)).
+
+
+Using a Native Linux System
+---------------------------
+
 An Intel-based computer with [Linux that is compatible with ROS2 Galactic](https://docs.ros.org/en/galactic/Installation/Alternatives/Ubuntu-Development-Setup.html). 
 
 
