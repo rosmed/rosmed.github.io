@@ -6,43 +6,10 @@ title: Slicer Environment
 Back to [Tutorial Home](/ismr2023/)
 
 
-Docker Environment
-------------------
+Installing 3D Slicer and Extensions (Skip if using Docker) 
+---------------------------------------------------------
 
-### Testing 3D Slicer
-
-
-The 3D Slicer binary is installed under /root/slicer/Slicer-5.2 (Lightweight Docker image) or /root/slicer/Slicer-SuperBuild-Release/Slicer-build (full Docker image). Before launching 3D Slicer, make sure to source ROS's setup script:
-~~~~
-# source /root/ros2_ws/install/setup.bash
-# <path to 3D Slicer>/Slicer
-~~~~
-Alternatively, run the launch script that comes with the Docker image:
-~~~~
-# ./start-slicer-ros2.bash
-~~~~
-If successful, 3D Slicer's main window should appear on the desktop. 
-
-
-### Installing the SegmentationUNet module (Intel-based machine only)
-
-
-If your host computer is equipped with x86 CPU(s), you can run deep-learning-based ultrasound segmentation. To install the segmentation module, run the installation script that comes with the Docker image:
-~~~~
-# ./install-segmentation-unet.bash
-~~~~
-Do not use this script if your host computer is not an x86 system (e.g., Mac with Apple Silicon CPU). The segmentation module installs the TensorFlow library that uses Intel's AVX instructions, which are unavailable in the emulated environment. Once the module has been installed, the Slicer will not start properly.
-
-
-
-Native Environment
-------------------
-
-### Installing Slicer and Extension
-
-To complete the tutorial, you need to use Slicer 5.2 or higher. 
-
-- [3D Slicer Download Page](https://download.slicer.org) (Click "Preview Release" for your platform)
+To complete the tutorial, you need to build 3D Slicer from the source code. The [build instruction](https://slicer.readthedocs.io/en/latest/developer_guide/build_instructions/linux.html) is available on the Slicer Web Site. To use SlicerROS2 module, make sure to make sure to use the system/native OpenSSL libraries instead of the version that is downloaded as part of the building process. To use system/native OpenSSL, after you ran CMake, in the Slicer build directory, set `Slicer_USE_SYSTEM_OpenSLL` `ON` using `cmake . -DSlicer_USE_SYSTEM_OpenSSL=ON` or ccmake.
 
 After installing and launching 3D Slicer, open the Extension Manager ("View" -> "Extension Manager"), and install the following extension:
 
@@ -51,10 +18,23 @@ After installing and launching 3D Slicer, open the Extension Manager ("View" -> 
 - SlicerIGSIO
 - ParallelProcesses (see [the GitHub page](https://github.com/pieper/SlicerParallelProcessing) for more information.)
 
-### Installing SegmentationUNet
+
+Installing SegmentationUNet (Intel-based PC/Mac only)
+-----------------------------------------------------
+
+If your host computer is equipped with x86 CPU(s), you can run deep-learning-based ultrasound segmentation. 
 
 
-#### For Windows users, or Mac/Linux users who run 3D Slicer from a terminal
+#### For Docker Users:
+To install the segmentation module, run the installation script that comes with the Docker image:
+~~~~
+# ./install-segmentation-unet.bash
+~~~~
+Do not use this script if your host computer is not an x86 system (e.g., Mac with Apple Silicon CPU). The segmentation module installs the TensorFlow library that uses Intel's AVX instructions, which are unavailable in the emulated environment. Once the module has been installed, the Slicer will not start properly.
+
+When Slicer is launched for the first time after installing the SegmenationUNet module, it will automatically install the TensorFlow library into Slicer's Python envrionment.
+
+#### For Native OS Environment 
 The SegmentationUNet module is available as part of SlicerIGT/aigt at [GitHub]. You can either clone the repository using a git command:
 ~~~~
 git clone https://github.com/SlicerIGT/aigt
@@ -67,15 +47,47 @@ To install the SegmentationUNet to your 3D Slicer:
 - Drop the SegmentationUNet.py file in the area in Slicer settings called Additional module paths
 - Press OK on the Settings window and restart Slicer application
 
+When Slicer is launched for the first time after installing the SegmenationUNet module, it will automatically install the TensorFlow library into Slicer's Python envrionment.
 
-#### For Mac users who want to use the launcher to start 3D Slicer
-The current version of the SegmentationUNet module may not work properly if 3D Slicer is launched from the launcher on macOS, because it tries to output a log file where the Slicer is launched. If you want to avoid the issue, use the code in the `ismr2021-mac` branch in [a forked repository]((https://github.com/rosmed/aigt/), which output a log file in the home directory. 
-~~~~
-git clone -b ismr2021-mac https://github.com/rosmed/aigt
-~~~~
-After cloning the code, follow the steps above to install the module. 
 
-When Slicer is launched for the first time after installing the SegmenationUNet module, it will automatically install the TensorFlow library into Slicer's Python envrionment.   
+Installing SlicerROS2
+---------------------
+
+#### Building SlicerROS2 the Native Environment (Skip if using Docker Environment) 
+
+The build instruction for SlicerROS2 is available at [the SlicerROS2 documentation](https://slicerros2module.readthedocs.io/en/latest/pages/getting-started.html#pre-requisites). 
+
+First, source the ROS setup script:
+~~~~
+source /opt/ros/galactic/setup.bash
+~~~~
+
+Obtian the source code. Assuming that your ROS2 workspace is located at `~/ros2_ws`: 
+~~~~
+$ cd ~/ros2_ws/src
+$ git clone https://github.com/rosmed/slicer_ros2_module/blob/devel/docs/index.rst
+~~~~
+
+Then, build the module by running the following command:
+~~~~
+colcon build --cmake-args -DSlicer_DIR:PATH=/<your home dir>/slicer/Slicer-SuperBuild-Debug/Slicer-build
+~~~~
+
+
+
+#### Testing SlicerROS2 on Docker (Skip if using Native Environment)
+
+The 3D Slicer binary is installed under /root/slicer/Slicer-5.2 (Lightweight Docker image) or /root/slicer/Slicer-SuperBuild-Release/Slicer-build (full Docker image). Before launching 3D Slicer, make sure to source ROS's setup script:
+~~~~
+# source /root/ros2_ws/install/setup.bash
+# <path to 3D Slicer>/Slicer
+~~~~
+Alternatively, run the launch script that comes with the Docker image:
+~~~~
+# ./start-slicer-ros2.bash
+~~~~
+If successful, 3D Slicer's main window should appear on the desktop. 
+
 
 
 Files for Tutorial
