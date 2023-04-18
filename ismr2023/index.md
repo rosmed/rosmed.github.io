@@ -51,13 +51,13 @@ Researchers, engineers, and students working in the field of medical robotics an
 
 # Tutorial
 - Step 0: [Prerequisite](prerequisite)
-- Step 1: Setting up environment
+- Step 1: Setting up the environment
+  - [Virtual Environment (Docker)](docker_env) 
   - [3D Slicer](slicer_env)
   - [ROS](ros_env)
-- Step 2: [Testing OpenIGTLink Communication Between Slicer and ROS](ros_igtl_test)
-- Step 3: [Creating a 3D model for surgical planning](slicer_planning.md)
-- Step 4: Setting up [Universal Robot Arm on ROS](fake_robot.md)
-- Step 5: [Targeting](ros_targeting.md)
+- Step 2: [Creating an anatomical model from ultrasound images using AI-based segmentation](slicer_model)
+- Step 3: [Surgical Planning](slicer_planning)
+- Step 4: [Connecting 3D Slicer and ROS](connecting_slicer_ros)
 
 # Links
 - [SSMR/ISMR Workshop](http://www.ismr.gatech.edu)
