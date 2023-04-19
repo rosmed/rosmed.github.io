@@ -94,10 +94,11 @@ Researchers, engineers, and students working in the field of medical robotics an
 - [Laura Connolly](http://perk.cs.queensu.ca/users/connolly), Queen’s University, Kingston, ON, Canada
 - [Aravind S Kumar](https://in.linkedin.com/in/aravind-s-kumar-091571165?original_referer=https%3A%2F%2Fwww.google.com%2F), Johns Hopkins University, Baltimore, MD 
 - [Lydia Al-Zogbi](https://www.linkedin.com/in/lidia-alzogbi), Johns Hopkins University, Baltimore, MD
+- [Kapi Ketan Mehta](https://www.linkedin.com/in/kapi-ketan-mehta), Johns Hopkins University, Baltimore, MD
 - [Mark Fuge, Ph.D.](http://ideal.umd.edu/team/mark-fuge), University of Maryland, College Park, MD
 - [Pedro Moreira, Ph.D.](https://scholar.harvard.edu/pedromoreira/home), Brigham and Women's Hospital and Harvard Medical School, Boston, MA
 - [Mariana Bernardes, Ph.D.](https://scholar.harvard.edu/bernardes), Brigham and Women’s Hospital and Harvard Medical School, Boston, MA 
-- [Kapi Ketan Mehta](https://www.linkedin.com/in/kapi-ketan-mehta), Johns Hopkins University, Baltimore, MD
+
 
 # Acknowledgements
 
