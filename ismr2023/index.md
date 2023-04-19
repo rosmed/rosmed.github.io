@@ -40,14 +40,17 @@ In this last iteration of our tutorial series, the participants will build a sim
 Researchers, engineers, and students working in the field of medical robotics and image-guided interventions are welcomed to join. The tutorial would be particularly useful for those who are already engaged or will be engaged in the design, implementation, and clinical translation of a system for image-guided robot-assisted interventions. We strongly recommend the audience to bring their own laptop computers to follow the hands-on tutorial during the session. While the tutorial will not involve coding, some experience of running commands on a UNIX-like system and compiling open-source software using Make or CMake would be helpful.
 
 
-# Time Table (TBD)
+# Time Table
 
-- 5min : Opening remarks and introduction (Junichi Tokuda)
-- 15min : Building navigation software using 3D Slicer, PLUS, and SlicerIGT (Tamas Ungi)
-- 15min : Robot-Assisted Vertoplasty (Axel Kerieger)
-- 1hr : Tutorial Session 1: Building a patient model from ultrasound image using 3D Slicer
-- 10min: (Break)
-- 1hr: Tutorial Session 2: Integrating ROS and 3D Slicer
+| Time  | Aganda                                                                             |
+|-------|------------------------------------------------------------------------------------|
+| 13:30 | Opening remarks and introduction (Junichi Tokuda)                                  |
+| 13:35 | Robot-Assisted Vertoplasty (Lydia Al-Zogbi)                                        |
+| 13:50 | 3D Slicer for Image-Guided Robotic Interventions (Mariana Bernardes)               |
+| 14:05 | Building navigation software using 3D Slicer, PLUS, and SlicerIGT (Laura Connolly) |
+| 14:20 | Tutorial Session 1: Building a patient model from ultrasound image using 3D Slicer |
+| 15:20 | (Break)                                                                            |
+| 15:40 | Tutorial Session 2: Integrating ROS and 3D Slicer                                  |
 
 # Tutorial
 - Step 0: [Prerequisite](prerequisite)
