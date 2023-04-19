@@ -22,8 +22,8 @@ To get started with SlicerROS2, we'll be using a simulated patient side manipula
 
 ````
 source ~/ros2_ws/install/setup.bash
-cd ~/ros2_ws/install/sawIntuitiveResearchKitAll/share/sawIntuitiveResearchKit
-ros2 run dvrk_robot dvrk_console_json -j share/console/console-PSM1_KIN_SIMULATED.json
+cd ~/ros2_ws/src/dvrk/dvrk_config_jhu/jhu-dVRK-Si-demo
+ros2 run dvrk_robot dvrk_console_json -j console-PSM3_SIMULATED.json
 ````
 
 3. Select "Power on" and press "Home"
@@ -33,7 +33,7 @@ ros2 run dvrk_robot dvrk_console_json -j share/console/console-PSM1_KIN_SIMULATE
 
 ````
 source ~/ros2_ws/install/setup.bash
-ros2 launch dvrk_model dvrk_state_publisher.launch.py arm:=PSM1
+ros2 launch dvrk_model dvrk_state_publisher.launch.py arm:=PSM3
 ````
 
 5. Finally, in a third terminal, navigate to your inner build folder (usually in Slicer-SuperBuild-xxx/Slicer-build/)
@@ -44,7 +44,7 @@ source ~/opt/ros/galactic/setup.bash
 ./Slicer
 ````
 
-6. Now you can visualize the robot by switching to the ROS2 module and entering "PSM1/robot_state_publisher" in the second selector: 
+6. Now you can visualize the robot by switching to the ROS2 module and entering "PSM3/robot_state_publisher" in the second selector: 
 <img width="469" alt="image" style="text-align:center" src="https://user-images.githubusercontent.com/36430552/232660578-37974c02-7379-4d4d-ac22-41e82ed317d3.png">
 
 Note: you will need to zoom out to see the robot!
@@ -52,7 +52,7 @@ Note: you will need to zoom out to see the robot!
 6. Get your robot to do a little dance by running in a seperate terminal
 
 ````
-ros2 run dvrk_python dvrk_arm_test.py -a PSM1
+ros2 run dvrk_python dvrk_arm_test.py -a PSM3
 ````
 
 <img width="422" alt="image" style="text-align:center" src="https://user-images.githubusercontent.com/36430552/232660691-d3dd4a8d-5799-4cb8-862f-40817897c24a.png">
