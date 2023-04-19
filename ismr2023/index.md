@@ -42,7 +42,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 
 # Time Table
 
-| Time  | Aganda                                                                              | Speaker           |
+| Time  | Agenda                                                                              | Speaker           |
 |-------|-------------------------------------------------------------------------------------|-------------------|
 | 13:30 | Opening remarks and introduction                                                    | Junichi Tokuda    |
 | 13:35 | Tongue Tumor Resection - Clinical Background, Challenges and Current Progress       | Lydia Al-Zogbi    |
