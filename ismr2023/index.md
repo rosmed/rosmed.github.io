@@ -43,11 +43,12 @@ Researchers, engineers, and students working in the field of medical robotics an
 # Time Table (TBD)
 
 - 5min : Opening remarks and introduction (Junichi Tokuda)
-- 15min : Building navigation software using 3D Slicer, PLUS, and SlicerIGT (Tamas Ungi)
-- 15min : Robot-Assisted Vertoplasty (Axel Kerieger)
-- 1hr : Tutorial Session 1: Building a patient model from ultrasound image using 3D Slicer
+- 15min : Tongue Tumor Resection - Clinical Background, Challenges and Current Progress (Lydia Al-Zogbi)
+- 15min: 3D Slicer as a Platform for Image-Guided Therapy (Mariana Bernardes)
+- 30min : Tutorial Session 1 - Building a patient model from ultrasound image using 3D Slicer
+- 30min: Tutorial Session 2 - Intro to SlicerROS2
 - 10min: (Break)
-- 1hr: Tutorial Session 2: Integrating ROS and 3D Slicer
+- 1hr: Tutorial Session 3 - Path planning and registration with SlicerROS2
 
 # Tutorial
 - Step 0: [Prerequisite](prerequisite)
@@ -96,6 +97,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 - [Mark Fuge, Ph.D.](http://ideal.umd.edu/team/mark-fuge), University of Maryland, College Park, MD
 - [Pedro Moreira, Ph.D.](https://scholar.harvard.edu/pedromoreira/home), Brigham and Women's Hospital and Harvard Medical School, Boston, MA
 - [Mariana Bernardes, Ph.D.](https://scholar.harvard.edu/bernardes), Brigham and Women’s Hospital and Harvard Medical School, Boston, MA 
+- [Kapi Ketan Mehta](https://www.linkedin.com/in/kapi-ketan-mehta), Johns Hopkins University, Baltimore, MD
 
 # Acknowledgements
 
