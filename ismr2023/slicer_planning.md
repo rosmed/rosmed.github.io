@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Slicer Planning 
+title: Intro to SlicerROS2
 ---
 
 Back to [Tutorial Home](/ismr2023/)
