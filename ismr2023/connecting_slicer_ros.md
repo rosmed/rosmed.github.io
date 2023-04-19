@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Connecting 3D Slicer and ROS
+title: Image registration and path planning in Slicer
 ---
 
 Back to [Tutorial Home](/ismr2023/)
