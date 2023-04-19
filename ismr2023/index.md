@@ -46,9 +46,9 @@ Researchers, engineers, and students working in the field of medical robotics an
 - 15min : Tongue Tumor Resection - Clinical Background, Challenges and Current Progress (Lydia Al-Zogbi)
 - 15min: 3D Slicer as a Platform for Image-Guided Therapy (Mariana Bernardes)
 - 30min : Tutorial Session 1 - Building a patient model from ultrasound image using 3D Slicer
-- 30min: Tutorial Session 2 - Intro to SlicerROS2
-- 10min: (Break)
-- 1hr: Tutorial Session 3 - Path planning and registration with SlicerROS2
+- 30min : Tutorial Session 2 - Intro to SlicerROS2
+- 10min : (Break)
+- 1hr : Tutorial Session 3 - Path planning and registration with SlicerROS2
 
 # Tutorial
 - Step 0: [Prerequisite](prerequisite)
@@ -114,7 +114,6 @@ This work is supported in part by:
 ![JHU](/images/JHU_Logo.png){:class="img-responsive" width="240px"}
 ![UMD](/images/UMD_Logo.png){:class="img-responsive" width="240px"}
 ![Queens](/images/Queens_Logo.png){:class="img-responsive" width="200px"}
-
 
 
 # Contact
