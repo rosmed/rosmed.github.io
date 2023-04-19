@@ -19,7 +19,7 @@ permalink: /ismr2023/
 - [Organizers](#organizers)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
-- [Presentation files](https://github.com/rosmed/ismr2023_files)
+- [Presentation PDF](https://github.com/rosmed/ismr2023_files](https://github.com/rosmed/rosmed.github.io/blob/master/ismr2023/ISMR23-Instructions_PDF.pdf)
 
 
 # Overview
