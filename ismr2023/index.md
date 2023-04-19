@@ -42,16 +42,16 @@ Researchers, engineers, and students working in the field of medical robotics an
 
 # Time Table
 
-| Time  | Aganda                                                                                         |
-|-------|------------------------------------------------------------------------------------------------|
-| 13:30 | Opening remarks and introduction (Junichi Tokuda)                                              |
-| 13:35 | Tongue Tumor Resection - Clinical Background, Challenges and Current Progress (Lydia Al-Zogbi) |
-| 13:50 | 3D Slicer as a Platform for Image-Guided Therapy (Mariana Bernardes)                           |
-| 14:05 | Tutorial Session 1 - Building a patient model from ultrasound image using 3D Slicer            |
-| 14:35 | Tutorial Session 2 - Intro to SlicerROS2                                                       |
-| 15:05 | (Break)                                                                                        |
-| 15:15 | Tutorial Session 3 - Path planning and registration with SlicerROS2                            |
-| 16:30 | Closing                                                                                        |
+| Time  | Aganda                                                                              | Speaker           |
+|-------|-------------------------------------------------------------------------------------|-------------------|
+| 13:30 | Opening remarks and introduction                                                    | Junichi Tokuda    |
+| 13:35 | Tongue Tumor Resection - Clinical Background, Challenges and Current Progress       | Lydia Al-Zogbi    |
+| 13:50 | 3D Slicer as a Platform for Image-Guided Therapy                                    | Mariana Bernardes |
+| 14:05 | Tutorial Session 1 - Building a patient model from ultrasound image using 3D Slicer | Laura Connolly    |
+| 14:35 | Tutorial Session 2 - Intro to SlicerROS2                                            | Laura Connolly    |
+| 15:05 | Break                                                                               |                   |
+| 15:15 | Tutorial Session 3 - Path planning and registration with SlicerROS2                 | Laura Connolly    |
+| 16:30 | Closing                                                                             |                   |
 
 
 # Tutorial
