@@ -4,25 +4,52 @@ title: Tutorials
 permalink: /tutorials/
 ---
 
+Following tutorials are available online.  
 
 # ISMR 2023 Tutorial - SlicerROS2 (April 19, 2023)
+- [ISMR 2023 Workshop page](/ismr2023/index)
+- Software: 3D Slicer 5.2, ROS2, SlicerROS2
+- Agenda:
+  - Setting up SlicerROS2
+  - Loading a robot model on 3D Slicer using SlicerROS2
+  - Image-guided robot-assisted tongue tumor resection
+    - Creating a patient model using live ultrasound and AI-based automatic segmentation.
+    - Connecting 3D Slicer with dVRK and the Patient-Side Manipulator (PSM).
+    - Robot-to-patient registration
+    - Trajectory planning on 3D Slicer
 
-See [ISMR 2023 Workshop page](/ismr2023/index)
+
+# ISMR 2021 Tutorial - Integration of Slicer and ROS2 using ros2_igtl_bridge (November 19, 2021)
+
+- [ISMR 2021 Workshop page](/ismr2021/index)
+- Software: 3D Slier 4.13, ROS2, ros2_igtl_bridge
+- Agenda:
+  - Setting up ros2_igtl_bridge
+  - Image-guided robot-assisted spine surgery
+    - Creating a patient model using live ultrasound and AI-based automatic segmentation.
+    - Connecting 3D Slicer with ROS
+    - Robot-to-patient registration
+    - Trajectory planning on 3D Slicer
+
+# ISMR 2019Tutorial - Integration of Slicer and ROS using ros-igtl-bridge (April 3, 2019)
+
+- [ISMR 2019 Workshop page](/ismr2019/index)
+- Software: 3D Slier 4.13, ROS2, ros2_igtl_bridge
+- Agenda:
+  - Setting up ros2_igtl_bridge
+  - Image-guided robot-assisted brain surgery 
+    - Setting up ROS and 3D Slicer
+    - Setting up Universal Robot on ROS
+    - Planning Procedure on 3D Slicer
+    - Robot-to-image registration
+    - Execution of the plan
+  
+  
+  
+  
 
 
 
-
-# ISMR 2021 Tutorial - Integration of Slicer and ROS2 using ros2_igtl_bridge (2021)
-In this tutorial, the participants will build a system for image-guided robot-assisted interventions on their own laptop computers using state-of-the-art research platforms for medical imaging and robotics, namely 3D Slicer 4.13 and Robot Operating System 2 (ROS2). The two platforms will be integrated using an open network communication protocol, OpenIGTLink. Then the participant will build a demo system that allows a user to plan a procedure on a 3D image using AI-based segmentation, execute the plan using a virtual robot, and visualize the 3D model of the robot along with reformatted images of the patient as feedback. At the end of the tutorial, the participants are expected to have a working demo system on their laptops, which could potentially be used as a template for their own research project.
-
-- Step 0: [Prerequisite](ismr2021/prerequisite.md)
-- Step 1: Setting up environment
-  - [3D Slicer](ismr2021/slicer_env.md)
-  - [ROS](ismr2021/ros_env.md)
-- Step 2: [Testing OpenIGTLink Communication Between Slicer and ROS](ismr2021/ros_igtl_test.md)
-- Step 3: [Creating a 3D model for surgical planning](ismr2021/slicer_planning.md)
-- Step 4: Setting up [Universal Robot Arm on ROS](ismr2021/fake_robot.md)
-- Step 5: [Targeting](ismr2021/ros_targeting.md)
 
 
 
