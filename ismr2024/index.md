@@ -57,7 +57,17 @@ Researchers, engineers, and students working in the field of medical robotics an
 | 16:45 | Closing                                                                             |                   |
 
 
+# Preparation
+
+1. [Prerequisite](prerequisite.md)
+2. [Running ROS2 on Docker](docker-ros.md)  
+
+# Tutorial
+
+Under construction
+
 # Links
+
 - [SSMR/ISMR Workshop](http://www.ismr.gatech.edu)
 - [3D Slicer](https://www.slicer.org/)
 - [Robot Operating System](http://www.ros.org/)
