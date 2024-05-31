@@ -44,8 +44,17 @@ Researchers, engineers, and students working in the field of medical robotics an
 
 
 # Time Table
+| Time  | Agenda                                                                              | Speaker           |
+|-------|-------------------------------------------------------------------------------------|-------------------|
+| 13:30 | Opening remarks and introduction                                                    | Junichi Tokuda    |
+| 13:35 | 3D Slicer as a Platform for Image-Guided Therapy                                    | Mariana Bernardes |
+| 13:50 | Tongue Tumor Resection - Clinical Background, Challenges and Current Progress       | Jiawai Ge         |
+| 14:05 | Introduction to ROS2 and Gazebo                                                     | Simon Leonard     |
+| 14:30 | Tutorial Session 1                                                                  | Simon Leonard     |
+| 15:30 | Break                                                                               |                   |
+| 15:45 | Tutorial Session 2                                                                  | Simon Leonard     |
+| 16:45 | Closing                                                                             |                   |
 
-TO BE ANNOUNCED.
 
 # Links
 - [SSMR/ISMR Workshop](http://www.ismr.gatech.edu)
