@@ -28,8 +28,6 @@ Using a native environment
   - x86 64 bit
   - 16GB+ memory
 
+
 ----
-Back to [Tutorial Home](ISMR-2024-SlicerROS2-Tutorial)
-
-
 [Back to Workshop Page](index.md)
