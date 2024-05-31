@@ -44,6 +44,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 
 
 # Time Table
+
 | Time  | Agenda                                                                              | Speaker           |
 |-------|-------------------------------------------------------------------------------------|-------------------|
 | 13:30 | Opening remarks and introduction                                                    | Junichi Tokuda    |
