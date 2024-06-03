@@ -65,7 +65,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 # Tutorial
 
 1. [Visualizing your simulation in 3D Slicer](slicer-instructions.md) 
-2. [Gazebo/Ignition introduction](gazebo-ignition.md)
+2. [Gazebo/Ignition introduction](https://www.cs.jhu.edu/~sleonard/ismr24.pdf)
    
 # Links
 
