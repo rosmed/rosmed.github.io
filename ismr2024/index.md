@@ -65,6 +65,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 # Tutorial
 
 Under construction
+2. [Visualizing your simulation in 3D Slicer](slicer-instructions.md) 
 
 # Links
 
