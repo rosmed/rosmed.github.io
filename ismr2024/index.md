@@ -48,7 +48,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 | Time  | Agenda                                                                              | Speaker           |
 |-------|-------------------------------------------------------------------------------------|-------------------|
 | 13:30 | Opening remarks and introduction                                                    | Junichi Tokuda    |
-| 13:35 | 3D Slicer as a Platform for Image-Guided Therapy                                    | Mariana Bernardes |
+| 13:35 | 3D Slicer and ROS: Integrating Platforms for Image-Guided Therapy                   | Mariana Bernardes |
 | 13:50 | Tongue Tumor Resection - Clinical Background, Challenges and Current Progress       | Jiawai Ge         |
 | 14:05 | Introduction to ROS2 and Gazebo                                                     | Simon Leonard     |
 | 14:30 | Tutorial Session 1                                                                  | Simon Leonard     |
