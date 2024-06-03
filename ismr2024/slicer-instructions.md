@@ -96,6 +96,6 @@ In the bottom right slice view (where you can see part of the US image) hold dow
 
 Finally, press the push pin in the yellow viewer again and press the closed eye icon to toggle it to Open. You should see the ultrasound in the 3D viewer at the end of the US probe:
 
-![ISMRPhoto](images/visualizein3D.png){:class="img-responsive" width="800px"}
+![ISMRPhoto](images/visualizeIn3D.png){:class="img-responsive" width="800px"}
 
 Now you can simulate US data in gazebo and visualize that data in 3D Slicer!
