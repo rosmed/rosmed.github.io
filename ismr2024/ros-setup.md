@@ -1,12 +1,24 @@
 Setting Up ROS2 and 3D Slicer Environment on Ubuntu 22.04
 =========================================================
 
+The following instruction outlines the steps to install necessary components for the tutorial in your local computer. We recommend to use [our Docker image], if your goal is to simply evaluate the setup and decide whether SlicerROS2 suites your needs. The tutorial has been tested on Ubuntu 22.04 with ROS2 Humble.  
+
 ROS2 Humble
 -----------
+
 To install the base ROS2 package, please follow [the ROS2 Humble Installation page](https://docs.ros.org/en/humble/Installation.html).
 
-Gazebo Ignition
----------------
+Gazebo (Ignition)
+-----------------
+
+Gazebo is a dynamic simulation environment that can be integrated with ROS. Gazebo is currently in transition from the old architecture the new one, and there are two variations exist, including "Gazebo Classic" and "Gazebo". Gazebo Classic is the old one phasing out by 2025 (according to the Gazebo website). The current Gazebo was introduced in 2019 and is formerly known as "Ignition". Following a trademark dispute, it has been re-branded as "Gazebo" since 2022. 
+
+To install Gazebo Ignition in the ROS environment is available on [the Gazebo Website](https://gazebosim.org/docs/garden/ros_installation). If you are using ROS2 Humble on Ubuntu 22.04, following command can be used to install Gazebo Ignition:
+
+~~~~
+$ sudo apt-get install ros-humble-ros-gz
+~~~~
+
 
 
 SlicerROS2

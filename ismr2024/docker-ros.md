@@ -31,7 +31,7 @@ In this example, the web port on the docker container will be mapped to port 608
 (Optional) Running the Docker image on a remote computer
 --------------------------------------------------------
 
-If you happen to have access an SSH access to a remote high-performance computer with a Docker environment, you may run the ROS Docker image on the remote conputer and display the desktop on the browser on your local machine. Supposing the hostname of the remote computer is `remote.computer` and your username is `yourusername`, log in to the remote computer and run the Docker command as follows:
+If you happen to have SSH access to a remote high-performance computer with a Docker environment, you may run the ROS Docker image on the remote conputer and display the desktop on the browser on your local machine. Supposing the hostname of the remote computer is `remote.computer` and your username is `yourusername`, log in to the remote computer and run the Docker command as follows:
 
 ~~~~
 $ ssh -l `yourusername` -L 6080:localhost:6080 remote.computer
@@ -41,6 +41,12 @@ $ docker run -it --rm -p 6080:80 rosmed/docker-ubuntu-22.04-ros2-slicerros2-lw:i
 ~~~~
 
 The `-L` option for the ssh command is used to forward TCP port 6808 on `remote.computer` to TCP port 6808 of your local machine. Once the docker image has started, you can open a Web browser on your local machine, and access https://127.0.0.1:6080/ or https://localhost:6080 from there.
+
+
+(Optional) About the Docker image
+---------------------------------
+
+The Docker image was built and maintained using [Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/). The Dockerfiles used to built the Docker image for this tutorial is outlined in [the GitHub repository](https://github.com/rosmed/docker-ubuntu-22.04-ros2-novnc/tree/ismr2024).  
 
 
 [^1]: The Docker image provided for this tutorial is built for the x86_64 CPU architecture. A Mac with an Apple Silicon CPU will be able to run this Docker image using the emulator, though it might encounter some unexpected errors.
