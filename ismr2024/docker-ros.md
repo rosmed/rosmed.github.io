@@ -23,7 +23,7 @@ Once the image is downloaded or loaded, run the following command:
 ~~~~
 $ docker run -it --rm -p 6080:80 rosmed/docker-ubuntu-22.04-ros2-slicerros2-lw:ismr2024
 ~~~~
-In this example, the web port on the docker container will be mapped to port 6080 on the host computer. The desktop can be accessed at https://127.0.0.1:6080/ or https://localhost:6080 from a web browser.
+In this example, the web port on the docker container will be mapped to port 6080 on the host computer. The desktop can be accessed at `https://127.0.0.1:6080/` or `https://localhost:6080/` from a web browser.
 
 ![ISMRPhoto](images/dockerRemoteDesktop.png){:class="img-responsive" width="800px"}
 
@@ -43,6 +43,6 @@ $ docker run -it --rm -p 6080:80 rosmed/docker-ubuntu-22.04-ros2-slicerros2-lw:i
 The `-L` option for the ssh command is used to forward TCP port 6808 on `remote.computer` to TCP port 6808 of your local machine. Once the docker image has started, you can open a Web browser on your local machine, and access https://127.0.0.1:6080/ or https://localhost:6080 from there.
 
 
-[^1] The Docker image provided for this tutorial is built for the x86_64 CPU architecture. A Mac with an Apple Silicon CPU will be able to run this Docker image using the emulator, though it might encounter some unexpected errors.
+[^1]: The Docker image provided for this tutorial is built for the x86_64 CPU architecture. A Mac with an Apple Silicon CPU will be able to run this Docker image using the emulator, though it might encounter some unexpected errors.
 
 
