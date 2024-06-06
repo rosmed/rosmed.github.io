@@ -49,7 +49,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 |-------|-------------------------------------------------------------------------------------|-------------------|
 | 13:30 | Opening remarks and introduction                                                    | Junichi Tokuda    |
 | 13:35 | 3D Slicer and ROS: Integrating Platforms for Image-Guided Therapy                   | Mariana Bernardes |
-| 13:50 | Tongue Tumor Resection - Clinical Background, Challenges and Current Progress       | Jiawai Ge         |
+| 13:50 | Tongue Tumor Resection - Clinical Background, Challenges and Current Progress       | Jiawei Ge         |
 | 14:05 | Introduction to ROS2 and Gazebo                                                     | Simon Leonard     |
 | 14:30 | Tutorial Session 1                                                                  | Simon Leonard     |
 | 15:30 | Break                                                                               |                   |
@@ -97,14 +97,18 @@ Researchers, engineers, and students working in the field of medical robotics an
 
 # Organizers
 
-- [Junichi Tokuda, Ph.D.](https://tokuda-lab.bwh.harvard.edu/), Brigham and Women’s Hospital and Harvard Medical School, Boston, MA
-- [Axel Krieger, Ph.D.](https://me.jhu.edu/faculty/axel-krieger/), Johns Hopkins University, Baltimore, MD
+## In-Person
 - [Simon Leonard, Ph.D.](https://www.cs.jhu.edu/~sleonard/), Johns Hopkins University, Baltimore, MD
-- [Mark Fuge, Ph.D.](http://ideal.umd.edu/team/mark-fuge), University of Maryland, College Park, MD
-- [Anton Deguet](https://malonecenter.jhu.edu/people/anton-deguet/), Johns Hopkins University, Baltimore, MD
-- [Laura Connolly](https://medicreate.cs.queensu.ca/all-students/laura-connolly/), Queen's University, Kingston, ON, Canada
-- [Lidia Al-Zogbi](https://www.linkedin.com/in/lidia-alzogbi), Johns Hopkins University, Baltimore, MD
 - [Mariana Bernardes, Ph.D.](https://tokuda-lab.bwh.harvard.edu/team/mariana-bernardes/), Brigham and Women's Hospital and Harvard Medical, Boston, MA 
+- [Junichi Tokuda, Ph.D.](https://tokuda-lab.bwh.harvard.edu/), Brigham and Women’s Hospital and Harvard Medical School, Boston, MA
+- Jiawei Ge, Johns Hopkins University 
+
+## Material Preparation/Testing
+- [Laura Connolly](https://medicreate.cs.queensu.ca/all-students/laura-connolly/), Queen's University, Kingston, ON, Canada
+- [Anton Deguet](https://malonecenter.jhu.edu/people/anton-deguet/), Johns Hopkins University, Baltimore, MD
+- [Lidia Al-Zogbi](https://www.linkedin.com/in/lidia-alzogbi), Johns Hopkins University, Baltimore, MD
+- [Axel Krieger, Ph.D.](https://me.jhu.edu/faculty/axel-krieger/), Johns Hopkins University, Baltimore, MD
+- [Mark Fuge, Ph.D.](http://ideal.umd.edu/team/mark-fuge), University of Maryland, College Park, MD
 - [Pedro Moreira, Ph.D.](https://tokuda-lab.bwh.harvard.edu/team/pedro-moreira/), Brigham and Women's Hospital and Harvard Medical School, Boston, MA
 
 # Acknowledgements
