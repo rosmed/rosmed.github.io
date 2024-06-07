@@ -19,8 +19,9 @@ To install Gazebo Ignition in the ROS environment is available on [the Gazebo We
 $ sudo apt-get install ros-humble-ros-gz
 ~~~~
 
-SlicerROS2
+3D Slicer
 ----------
+
 While 3D Slicer is distributed in both source and binary packages, we need to use the source package and build on the ROS2 system to use the SlicerROS2 extension. The detailed instruction to build 3D Slicer and SlicerROS2 can be found on [the SlicerROS2 instruction page](https://slicer-ros2.readthedocs.io/en/latest/pages/getting-started.html). 
 
 First, we install the prerequisite packages required for building 3D Slicer:
@@ -43,10 +44,37 @@ $ make -j4
 ~~~~
 This process will take 30 minutes to several hours.
 
+
+Extensions (plug-ins) for 3D Slicer
+-----------------------------------
+
+We will add several Extensions (plug-ins) for 3D Slicer. While 3D Slicer has a AppStore-like GUI to browse, download, and install those Extensions, we need to build and install them from source code because the 3D Slicer built for SlicerROS2 is currently not compatible with the binary-distributed Extensions.
+
+
+Under construction.
+
+
 Plus Toolkit
 ------------
 
+We will use [the Plus Toolkit library](https://plustoolkit.github.io) to generate synthetic ultrasound image. The library will be called from the ultrasound simulation plug-in for Gazebo.
 
+First, install dependcies:
+~~~~
+$ sudo apt-get install -y libglvnd-dev libqt5x11extras5-dev qtdeclarative5-dev qml-module-qtquick*
+~~~~
+
+Then run the following commands:
+
+~~~~
+$ cd <working directory>/plus
+$ cd <working directory>/plus
+$ git clone https://github.com/PlusToolkit/PlusBuild.git
+$ mkdir PlusBuild-bin 
+$ cd PlusBuild-bin
+$ cmake ../PlusBuild -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=<working directory>/plus/install -DPLUSBUILD_INSTALL_VTK=ON -DPLUSBUILD_INSTALL_ITK=ON 
+$ make -j4
+~~~~
 
 Other files for Tutorial
 ------------------------
