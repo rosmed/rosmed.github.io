@@ -19,8 +19,6 @@ To install Gazebo Ignition in the ROS environment is available on [the Gazebo We
 $ sudo apt-get install ros-humble-ros-gz
 ~~~~
 
-
-
 SlicerROS2
 ----------
 While 3D Slicer is distributed in both source and binary packages, we need to use the source package and build on the ROS2 system to use the SlicerROS2 extension. The detailed instruction to build 3D Slicer and SlicerROS2 can be found on [the SlicerROS2 instruction page](https://slicer-ros2.readthedocs.io/en/latest/pages/getting-started.html). 
@@ -44,6 +42,10 @@ $ cmake -DCMAKE_BUILD_TYPE:STRING=Release -DSlicer_USE_SYSTEM_OpenSSL=ON ../Slic
 $ make -j4
 ~~~~
 This process will take 30 minutes to several hours.
+
+Plus Toolkit
+------------
+
 
 
 Other files for Tutorial
