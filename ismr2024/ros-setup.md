@@ -48,10 +48,66 @@ This process will take 30 minutes to several hours.
 Extensions (plug-ins) for 3D Slicer
 -----------------------------------
 
-We will add several Extensions (plug-ins) for 3D Slicer. While 3D Slicer has a AppStore-like GUI to browse, download, and install those Extensions, we need to build and install them from source code because the 3D Slicer built for SlicerROS2 is currently not compatible with the binary-distributed Extensions.
+We will add several Extensions (plug-ins) for 3D Slicer. While 3D Slicer has a AppStore-like GUI called [Extensions Manager](https://slicer.readthedocs.io/en/latest/user_guide/extensions_manager.html) to browse, download, and install those Extensions, we need to build and install them from source code because the 3D Slicer built for SlicerROS2 is currently not compatible with the binary-distributed Extensions. The following Extensions are required:
+
+- SlicerIGSIO
+- SlicerIGT
+- SlicerOpenIGTLink (Optional)
+
+In the following sections, we build those Extensions and make install packages so that they can be installed with a command. Alternatively, they [can be installed in 3D Slicer from the application setting](https://slicer.readthedocs.io/en/latest/developer_guide/extensions.html). 
 
 
-Under construction.
+### SlicerIGSIO
+
+IGISO is a library to provide high-level communication layer for image-guided therapy (IGT) applications, and required for [the SlicerIGT Extension](https://www.slicerigt.org).
+Run the following commands to build  
+
+~~~~
+$ mkdir -p <working directory>/slicer/modules
+$ cd <working directory>/slicer/modules
+$ git clone https://github.com/IGSIO/SlicerIGSIO
+$ mkdir SlicerIGSIO-build
+$ cd SlicerIGSIO-build
+$ cmake -DCMAKE_BUILD_TYPE:STRING=Release -DSlicer_DIR:PATH=<working directory>/slicer/Slicer-SuperBuild-Release/Slicer-build ../SlicerIGSIO
+$ make -j4
+$ cd inner-build
+$ make package
+$ mkdir -p <working directory>/slicer/packages
+$ mv *.tar.gz <working directory>
+~~~~
+
+### SlicerIGT
+
+SlicerIGT provides a set of tools to build IGT applications. 
+
+~~~~
+$ cd <working directory>/slicer/modules
+$ git clone https://github.com/SlicerIGT/SlicerIGT
+$ mkdir SlicerIGT-build 
+$ cd SlicerIGT-build
+$ cmake -DCMAKE_BUILD_TYPE:STRING=Release -DSlicer_DIR:PATH=<working directory>/slicer/Slicer-SuperBuild-Release/Slicer-build -DSlicerIGSIO_DIR:PATH=<working directory>/slicer/modules/SlicerIGSIO-build/inner-build ../SlicerIGT 
+$ make -j4 
+$ make package
+$ mkdir -p <working directory>/slicer/packages
+$ mv *.tar.gz <working directory>/slicer/packages
+~~~~
+
+
+### SlicerOpenIGTLink
+
+OpenIGTLink is not required for this tutorial, but might be useful later, if you need to use Slicer with external software/hardware for IGT applications. 
+
+~~~~
+$ cd <working directory>/slicer/modules
+$ git clone https://github.com/openigtlink/SlicerOpenIGTLink
+$ mkdir SlicerOpenIGTLink-build
+$ cd SlicerOpenIGTLink-build
+$ cmake -DCMAKE_BUILD_TYPE:STRING=Release -DSlicer_DIR:PATH=/root/slicer/Slicer-SuperBuild-Release/Slicer-build ../SlicerOpenIGTLink
+$ make -j4
+$ cd inner-build
+$ make package
+$ mv *.tar.gz <working directory>/slicer/packages
+~~~~
 
 
 Plus Toolkit
@@ -59,7 +115,7 @@ Plus Toolkit
 
 We will use [the Plus Toolkit library](https://plustoolkit.github.io) to generate synthetic ultrasound image. The library will be called from the ultrasound simulation plug-in for Gazebo.
 
-First, install dependcies:
+First, install dependencies:
 ~~~~
 $ sudo apt-get install -y libglvnd-dev libqt5x11extras5-dev qtdeclarative5-dev qml-module-qtquick*
 ~~~~
@@ -76,5 +132,7 @@ $ cmake ../PlusBuild -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=<working 
 $ make -j4
 ~~~~
 
+
 Other files for Tutorial
 ------------------------
+
