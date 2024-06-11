@@ -45,8 +45,8 @@ $ make -j4
 This process will take 30 minutes to several hours.
 
 
-Extensions (plug-ins) for 3D Slicer
------------------------------------
+Building and Installing Extensions (plug-ins) for 3D Slicer
+-----------------------------------------------------------
 
 We will add several Extensions (plug-ins) for 3D Slicer. While 3D Slicer has a AppStore-like GUI called [Extensions Manager](https://slicer.readthedocs.io/en/latest/user_guide/extensions_manager.html) to browse, download, and install those Extensions, we need to build and install them from source code because the 3D Slicer built for SlicerROS2 is currently not compatible with the binary-distributed Extensions. The following Extensions are required:
 
@@ -54,10 +54,10 @@ We will add several Extensions (plug-ins) for 3D Slicer. While 3D Slicer has a A
 - SlicerIGT
 - SlicerOpenIGTLink (Optional)
 
-In the following sections, we build those Extensions and make install packages so that they can be installed with a command. Alternatively, they [can be installed in 3D Slicer from the application setting](https://slicer.readthedocs.io/en/latest/developer_guide/extensions.html). 
+In the following sections, we build those Extensions and make install packages so that they can be installed from Slicer Extensions. Alternatively, Extensions [can be installed in 3D Slicer from the application setting without creating the packages](https://slicer.readthedocs.io/en/latest/developer_guide/extensions.html). 
 
 
-### SlicerIGSIO
+### Building SlicerIGSIO
 
 IGISO is a library to provide high-level communication layer for image-guided therapy (IGT) applications, and required for [the SlicerIGT Extension](https://www.slicerigt.org).
 Run the following commands to build  
@@ -76,7 +76,7 @@ $ mkdir -p <working directory>/slicer/packages
 $ mv *.tar.gz <working directory>
 ~~~~
 
-### SlicerIGT
+### Building SlicerIGT
 
 SlicerIGT provides a set of tools to build IGT applications. 
 
@@ -93,7 +93,7 @@ $ mv *.tar.gz <working directory>/slicer/packages
 ~~~~
 
 
-### SlicerOpenIGTLink
+### Building SlicerOpenIGTLink
 
 OpenIGTLink is not required for this tutorial, but might be useful later, if you need to use Slicer with external software/hardware for IGT applications. 
 
@@ -108,6 +108,15 @@ $ cd inner-build
 $ make package
 $ mv *.tar.gz <working directory>/slicer/packages
 ~~~~
+
+### Installing the Extensions
+
+To install the extensions from the packages created above, open the Extensions Manager ("View" -> "Extensions Manager")
+
+
+
+
+
 
 
 Plus Toolkit
