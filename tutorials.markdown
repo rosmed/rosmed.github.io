@@ -4,7 +4,24 @@ title: Tutorials
 permalink: /tutorials/
 ---
 
-Following tutorials are available online.  
+Online Tutorials
+================
+
+- [Exporting URDF from CAD and Visualizing on RViz and 3D Slicer](/tutorials/export_urdf_from_cad/)
+
+
+
+Past workshops
+==============
+
+# ISMR 2024 Tutorial - SlicerROS2 (June 3, 2024)
+- [ISMR 2024 Workshop page](/ismr2024/index)
+- Software: 3D Slicer 5.2, ROS2, SlicerROS2
+- Agenda:
+  - Leveraging SlicerROS2 for Simulation of Image-Guided Assisted Interventions in Gazebo (Ignition)
+  - Creating a sensor plugin for Gazebo
+  - Running a robot on Gazebo Ignition and 3D Slicer
+
 
 # ISMR 2023 Tutorial - SlicerROS2 (April 19, 2023)
 - [ISMR 2023 Workshop page](/ismr2023/index)
