@@ -1,3 +1,10 @@
+---
+layout: page
+title: Setting up ROS
+---
+Back to [Tutorial Home](index)
+
+
 Setting Up ROS2 and 3D Slicer Environment on Ubuntu 22.04
 =========================================================
 
@@ -111,7 +118,7 @@ $ mv *.tar.gz <working directory>/slicer/packages
 
 ### Installing the Extensions
 
-To install the extensions from the packages created above, open the Extensions Manager ("View" -> "Extensions Manager")
+To install the extensions from the packages created above, open the Extensions Manager (`View` -> `Extensions Manager`). Near the top of the Extensions Manager window, click `Install from file...` button and choose the `.tar.gz` files under `<working directory>/slicer/packages` created above. After installing the all `.tar.gz` files, restart 3D Slicer.
 
 
 
@@ -119,29 +126,6 @@ To install the extensions from the packages created above, open the Extensions M
 
 
 
-Plus Toolkit
-------------
-
-We will use [the Plus Toolkit library](https://plustoolkit.github.io) to generate synthetic ultrasound image. The library will be called from the ultrasound simulation plug-in for Gazebo.
-
-First, install dependencies:
-~~~~
-$ sudo apt-get install -y libglvnd-dev libqt5x11extras5-dev qtdeclarative5-dev qml-module-qtquick*
-~~~~
-
-Then run the following commands:
-
-~~~~
-$ cd <working directory>/plus
-$ cd <working directory>/plus
-$ git clone https://github.com/PlusToolkit/PlusBuild.git
-$ mkdir PlusBuild-bin 
-$ cd PlusBuild-bin
-$ cmake ../PlusBuild -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=<working directory>/plus/install -DPLUSBUILD_INSTALL_VTK=ON -DPLUSBUILD_INSTALL_ITK=ON 
-$ make -j4
-~~~~
 
 
-Other files for Tutorial
-------------------------
 

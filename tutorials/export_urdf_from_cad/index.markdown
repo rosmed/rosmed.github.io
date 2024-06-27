@@ -81,13 +81,16 @@ The GUI to change the joint angles should appear on the screen.
 Visualizing the robot on RViz
 -----------------------------
 
+> :warning: **If the following steps does not work**: Moving the sliders on the `joint_state_publisher_gui` before running the following commands can resoulve the issue.  
+
+
 Open a third window, and run the following command to start RViz:
 
 ~~~~
 $ cd ~/ros2_ws
 $ source /opt/ros/humble/setup.bash
 $ source install/setup.bash
-$ ros2 run joint_state_publisher_gui joint_state_publisher_gui 
+$ ros2 run rviz2 rviz2 
 ~~~~
 
 ![URDFTutorialImage](images/rviz.png){:class="img-responsive" width="800px"}
@@ -112,6 +115,9 @@ Use the scroll button on the mouse, or right-click and move the mouse up and dow
 ![URDFTutorialImage](images/rviz_with_robot_scaled.png){:class="img-responsive" width="800px"}
 
 At this point, you could move the joints manually by moving the sliders on the `joint_state_publisher_gui` and observe the motion of the robot on RViz.
+
+
+
 
 
 Visualizing the robot on 3D Slicer

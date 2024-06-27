@@ -5,16 +5,20 @@ permalink: /tutorials/
 ---
 
 Online Tutorials
-================
+-----------------
 
 - [Exporting URDF from CAD and Visualizing on RViz and 3D Slicer](/tutorials/export_urdf_from_cad/)
 
 
 
-Past workshops
-==============
 
-# ISMR 2024 Tutorial - SlicerROS2 (June 3, 2024)
+------------------------------------------
+
+
+Past workshops
+--------------
+
+### ISMR 2024 Tutorial - SlicerROS2 (June 3, 2024)
 - [ISMR 2024 Workshop page](/ismr2024/index)
 - Software: 3D Slicer 5.2, ROS2, SlicerROS2
 - Agenda:
@@ -23,7 +27,7 @@ Past workshops
   - Running a robot on Gazebo Ignition and 3D Slicer
 
 
-# ISMR 2023 Tutorial - SlicerROS2 (April 19, 2023)
+### ISMR 2023 Tutorial - SlicerROS2 (April 19, 2023)
 - [ISMR 2023 Workshop page](/ismr2023/index)
 - Software: 3D Slicer 5.2, ROS2, SlicerROS2
 - Agenda:
@@ -36,7 +40,7 @@ Past workshops
     - Trajectory planning on 3D Slicer
 
 
-# ISMR 2021 Tutorial - Integration of Slicer and ROS2 using ros2_igtl_bridge (November 19, 2021)
+### ISMR 2021 Tutorial - Integration of Slicer and ROS2 using ros2_igtl_bridge (November 19, 2021)
 
 - [ISMR 2021 Workshop page](/ismr2021/index)
 - Software: 3D Slier 4.13, ROS2, ros2_igtl_bridge
@@ -48,7 +52,7 @@ Past workshops
     - Robot-to-patient registration
     - Trajectory planning on 3D Slicer
 
-# ISMR 2019Tutorial - Integration of Slicer and ROS using ros-igtl-bridge (April 3, 2019)
+### ISMR 2019Tutorial - Integration of Slicer and ROS using ros-igtl-bridge (April 3, 2019)
 
 - [ISMR 2019 Workshop page](/ismr2019/index)
 - Software: 3D Slier 4.13, ROS2, ros2_igtl_bridge

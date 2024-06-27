@@ -1,3 +1,10 @@
+---
+layout: page
+title: Setting Up Docker ROS
+---
+Back to [Tutorial Home](index)
+
+
 Running ROS on Docker
 =====================
 

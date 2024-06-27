@@ -1,3 +1,9 @@
+---
+layout: page
+title: Visualizing the Robot on 3D Slicer
+---
+Back to [Tutorial Home](index)
+
 Visualizing your simulation data in 3D Slicer
 ---------------------
 

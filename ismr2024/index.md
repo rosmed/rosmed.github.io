@@ -60,12 +60,13 @@ Researchers, engineers, and students working in the field of medical robotics an
 # Preparation
 
 
-1. [Prerequisite](prerequisite.md)
+1. [Prerequisite](prerequisite)
 2. Setting up the environment:
-  - (Option 1) [Running ROS2 on Docker](docker-ros.md)
-  - (Option 2) [Running ROS2 on a native Linux system](ros-setup.md)
-3. [Visualizing your simulation in 3D Slicer](slicer-instructions.md) 
-4. [Gazebo/Ignition introduction](https://www.cs.jhu.edu/~sleonard/ismr24.pdf)
+  - (Option 1) [Running ROS2 on Docker](docker-ros)
+  - (Option 2) [Running ROS2 on a native Linux system](ros-setup)
+3. [Setting up files for the tutorial](ros-tutorial-setup)   
+4. [Visualizing your simulation in 3D Slicer](slicer-instructions) 
+5. [Gazebo/Ignition introduction](https://www.cs.jhu.edu/~sleonard/ismr24.pdf)
    
 # Links
 

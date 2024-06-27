@@ -1,5 +1,8 @@
-Prerequisite
-============
+---
+layout: page
+title: Prerequisite
+---
+Back to [Tutorial Home](index)
 
 Using the Docker image
 ----------------------
@@ -28,6 +31,3 @@ Using a native environment
   - x86 64 bit
   - 16GB+ memory
 
-
-----
-[Back to Workshop Page](index.md)
