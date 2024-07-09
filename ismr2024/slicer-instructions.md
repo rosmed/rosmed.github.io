@@ -4,10 +4,21 @@ title: Visualizing the Robot on 3D Slicer
 ---
 Back to [Tutorial Home](index)
 
+Launch your robot and US in ROS2
+---------------------
+
+Source ros and the workspace in the terminal and then launch the system bringup:
+~~~~
+source /opt/ros/humble/setup.bash
+source ~/ismr24_ws/install/setup.bash
+ros2 launch ur5_us_bringup ismr_ur_bringup.launch.py
+~~~~
+
+
 Visualizing your simulation data in 3D Slicer
 ---------------------
 
-Source ros and the workspace in the terminal and then launch 3D Slicer:
+Source ros and the workspace in another terminal and then launch 3D Slicer:
 ~~~~
 source /opt/ros/humble/setup.bash
 source ~/ismr24_ws/install/setup.bash
