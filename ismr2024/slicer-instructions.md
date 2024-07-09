@@ -4,7 +4,7 @@ title: Visualizing the Robot on 3D Slicer
 ---
 Back to [Tutorial Home](index)
 
-Launch your robot and US in ROS2
+Launch your robot and US simulation in ROS2
 ---------------------
 
 Source ros and the workspace in the terminal and then launch the system bringup:
