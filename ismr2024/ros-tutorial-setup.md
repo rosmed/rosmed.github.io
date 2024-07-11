@@ -50,8 +50,8 @@ The tutorial-specific source codes are available in the GitHub repository.
 First, create a workspace: 
 
 ~~~~
-$ mkdir -p /root/ismr24_ws/src
-$ cd /root/ismr24_ws/src
+$ mkdir -p /home/<user name>/ismr24_ws/src
+$ cd /home/<user name>/ismr24_ws/src
 $ git clone https://github.com/rosmed/ismr24
 ~~~~
 

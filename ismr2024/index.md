@@ -57,16 +57,18 @@ Researchers, engineers, and students working in the field of medical robotics an
 | 16:45 | Closing                                                                             |                   |
 
 
-# Preparation
+# Presentation 
+- [Gazebo/Ignition introduction](https://www.cs.jhu.edu/~sleonard/ismr24.pdf)
 
+# Preparation
 
 1. [Prerequisite](prerequisite)
 2. Setting up the environment:
   - (Option 1) [Running ROS2 on Docker](docker-ros)
   - (Option 2) [Running ROS2 on a native Linux system](ros-setup)
 3. [Setting up files for the tutorial](ros-tutorial-setup)   
-4. [Visualizing your simulation in 3D Slicer](slicer-instructions) 
-5. [Gazebo/Ignition introduction](https://www.cs.jhu.edu/~sleonard/ismr24.pdf)
+4. [Visualizing your simulation in 3D Slicer](slicer-instructions)
+5. [Controlling the robot from the terminal](ros-robot-control)
    
 # Links
 
@@ -116,7 +118,7 @@ This work is supported in part by:
 - Ontario Consortium for Adaptive Interventions in Radiation Oncology (OCAIRO)
 - SparKit project
 - CANARIE’s Research Software Program
-
+p
 ![NIBIB Logo](https://www.nibib.nih.gov/sites/default/files/nibib_logo.png){:class="img-responsive"}
 
 ![BWH](/images/BWH_Logo.png){:class="img-responsive" width="360px"}
