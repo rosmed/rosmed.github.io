@@ -38,6 +38,7 @@ header_pages:
 #  - index.markdown
   - tutorials.markdown
   - software.markdown
+  - hardware.markdown
   - events.markdown
   - team.markdown
   - refs.markdown
