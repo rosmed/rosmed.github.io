@@ -29,7 +29,7 @@ ros2 run dvrk_robot dvrk_console_json -j console-PSM3_SIMULATED.json
 3. Select "Power on" and press "Home"
 <img width="370" alt="image" style="text-align:center" src="https://user-images.githubusercontent.com/36430552/232660134-27a85349-6c65-41a9-be6c-60007797262e.png">
 
-4. In a seperate terminal, launch the robot_state_pubslisher (this is how we tell Slicer where the links are) 
+4. In a separate terminal, launch the robot_state_publisher (this is how we tell Slicer where the links are) 
 
 ````
 source ~/ros2_ws/install/setup.bash
@@ -49,7 +49,7 @@ source ~/opt/ros/galactic/setup.bash
 
 Note: you will need to zoom out to see the robot!
 
-6. Get your robot to do a little dance by running in a seperate terminal
+6. Get your robot to do a little dance by running in a separate terminal
 
 ````
 ros2 run dvrk_python dvrk_arm_test.py -a PSM3
