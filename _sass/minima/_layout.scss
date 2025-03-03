@@ -200,7 +200,7 @@
 }
 
 .post-list-heading {
-  @include relative-font-size(1.75);
+  @include relative-font-size(1.5);
 }
 
 .post-list {
@@ -219,7 +219,7 @@
 
 .post-link {
   display: block;
-  @include relative-font-size(1.5);
+  @include relative-font-size(1.2);
 }
 
 
