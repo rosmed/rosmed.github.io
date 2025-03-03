@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "ISMR 2024 Workshop: Leveraging SlicerROS2 for Simulation of Image-Guided Assisted Interventions"
+date:   2024-06-03 13:30:00 -0400
+categories: news workshop
+---
+
+We successfully organized our ISMR 2024 workshop on "Leveraging SlicerROS2 for Simulation of Image-Guided Assisted Interventions in Gazebo (Ignition)" on June 3, 2024. The workshop focused on using Gazebo simulation software with 3D Slicer to simulate image-guided robot-assisted interventions.
+
+Participants learned how to extend Gazebo capabilities to simulate ultrasound probes mounted on robots, visualize images in 3D Slicer using SlicerROS2, and control robots to reach target positions. The workshop included presentations on ROS2 and Gazebo integration with medical imaging platforms and hands-on tutorial sessions.
+
+[Learn more about the ISMR 2024 workshop](/ismr2024/)

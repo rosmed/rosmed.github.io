@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "ISMR 2023 Workshop on Image-Guided Robot-Assisted Interventions"
+date:   2023-04-19 09:00:00 -0400
+categories: news workshop
+---
+
+The ISMR 2023 workshop on Image-Guided Robot-Assisted Interventions was successfully held, introducing participants to the integration of 3D Slicer with ROS2 for medical robotics applications.
+
+The workshop demonstrated how SlicerROS2 facilitates communication between medical imaging software and robotic systems, enabling rapid prototyping and testing of image-guided intervention systems. Participants engaged in hands-on sessions covering robot setup, registration, targeting, and planning.
+
+[Learn more about the ISMR 2023 workshop](/ismr2023/)
