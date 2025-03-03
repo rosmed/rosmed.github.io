@@ -15,6 +15,21 @@ Online Tutorials
 ------------------------------------------
 
 
+Upcoming workshops
+-----------------
+
+### ISMR 2025 Tutorial - Open-Source Software for Intelligent Image-Guided Medical Robots (TBD, 2025)
+- [ISMR 2025 Workshop page](/ismr2025/)
+- Software: 3D Slicer, ROS2, SlicerROS2, AMBF, Gazebo (Ignition), dVRK, MoveIt!
+- Agenda:
+  - AI for Surgical Robotics
+  - Open Source Tools for Medical Robotics
+  - Demonstrations of Integrated Systems:
+    - Ultrasound-based virtual fixtures for breast-conserving surgery
+    - Image-guided needle insertion with 3D Slicer, ROS2, and MoveIt!
+
+------------------------------------------
+
 Past workshops
 --------------
 
