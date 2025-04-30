@@ -42,21 +42,36 @@ Researchers, engineers, and students working in the field of medical robotics an
 
 # Time Table
 
-| Time    | Agenda                                                  | Speaker       |
-|---------|--------------------------------------------------------|---------------|
-| TBD     | Session 1: AI for Surgical Robotics                    | TBD           |
-| TBD     | Break                                                  |               |
-| TBD     | Session 2: Open Source Tools                           | TBD           |
-| TBD     | Lunch Break                                           |               |
-| TBD     | Session 3: Demonstrations of Integrated Systems (Part 1)| TBD           |
-| TBD     | Break                                                  |               |
-| TBD     | Session 3: Demonstrations of Integrated Systems (Part 2)| TBD           |
-| TBD     | Closing                                                |               |
+| Time        | Agenda                                                  | Speaker        |
+|-------------|---------------------------------------------------------|----------------|
+| 8:00-9:00   | Registration                                            |                |
+| 9:00-10:30  | Session 1: AI for Surgical Robotics                     | TBD            |
+| 10:30-11:00 | Break and Refreshments                                  |                |
+| 11:00-12:30 | Session 2: Open Source Tools                            |                |
+|             | Open-source medical imaging and image guided therapy    | Junichi Tokuda |
+|             | Open-source medical robotics                            | Anton Deguet   |
+|             | Open-source dynamic simulation                          | Adnan Munawar  |
+|             | Open-source AI development                              | Axel Krieger   |
+|             | Open-source continuum surgical robot                    | Loris Fichera  |
+|             | Panel Discussion                                        |                |
+| 12:30-13:30 | Lunch                                                   |                |
+| 13:30-15:00 | Session 3: Demonstrations of Integrated Systems (Part 1)| Mariana Bernardes |
+| 15:00-15:30 | Break and Refreshments                                  |                |
+| 15:30-17:00 | Session 3: Demonstrations of Integrated Systems (Part 2)| Laura Connolly |
+| 17:00       | Closing                                                 |                |
 
 
-# Preparation
+# Tutorial Materials
+*Instructions and materials will be provided here.*
 
-*Instructions for preparation will be provided closer to the event.*
+#### Session 3 (Part 1): Creating and loading the visual/kinematic of a custom robot in 3D Slicer
+
+In this tutorial, we will explore the basic features of SlicerROS2, including loading and visualizing URDF data in 3D Slicer, and connecting it to ROS Control.
+
+#### Session 3 (Part 2): Integration of 3D Slicer with AI-based segmentation, ROS2, and AMBF 
+
+This tutorial demonstrates a more advanced use-case scenario, where an anatomical model is created in 3D Slicer and used in a dynamic simulator (AMBF) to simulate the physical interaction between a manipulator and the anatomy.
+
 
 
 # Links
