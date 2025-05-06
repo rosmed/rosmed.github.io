@@ -45,7 +45,12 @@ Researchers, engineers, and students working in the field of medical robotics an
 | Time        | Agenda                                                  | Speaker        |
 |-------------|---------------------------------------------------------|----------------|
 | 8:00-9:00   | Registration                                            |                |
-| 9:00-10:30  | Session 1: AI for Surgical Robotics                     | TBD            |
+| 9:00-10:30  | Session 1: AI for Surgical Robotics                     |                |
+|             |                                                         | Peter Kazanzides |
+|             |                                                         | TBD            |
+|             |                                                         | Alan Kuntz     |
+|             |                                                         | Zonghe Chua    |
+|             |                                                         | Jie Ying Wu    |
 | 10:30-11:00 | Break and Refreshments                                  |                |
 | 11:00-12:30 | Session 2: Open Source Tools                            |                |
 |             | Open-source medical imaging and image guided therapy    | Junichi Tokuda |
@@ -116,6 +121,7 @@ This tutorial demonstrates a more advanced use-case scenario, where an anatomica
 
 This work is supported in part by:
 - U.S. National Institutes of Health (R01EB020667, R01EB020667-05S1, R01EB020610, P41EB028741)
+- U.S. National Science Foundation (OISE-1927354, OISE-1927275)
 - Ontario Consortium for Adaptive Interventions in Radiation Oncology (OCAIRO)
 - SparKit project
 - CANARIE's Research Software Program
