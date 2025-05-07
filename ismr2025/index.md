@@ -43,17 +43,19 @@ Researchers, engineers, and students working in the field of medical robotics an
 # Time Table
 
 | Time        | Agenda                                                  | Speaker        |
-|-------------|---------------------------------------------------------|----------------|
+|-------------|---------------------------------------------------------|:--------------:|
 | 8:00-9:00   | Registration                                            |                |
 | 9:00-10:30  | Session 1: AI for Surgical Robotics                     |                |
-|             | TBD                                                     | Peter Kazanzides |
+|             | Machine Learning with the da Vinci Research Kit (dVRK)  | Peter Kazanzides |
+|             |                                                         |      "          |
 |             | Automating Medical Needle Robots in Living Tissue:      | Ron Alterovitz |
-|             | Open Source Data Sets and AI Software                   |                |
+|             | Open Source Data Sets and AI Software                   |       "        |
 |             | Learning from Demonstration for Autonomy in Soft        | Alan Kuntz     |
-|             | Tissue Surgery                                          |                |
-|             | TBD                                                     | Zonghe Chua    |
+|             | Tissue Surgery                                          |       "        |
+|             | Towards Indirect Force Estimation via Learning-based    | Zonghe Chua    |
+|             | Visual Proprioception in Minimally Invasive Telesurgery |       "        |
 |             | From Monocular Vision to Autonomous Action: Guiding     | Jie Ying Wu    |
-|             | Tumor Resection via 3D Reconstruction                   |                |
+|             | Tumor Resection via 3D Reconstruction                   |       "        |
 | 10:30-11:00 | Break and Refreshments                                  |                |
 | 11:00-12:30 | Session 2: Open Source Tools                            |                |
 |             | Open-source medical imaging and image guided therapy    | Junichi Tokuda |
