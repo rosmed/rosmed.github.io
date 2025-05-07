@@ -48,9 +48,11 @@ Researchers, engineers, and students working in the field of medical robotics an
 | 9:00-10:30  | Session 1: AI for Surgical Robotics                     |                |
 |             |                                                         | Peter Kazanzides |
 |             |                                                         | TBD            |
-|             |                                                         | Alan Kuntz     |
+|             | Learning from Demonstration for Autonomy in Soft        | Alan Kuntz     |
+|             | Tissue Surgery                                          |      |
 |             |                                                         | Zonghe Chua    |
-|             |                                                         | Jie Ying Wu    |
+|             | From Monocular Vision to Autonomous Action: Guiding <td rowspan="2"> Jie Ying Wu  </td> |
+|             | Tumor Resection via 3D Reconstruction |
 | 10:30-11:00 | Break and Refreshments                                  |                |
 | 11:00-12:30 | Session 2: Open Source Tools                            |                |
 |             | Open-source medical imaging and image guided therapy    | Junichi Tokuda |
