@@ -49,10 +49,10 @@ Researchers, engineers, and students working in the field of medical robotics an
 |             |                                                         | Peter Kazanzides |
 |             |                                                         | TBD            |
 |             | Learning from Demonstration for Autonomy in Soft        | Alan Kuntz     |
-|             | Tissue Surgery                                          |      |
+|             | Tissue Surgery                                          |                |
 |             |                                                         | Zonghe Chua    |
-|             | From Monocular Vision to Autonomous Action: Guiding <td rowspan="2"> Jie Ying Wu  </td> |
-|             | Tumor Resection via 3D Reconstruction |
+|             | From Monocular Vision to Autonomous Action: Guiding     | Jie Ying Wu    |
+|             | Tumor Resection via 3D Reconstruction                   |                |
 | 10:30-11:00 | Break and Refreshments                                  |                |
 | 11:00-12:30 | Session 2: Open Source Tools                            |                |
 |             | Open-source medical imaging and image guided therapy    | Junichi Tokuda |
