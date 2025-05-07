@@ -46,11 +46,12 @@ Researchers, engineers, and students working in the field of medical robotics an
 |-------------|---------------------------------------------------------|----------------|
 | 8:00-9:00   | Registration                                            |                |
 | 9:00-10:30  | Session 1: AI for Surgical Robotics                     |                |
-|             |                                                         | Peter Kazanzides |
-|             |                                                         | TBD            |
+|             | TBD                                                     | Peter Kazanzides |
+|             | Automating Medical Needle Robots in Living Tissue:      | Ron Alterovitz |
+|             | Open Source Data Sets and AI Software                   |                |
 |             | Learning from Demonstration for Autonomy in Soft        | Alan Kuntz     |
 |             | Tissue Surgery                                          |                |
-|             |                                                         | Zonghe Chua    |
+|             | TBD                                                     | Zonghe Chua    |
 |             | From Monocular Vision to Autonomous Action: Guiding     | Jie Ying Wu    |
 |             | Tumor Resection via 3D Reconstruction                   |                |
 | 10:30-11:00 | Break and Refreshments                                  |                |
