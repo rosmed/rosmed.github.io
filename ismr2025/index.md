@@ -129,12 +129,15 @@ This work is supported in part by:
 - SparKit project
 - CANARIE's Research Software Program
 
-![NIBIB Logo](https://www.nibib.nih.gov/sites/default/files/nibib_logo.png){:class="img-responsive"}
+![NIBIB Logo](https://www.nibib.nih.gov/sites/default/files/nibib_logo.png){:class="img-responsive"} 
+
+![NSF Logo](/images/NSF_Logo.png){:class="img-responsive" width="120px"}
+
 
 ![BWH](/images/BWH_Logo.png){:class="img-responsive" width="360px"}
 ![HMS](/images/HMS_Logo.png){:class="img-responsive" width="200px"}
 ![JHU](/images/JHU_Logo.png){:class="img-responsive" width="240px"}
-![UMD](/images/UMD_Logo.png){:class="img-responsive" width="240px"}
+![WPI](/images/WPI_Logo.png){:class="img-responsive" width="180px"}
 ![Queens](/images/Queens_Logo.png){:class="img-responsive" width="200px"}
 
 
