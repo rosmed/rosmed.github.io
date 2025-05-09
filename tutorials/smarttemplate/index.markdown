@@ -331,57 +331,57 @@ ros2 launch smart_template_demo robot.launch.py
 
 -   Use the provided python commands in the console. They will:
     -   Get the robot node from the scene
-~~~~
-rosNode = slicer.util.getModuleLogic('ROS2').GetDefaultROS2Node()
-robotNode = rosNode.GetRobotNodeByName('smart_template')
-~~~~
+    ~~~~
+    rosNode = slicer.util.getModuleLogic('ROS2').GetDefaultROS2Node()
+    robotNode = rosNode.GetRobotNodeByName('smart_template')
+    ~~~~
     -   Get the `robot_description` from the ROS2 topic publisher by SmartTemplate
-~~~~
-robot_description = slicer.util.getNode(robotNode.GetNodeReferenceID('parameter')).GetParameterAsString('robot_description')
-print(robot_description)
-~~~~
+    ~~~~
+    robot_description = slicer.util.getNode(robotNode.GetNodeReferenceID('parameter')).GetParameterAsString('robot_description')
+    print(robot_description)
+    ~~~~
     -   Recover ZFrameToRobot information from the URDF custom parameters
-~~~~
-import xml.etree.ElementTree as ET
-root = ET.fromstring(robot_description)
-zframe_orientation = root.find('./custom_parameters/zframe_orientation').get('value').strip()
-zframe_position = root.find('./custom_parameters/zframe_position').get('value').strip()
-rotation_values = list(map(float, zframe_orientation.strip().split()))
-translation_values = list(map(float, zframe_position.strip().split()))
-mat_ZFrameToRobot = vtk.vtkMatrix4x4()
-for i in range(3): # Set rotation part (3x3)
-    for j in range(3):
-        mat_ZFrameToRobot.SetElement(i, j, rotation_values[3 * i + j])
-for i in range(3): # Set translation part (last column)
-    mat_ZFrameToRobot.SetElement(i, 3, 1000*translation_values[i])
-mat_ZFrameToRobot.SetElement(3, 3, 1.0)
-~~~~
+    ~~~~
+    import xml.etree.ElementTree as ET
+    root = ET.fromstring(robot_description)
+    zframe_orientation = root.find('./custom_parameters/zframe_orientation').get('value').strip()
+    zframe_position = root.find('./custom_parameters/zframe_position').get('value').strip()
+    rotation_values = list(map(float, zframe_orientation.strip().split()))
+    translation_values = list(map(float, zframe_position.strip().split()))
+    mat_ZFrameToRobot = vtk.vtkMatrix4x4()
+    for i in range(3): # Set rotation part (3x3)
+        for j in range(3):
+            mat_ZFrameToRobot.SetElement(i, j, rotation_values[3 * i + j])
+    for i in range(3): # Set translation part (last column)
+        mat_ZFrameToRobot.SetElement(i, 3, 1000*translation_values[i])
+    mat_ZFrameToRobot.SetElement(3, 3, 1.0)
+    ~~~~
     -   Use the ZFrameToScanner registration:
-~~~~
-mat_ZFrameToScanner = vtk.vtkMatrix4x4()
-ZFrameToScannerNode = slicer.util.getFirstNodeByName('COR TSE T2 COVER ZFRAME-label-ZFrameTransform', className='vtkMRMLLinearTransformNode')
-ZFrameToScannerNode.GetMatrixTransformToWorld(mat_ZFrameToScanner)
-t_ZFrameToScanner = vtk.vtkTransform()
-t_ZFrameToScanner.SetMatrix(mat_ZFrameToScanner)
-~~~~
+    ~~~~
+    mat_ZFrameToScanner = vtk.vtkMatrix4x4()
+    ZFrameToScannerNode = slicer.util.getFirstNodeByName('COR TSE T2 COVER ZFRAME-label-ZFrameTransform', className='vtkMRMLLinearTransformNode')
+    ZFrameToScannerNode.GetMatrixTransformToWorld(mat_ZFrameToScanner)
+    t_ZFrameToScanner = vtk.vtkTransform()
+    t_ZFrameToScanner.SetMatrix(mat_ZFrameToScanner)
+    ~~~~
     -   Calculate the final RobotToScanner transform (robot world pose)
-~~~~
-t_RobotToZFrame = vtk.vtkTransform()
-t_RobotToZFrame.SetMatrix(mat_ZFrameToRobot)
-t_RobotToZFrame.Inverse()
-
-t_RobotToScanner = vtk.vtkTransform()
-t_RobotToScanner.Concatenate(t_ZFrameToScanner)
-t_RobotToScanner.Concatenate(t_RobotToZFrame)
-mat_RobotToScanner = t_RobotToScanner.GetMatrix()
-~~~~
+    ~~~~
+    t_RobotToZFrame = vtk.vtkTransform()
+    t_RobotToZFrame.SetMatrix(mat_ZFrameToRobot)
+    t_RobotToZFrame.Inverse()
+    
+    t_RobotToScanner = vtk.vtkTransform()
+    t_RobotToScanner.Concatenate(t_ZFrameToScanner)
+    t_RobotToScanner.Concatenate(t_RobotToZFrame)
+    mat_RobotToScanner = t_RobotToScanner.GetMatrix()
+    ~~~~
     -   Create a ROS2 publisher and publish to the `\world_pose` topic (which is subscribed by SmartTemplate to send a `tf_static_broadcast` to update the tf tree)
-~~~~
-pubWorld = rosNode.CreateAndAddPublisherNode('TransformStamped', '/world_pose')
-world_msg = pubWorld.GetBlankMessage()
-world_msg.SetTransform(mat_RobotToScanner)
-pubWorld.Publish(world_msg)
-~~~~
+    ~~~~
+    pubWorld = rosNode.CreateAndAddPublisherNode('TransformStamped', '/world_pose')
+    world_msg = pubWorld.GetBlankMessage()
+    world_msg.SetTransform(mat_RobotToScanner)
+    pubWorld.Publish(world_msg)
+    ~~~~
 
 -   In the ROS2 terminal where the SmartTemplate was launched, you can read an indication that the `world_pose_listener` node was triggered by the `\world_pose` topic published by SlicerROS2, and this caused the `tf_static_broadcaster` to update the world transform:
 
@@ -429,27 +429,27 @@ pubWorld.Publish(world_msg)
 -   After the target point "F-1" is defined, use the provided python
     commands in the console. They will:
     -   Create a `/desired_position` publisher
-~~~~
-pubGoal = rosNode.CreateAndAddPublisherNode('PoseStamped', '/desired_position')
-~~~~
+    ~~~~
+    pubGoal = rosNode.CreateAndAddPublisherNode('PoseStamped', '/desired_position')
+    ~~~~
     -   Get target in scanner coordinates
-~~~~
-targetMarkupsNode = slicer.util.getFirstNodeByName('F', className='vtkMRMLMarkupsFiducialNode')
-target_scanner = targetMarkupsNode.GetNthControlPointPosition(0)
-~~~~
+    ~~~~
+    targetMarkupsNode = slicer.util.getFirstNodeByName('F', className='vtkMRMLMarkupsFiducialNode')
+    target_scanner = targetMarkupsNode.GetNthControlPointPosition(0)
+    ~~~~
     -   Calculate the target in robot coordinates
-~~~~
-# OBS: Another approach would be to use a tf_lookup from 'world' to 'base_link' to get mat_RobotToScanner
-t_ScannerToRobot = vtk.vtkTransform()
-t_ScannerToRobot.SetMatrix(mat_RobotToScanner)
-t_ScannerToRobot.Inverse()
-target = t_ScannerToRobot.TransformPoint(target_scanner)
-
-mat_desired_position = vtk.vtkMatrix4x4()
-mat_desired_position.Identity()
-mat_desired_position.SetElement(0,3,target[0])
-mat_desired_position.SetElement(2,3,target[2])
-~~~~
+    ~~~~
+    # OBS: Another approach would be to use a tf_lookup from 'world' to 'base_link' to get mat_RobotToScanner
+    t_ScannerToRobot = vtk.vtkTransform()
+    t_ScannerToRobot.SetMatrix(mat_RobotToScanner)
+    t_ScannerToRobot.Inverse()
+    target = t_ScannerToRobot.TransformPoint(target_scanner)
+    
+    mat_desired_position = vtk.vtkMatrix4x4()
+    mat_desired_position.Identity()
+    mat_desired_position.SetElement(0,3,target[0])
+    mat_desired_position.SetElement(2,3,target[2])
+    ~~~~
     -   OBS: We could publish the desired target in world coordinates and let the robot node deal with the conversion to the robot's base coordinate frame (`base_link`) using tf. However, due to the nature of our needle insertion application, we aim to decouple the horizontal and vertical alignment of the needle (Phase 1) from the needle insertion motion (Phase 2). For this reason, we chose to express the target in `base_link` (robot) coordinates, allowing us to compute the alignment position more directly and independently.
 
 | **Phase 1: Needle alignment** | **Phase 2: Needle insertion** |
@@ -501,10 +501,9 @@ subEEPose = rosNode.CreateAndAddSubscriberNode('PoseStamped', '/end_effector_pos
 
 -   In the python console, create a publisher for /desired_command
     topic:
-
-pubCommand = rosNode.CreateAndAddPublisherNode('String',
-'/desired_command')
-
+~~~~
+pubCommand = rosNode.CreateAndAddPublisherNode('String', '/desired_command')
+~~~~
 -   Send "RETRACT" message and observe the robot fully retract the
     needle:
 
