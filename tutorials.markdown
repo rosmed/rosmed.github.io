@@ -8,7 +8,7 @@ Online Tutorials
 -----------------
 
 - [Exporting URDF from CAD and Visualizing on RViz and 3D Slicer](/tutorials/export_urdf_from_cad/)
-
+- [MRI-Guided Robot-Assisted Prostate Biopsy with SmartTemplate](/tutorials/smarttemplate/)
 
 
 
