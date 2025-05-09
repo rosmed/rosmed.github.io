@@ -4,6 +4,8 @@ title: MRI-Guided Robot-Assisted Prostate Biopsy with SmartTemplate
 permalink: /tutorials/smarttemplate/
 ---
 
+<font color=red>!!This page is under construction. !!</font>
+
 # MRI-Guided Robot-Assisted Prostate Biopsy with SmartTemplate
 
 Mariana Bernardes and Junichi Tokuda -- Brigham and Women's Hospital and
@@ -230,7 +232,7 @@ requirements:
 
 To use SlicerROS2, we must use a compiled version of 3D Slicer.
 
-[3D Slicer compilation:]{.underline}
+_3D Slicer compilation:_
 
 -   Download [3D Slicer source code](https://github.com/Slicer/Slicer.git) (v. 5.9.0)
 -   Other requirements:
@@ -254,7 +256,7 @@ you ran CMake for the first time:
 cmake ../Slicer -DSlicer_USE_SYSTEM_OpenSSL=ON -DCMAKE_BUILD_TYPE=Release
 ~~~~
 
-[SlicerROS2 compilation:]{.underline}
+_SlicerROS2 compilation:_
 
 -   Download SlicerROS2 source in your ROS2 worspace src folder: <https://github.com/rosmed/slicer_ros2_module>
 -   Other requirements:
@@ -266,14 +268,14 @@ cmake ../Slicer -DSlicer_USE_SYSTEM_OpenSSL=ON -DCMAKE_BUILD_TYPE=Release
 -  Compile SlicerROS2 module - [Instructions](https://slicer-ros2.readthedocs.io/en/latest/pages/gettingstarted.html#compilation)
 
 
-[Other required Slicer Modules for this tutorial:]{.underline}
+_Other required Slicer Modules for this tutorial:_
 
 > SlicerDevelopmentToolbox:
-> [[https://]{.underline}g[ithub.com/]{.underline}Q[IICR/SlicerDevelopmentToolbox.]{.underline}g[it]{.underline}](https://github.com/QIICR/SlicerDevelopmentToolbox.git)
+> [https://github.com/QIICR/SlicerDevelopmentToolbox.git](https://github.com/QIICR/SlicerDevelopmentToolbox.git)
 >
 > ZFrameRegistration (modified to include different ZFrame model
 > selection):
-> [[https://]{.underline}g[ithub.com/maribernardes/ZFrameRe]{.underline}g[istration-3DSlicer.]{.underline}g[it]{.underline}](https://github.com/maribernardes/ZFrameRegistration-3DSlicer.git)
+> [https://github.com/maribernardes/ZFrameRegistration-3DSlicer.git](https://github.com/maribernardes/ZFrameRegistration-3DSlicer.git)
 
 # Instructions
 
