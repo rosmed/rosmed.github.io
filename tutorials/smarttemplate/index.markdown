@@ -206,9 +206,7 @@ It is defined inside the robot's URDF under \<custom_parameters\>:
 > \<zframe_position value=\"\...\"/\>
 > \<zframe_orientation value=\"\...\"/\>
 
-![A black square with a yellow letter n AI-generated content may be
-incorrect.](images/image1.gif){width="2.2063495188101485in"
-height="2.011441382327209in"}
+![](images/image1.gif)
 
 # SlicerROS2 Setup - Ubuntu 24.04 (ROS2 Jazzy)
 
@@ -234,18 +232,17 @@ To use SlicerROS2, we must use a compiled version of 3D Slicer.
 
 [3D Slicer compilation:]{.underline}
 
--   Download 3D Slicer source code (v. 5.9.0):
-    [[https://]{.underline}g[ithub.com/Slicer/Slicer.]{.underline}g[it]{.underline}](https://github.com/Slicer/Slicer.git)
-
+-   Download [3D Slicer source code](https://github.com/Slicer/Slicer.git) (v. 5.9.0)
 -   Other requirements:
 
+~~~
 sudo apt update && sudo apt install git git-lfs build-essential \\
 libqt5x11extras5-dev qtmultimedia5-dev libqt5svg5-dev qtwebengine5-dev
 libqt5xmlpatterns5-dev qttools5-dev qtbase5-private-dev \\ libxt-dev
+~~~
 
--   Compile 3D Slicer - Instructions:
-    [[https://slicer.readthedocs.io/en/latest/developer\_]{.underline}g[uide/build_instructions/linux.html#buildslicer]{.underline}](https://slicer.readthedocs.io/en/latest/developer_guide/build_instructions/linux.html#build-slicer)
-
+-   Compile 3D Slicer - [Instructions](https://slicer.readthedocs.io/en/latest/developer_guide/build_instructions/linux.html#build-slicer)
+    
 Attention: Before you start compiling 3D Slicer, make sure to use the
 system/native OpenSSL libraries; otherwise, you'll get some errors when
 compiling the SlicerROS2 module. You will need to do the following after
@@ -253,22 +250,21 @@ you ran CMake for the first time:
 
 -   In the Slicer-build directory, set Slicer_USE_SYSTEM_OpenSLL to ON
     using:
-
-cmake ../Slicer -DSlicer_USE_SYSTEM_OpenSSL=ON
--DCMAKE_BUILD_TYPE=Release
+~~~~
+cmake ../Slicer -DSlicer_USE_SYSTEM_OpenSSL=ON -DCMAKE_BUILD_TYPE=Release
+~~~~
 
 [SlicerROS2 compilation:]{.underline}
 
--   Download SlicerROS2 source in your ROS2 worspace src folder:
-    <https://github.com/rosmed/slicer_ros2_module>
-
+-   Download SlicerROS2 source in your ROS2 worspace src folder: <https://github.com/rosmed/slicer_ros2_module>
 -   Other requirements:
 
+~~~~
 > sudo apt install python3-colcon-common-extensions sudo apt install
 > ros-jazzy-object-recognition-msgs sudo apt install ros-jazzy-moveit
+~~~~
+-  Compile SlicerROS2 module - [Instructions](https://slicer-ros2.readthedocs.io/en/latest/pages/gettingstarted.html#compilation)
 
--   Compile SlicerROS2 module - Instructions:
-    [[https://slicer-ros2.readthedocs.io/en/latest/pages/gettingstarted.html#compilation]{.underline}](https://slicer-ros2.readthedocs.io/en/latest/pages/gettingstarted.html#compilation)
 
 [Other required Slicer Modules for this tutorial:]{.underline}
 
@@ -284,101 +280,68 @@ cmake ../Slicer -DSlicer_USE_SYSTEM_OpenSSL=ON
 ## Preparation: Launch SmartTemplate and 3D Slicer
 
 -   Download the tutorial provided files:
-
     -   Two MR image files:
-
         -   AX_T1_VIBE_fs_tra_320.nrrd
-
         -   COR_TSE_T2_COVER_ZFRAME.nrrd
-
     -   ReachableVolume.mrk.json
-
     -   python_console_commands.txt
-
--   On the terminal, source the ROS2 workspace contains your
-    SmartTemplate_demo build:
-
-source path_to_ros2_ws/install/setup.bash
-
+-   On the terminal, source the ROS2 workspace contains your SmartTemplate_demo build: source path_to_ros2_ws/install/setup.bash
 -   Now, run the Slicer application from the command line.
-
 -   In another terminal window, source your ROS2 workspace again and
     launch the robot:
 
+~~~~
 source path_to_ros2_ws/install/setup.bash
+~~~~
 
 > ros2 launch smart_template_demo robot.launch.py
 
 ## Step 1: Load MR images and register ZFrame fiducials
 
--   Load MR images in 3DSlicer (drag the provided files and drop at the
-    3D Slicer interface)
-
+-   Load MR images in 3DSlicer (drag the provided files and drop at the 3D Slicer interface)
 -   Open \"ZFrameRegistrationWithROI\" module
 
-> ![](images/image2.jpg){width="6.909762685914261in"
-> height="5.681141732283464in"}
+> ![](images/image2.jpg)
 
 -   Select the horizontal ZFrame model
-
 -   Select the \"COR TSE T2 COVER ZFrame\" volume
-
 -   Select index of slices 9 to 12
-
--   Define the ROI in the coronal view (green viewer) that appropriately
-    covers the fiducials
-
+-   Define the ROI in the coronal view (green viewer) that appropriately covers the fiducials
 -   Click the ✓ button
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](images/image3.jpeg){width="7.519607392825897in"
-height="4.95097987751531in"}
+![](images/image3.jpeg)
 
 -   Observe the resultant Linear Transform node that was created to
     represent the transform from ZFrame to Scanner coordinates:
 
-![A screenshot of a software menu AI-generated content may be incorrect.](images/image4.jpg){width="2.9506944444444443in" height="2.941175634295713in"} ![A computer screen shot of a rectangular object AI-generated content may be incorrect.](images/image5.jpg){width="4.263643919510061in" height="2.837962598425197in"}
+![](images/image4.jpg) ![](images/image5.jpg)
 
 ## Step 2: Load SmartTemplate robot in 3DSlicer
 
 -   Open the \"ROS2\" module in Slicer:
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](images/image6.jpg){width="6.352777777777778in"
-height="4.983333333333333in"}
+![](images/image6.jpg)
 
 -   Click the \"+ Add new robot\" button:
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](images/image7.jpg){width="2.5097222222222224in"
-> height="3.995138888888889in"}
+> ![](images/image7.jpg)
 
 -   Configure parameters and click button \"Load robot\"
-
     -   Robot name: smart_template
-
     -   Parameter node name: /robot_state_publisher
-
     -   Parameter name: robot_description
-
     -   Fixed frame: world
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](images/image8.jpg){width="2.479861111111111in"
-height="3.6944444444444446in"}
+![](images/image8.jpg)
 
 -   Observe the SmartTemplate robot loaded in the 3D view:
 
-> ![A computer generated image of a machine AI-generated content may be
-> incorrect.](images/image9.jpg){width="3.3823523622047245in"
-> height="2.1506944444444445in"}
+> ![](images/image9.jpg)
 
 -   Using the SmartTemplate GUI, move the robot using the arrow buttons
     and observe the respective motion in Slicer
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](images/image10.png){width="2.5588232720909887in"
-> height="2.321581364829396in"}
+> ![](images/image10.png)
 
 horizontal
 
@@ -394,130 +357,71 @@ absolute values
 
 -   Open the python console (click the button in the menu bar)
 
-> ![A screenshot of a video AI-generated content may be
-> incorrect.](images/image11.jpg){width="5.039215879265092in"
-> height="0.734083552055993in"}
+> ![](images/image11.jpg)
 
 -   Use the provided python commands in the console. They will:
-
     -   Get the robot node from the scene
-
-    -   Get the robot_description from the ROS2 topic publisher by
-        SmartTemplate
-
-    -   Recover ZframeToRobot information from the URDF custom
-        parameters
-
-    -   Use the ZframeToScanner registration to calculate the final
-        RobotToScanner transform (robot world pose)
-
-    -   Create a ROS2 publisher and publish to the \\world_listener
-        topic (which is subscribed by SmartTemplate to send a
-        tf_static_broadcast to update the tf tree)
-
--   In the ROS2 terminal where the SmartTemplate was launched, you can
-    read an indication that the world_pose_listener node was triggered
-    by the \\world_pose topic published by SlicerROS2, and this caused
-    the tf_static_broadcaster to update the world transform:
+    -   Get the robot_description from the ROS2 topic publisher by SmartTemplate
+    -   Recover ZframeToRobot information from the URDF custom parameters
+    -   Use the ZframeToScanner registration to calculate the final RobotToScanner transform (robot world pose)
+    -   Create a ROS2 publisher and publish to the \\world_listener topic (which is subscribed by SmartTemplate to send a tf_static_broadcast to update the tf tree)
+-   In the ROS2 terminal where the SmartTemplate was launched, you can read an indication that the world_pose_listener node was triggered by the \\world_pose topic published by SlicerROS2, and this caused the tf_static_broadcaster to update the world transform:
 
 \[INFO\]\[\<timestamp_value\>\]\[world_pose_listener\]: Updated static
 transform world -\> base_link published.
 
--   The SmartTemplate pose will automatically update to the registered
-    pose with respect to the world (scanner). Also, observe the
-    publisher we created in the SlicerROS2 GUI and the topic message
-    just sent:
+-   The SmartTemplate pose will automatically update to the registered pose with respect to the world (scanner). Also, observe the publisher we created in the SlicerROS2 GUI and the topic message just sent:
 
-![A computer generated image of a machine AI-generated content may be incorrect.](images/image12.jpg){width="4.4077066929133855in" height="2.607843394575678in"} ![A screenshot of a computer AI-generated content may be incorrect.](images/image13.jpg){width="2.825203412073491in" height="3.803921697287839in"}
+![](images/image12.jpg) ![](images/image13.jpg)
 
 **Step 4: Make a straight needle insertion using the robot GUI**
 
 -   Open the \"Models\" module
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](images/image14.jpg){width="3.5980391513560805in"
-height="2.7000721784776904in"}
+![](images/image14.jpg)
 
--   Select the needle_link model and edit its color and Slice
-    Visibility:
+-   Select the needle_link model and edit its color and Slice Visibility:
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](images/image15.jpg){width="4.249625984251969in"
-height="5.245098425196851in"}
+![](images/image15.jpg)
 
--   Now, turn on the visualization of the provided \"AX T1 VIBE\" image
-    so that you can see it in the axial, coronal, sagittal and 3D
-    viewers:
+-   Now, turn on the visualization of the provided \"AX T1 VIBE\" image so that you can see it in the axial, coronal, sagittal and 3D viewers:
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](images/image16.jpeg){width="5.81078302712161in"
-height="3.8137259405074366in"}
+![](images/image16.jpeg)
 
--   Using the SmartTemplate GUI, change the insertion value from 5.0 to
-    100.0 mm and click the + button to insert the needle. Observe the
-    insertion as it progresses by scrolling through the MRI volume
-    slices and rotating the 3D view:
+-   Using the SmartTemplate GUI, change the insertion value from 5.0 to 100.0 mm and click the + button to insert the needle. Observe the insertion as it progresses by scrolling through the MRI volume slices and rotating the 3D view:
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](images/image17.png){width="5.867810586176728in"
-height="3.84999343832021in"}
+![](images/image17.png)
 
--   Now use the SmartTemplate GUI to fully retract the needle by
-    clicking the \"RETRACT\" button and observe the updates in the 3D
-    Slicer viewers
+-   Now use the SmartTemplate GUI to fully retract the needle by clicking the \"RETRACT\" button and observe the updates in the 3D Slicer viewers
 
 ## Step 5: Make a targeted insertion using SlicerROS2 publishers
 
--   Load the ReachableVolume ROI in 3D Slicer (drag the provided file
-    and drop it at 3D Slicer interface)
+-   Load the ReachableVolume ROI in 3D Slicer (drag the provided file and drop it at 3D Slicer interface)
+-   Open the \"Markups\" Module and click on the button to add a Point List:
 
--   Open the \"Markups\" Module and click on the button to add a Point
-    List:
-
-![A screenshot of a computer AI-generated content may be
-incorrect.](images/image18.jpg){width="2.9968536745406826in"
-height="1.7824300087489064in"}
+![](images/image18.jpg)
 
 -   It will generate a Point List automatically named \"F\"
-
--   Now, let's include one point to the list by clicking in the MR image
-    in the axial viewer (red). Select a target within the reachable
-    volume to the needle insertion.
-
+-   Now, let's include one point to the list by clicking in the MR image in the axial viewer (red). Select a target within the reachable volume to the needle insertion.
 -   In our example, we selected (7.6, 27.0, -140.0) in RAS coordinates:
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](images/image19.jpg){width="7.365277777777778in"
-height="5.460132327209099in"}
+![](images/image19.jpg)
 
 -   After the target point \"F-1\" is defined, use the provided python
     commands in the console. They will:
-
     -   Create a /desired_position publisher
-
     -   Calculate the target in robot coordinates
-
-    -   OBS: We could publish the desired target in world coordinates
-        and let the robot node deal with the conversion to the robot\'s
-        base coordinate frame (base_link) using tf. However, due to the
-        nature of our needle insertion application, we aim to decouple
-        the horizontal and vertical alignment of the needle (Phase 1)
-        from the needle insertion motion (Phase 2). For this reason, we
-        chose to express the target in base_link coordinates, allowing
-        us to compute the alignment position more directly and
-        independently.
+    -   OBS: We could publish the desired target in world coordinates and let the robot node deal with the conversion to the robot\'s base coordinate frame (base_link) using tf. However, due to the nature of our needle insertion application, we aim to decouple the horizontal and vertical alignment of the needle (Phase 1) from the needle insertion motion (Phase 2). For this reason, we chose to express the target in base_link coordinates, allowing us to compute the alignment position more directly and independently.
 
 | **Phase 1: Needle alignment** | **Phase 2: Needle insertion** |
 |:--------------------------------|:--------------------------------|
 | Align the SmartTemplate with the target | Insert the needle to the target depth |
-| ![A computer screen shot of a machine AI-generated content may be incorrect.](images/image20.jpg){width="3.3235290901137358in" height="2.9580325896762907in"} | ![A computer screen shot of a machine AI-generated content may be incorrect.](images/image21.jpg){width="3.323357392825897in" height="2.957638888888889in"} |
+| ![](images/image20.jpg) | ![](images/image21.jpg) |
 
 -   Observe the final needle placement in all planes to confirm the
     correct needle placement:
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](images/image22.png){width="7.397222222222222in"
-height="4.853472222222222in"}
+![](images/image22.png)
 
 ## Step 6: Read needle position using SlicerROS2 subscriber
 
@@ -537,9 +441,7 @@ height="4.853472222222222in"}
     vtkPoseMessage printed in the python console displays the
     homogeneous transform with translation in mm
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](images/image23.jpg){width="3.286169072615923in"
-> height="6.3825in"}
+> ![](images/image23.jpg)
 
 **Step 7: Send a robot command using SlicerROS2 publishers**
 
@@ -554,15 +456,11 @@ pubCommand = rosNode.CreateAndAddPublisherNode(\'String\',
 
 > pubCommand.Publish(\'RETRACT\')
 >
-> ![A computer screen shot of a machine AI-generated content may be
-> incorrect.](images/image24.jpg){width="4.0in"
-> height="3.5723622047244095in"}
+> ![](images/image24.jpg)
 
 -   Send \"HOME\" message and observe the robot go to its initial
     position:
 
 pubCommand.Publish(\'HOME\')
 
-> ![A computer screen shot of a machine AI-generated content may be
-> incorrect.](images/image25.jpg){width="4.076231408573928in"
-> height="3.6403685476815397in"}
+> ![](images/image25.jpg)
