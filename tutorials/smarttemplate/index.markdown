@@ -356,7 +356,7 @@ ros2 launch smart_template_demo robot.launch.py
         mat_ZFrameToRobot.SetElement(i, 3, 1000*translation_values[i])
     mat_ZFrameToRobot.SetElement(3, 3, 1.0)
     ~~~~
-    -   Use the ZFrameToScanner registration:
+    -   Get the ZFrameToScanner result from our registration:
     ~~~~
     mat_ZFrameToScanner = vtk.vtkMatrix4x4()
     ZFrameToScannerNode = slicer.util.getFirstNodeByName('COR TSE T2 COVER ZFRAME-label-ZFrameTransform', className='vtkMRMLLinearTransformNode')
