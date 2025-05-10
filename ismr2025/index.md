@@ -7,9 +7,10 @@ permalink: /ismr2025/
 ![ISMRPhoto](/images/ismr2024.jpg){:class="img-responsive" width="400px"}
 
 
-## Event Date: May 14, 2025 (In-Person)
+__Event Date: May 14, 2025 (In-Person)__
 
 # Table of Contents
+
 - [Overview](#overview)
 - [Intended Audience](#intended-audience)
 - [Time Table](#time-table)
@@ -41,21 +42,22 @@ Researchers, engineers, and students working in the field of medical robotics an
 
 
 # Time Table
+<style>
+    table th:first-of-type { width: 20%; }
+    table th:nth-of-type(2) { width: 55%; }
+    table th:nth-of-type(3) { width: 25%; }
+</style>
 
+    
 | Time        | Agenda                                                  | Speaker        |
 |-------------|---------------------------------------------------------|:--------------:|
 | 8:00-9:00   | Registration                                            |                |
 | 9:00-10:30  | Session 1: AI for Surgical Robotics                     |                |
 |             | Machine Learning with the da Vinci Research Kit (dVRK)  | Peter Kazanzides |
-|             |                                                         |      "          |
-|             | Automating Medical Needle Robots in Living Tissue:      | Ron Alterovitz |
-|             | Open Source Data Sets and AI Software                   |       "        |
-|             | Learning from Demonstration for Autonomy in Soft        | Alan Kuntz     |
-|             | Tissue Surgery                                          |       "        |
-|             | Towards Indirect Force Estimation via Learning-based    | Zonghe Chua    |
-|             | Visual Proprioception in Minimally Invasive Telesurgery |       "        |
-|             | From Monocular Vision to Autonomous Action: Guiding     | Jie Ying Wu    |
-|             | Tumor Resection via 3D Reconstruction                   |       "        |
+|             | Automating Medical Needle Robots in Living Tissue: Open Source Data Sets and AI Software  | Ron Alterovitz |
+|             | Learning from Demonstration for Autonomy in Soft Tissue Surgery        | Alan Kuntz     |
+|             | Towards Indirect Force Estimation via Learning-based Visual Proprioception in Minimally Invasive Telesurgery   | Zonghe Chua    |
+|             | From Monocular Vision to Autonomous Action: Guiding Tumor Resection via 3D Reconstruction | Jie Ying Wu    |
 | 10:30-11:00 | Break and Refreshments                                  |                |
 | 11:00-12:30 | Session 2: Open Source Tools                            |                |
 |             | Open-source medical imaging and image guided therapy    | Junichi Tokuda |
@@ -72,14 +74,19 @@ Researchers, engineers, and students working in the field of medical robotics an
 
 
 # Tutorial Materials
+
+## Prerequisites
+
+See [the prerequisites](Prerequisites)
+
 *Instructions and materials will be provided here.*
 
-#### Session 3 (Part 1): Creating and loading the visual/kinematic of a custom robot in 3D Slicer
+## Session 3 (Part 1): Creating and loading the visual/kinematic of a custom robot in 3D Slicer
 
 In this tutorial, we will explore the basic features of SlicerROS2, including loading and visualizing URDF data in 3D Slicer, and connecting it to ROS Control.
 - [MRI-Guided Robot-Assisted Prostate Biopsy with SmartTemplate](/tutorials/smarttemplate/)
 
-#### Session 3 (Part 2): Integration of 3D Slicer with AI-based segmentation, ROS2, and AMBF 
+## Session 3 (Part 2): Integration of 3D Slicer with AI-based segmentation, ROS2, and AMBF 
 
 This tutorial demonstrates a more advanced use-case scenario, where an anatomical model is created in 3D Slicer and used in a dynamic simulator (AMBF) to simulate the physical interaction between a manipulator and the anatomy.
 

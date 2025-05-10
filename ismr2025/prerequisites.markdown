@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Prerequisites - MRI-Guided Robot-Assisted Prostate Biopsy
-permalink: /tutorials/smarttemplate/prerequisites.html
+title: Prerequisites - ISMR2025 Tutorial
+permalink: /ismr2025/prerequisites.html
 ---
 
 # Prerequisites
@@ -10,7 +10,9 @@ Before starting this tutorial, please ensure you have the following prerequisite
 
 ## Required Files
 
-Files used in this tutorial are available in [a GitHub repository](https://github.com/rosmed/ismr2025/tree/main/part1-data). The repository includes:
+All required files are included in the Docker image (see the next section). They can also be downloaded from the following GitHub repositories. 
+
+Example image data are available in [this GitHub repository](https://github.com/rosmed/ismr2025). The repository includes:
 
 - **MR image files:**
   - AX_T1_VIBE_fs_tra_320.nrrd
@@ -20,9 +22,26 @@ Files used in this tutorial are available in [a GitHub repository](https://githu
 - **Python commands:**
   - python_console_commands.txt
 
+The demo ROS package for the SmartTemplate demo is available from [the SmartTemplate Demo repository](ttps://github.com/maribernardes/ros2_smart_template_demo].
+
+
+## Knowledge Prerequisites
+
+This tutorial assumes basic familiarity with:
+- ROS2 concepts (nodes, topics, tf2)
+- 3D Slicer interface
+- Basic understanding of medical image-guided interventions
+
+If you're new to these concepts, we recommend reviewing the following resources before starting:
+- [ROS2 Tutorials](https://docs.ros.org/en/jazzy/Tutorials.html)
+- [3D Slicer Documentation](https://slicer.readthedocs.io/en/latest/user_guide/getting_started.html)
+- [SlicerROS2 Documentation](https://slicer-ros2.readthedocs.io/)
+
 ## Computer Environment
 
-# Option 1: Download and Run the Docker image (Recommended) 
+You can use either a pre-configured Docker image, or a native Linux machine (Ubuntu 24.04).
+
+### Option 1: Download and Run the Docker image (Recommended) 
 
 
 Pull the image using the following command:
@@ -45,8 +64,14 @@ $ docker run -it --rm -p 6080:80 rosmed/docker-ubuntu-vnc-desktop-slicerros2-lw:
 In this example, the HTTP port (port 80) on the docker container will be mapped to port 6080 on the host computer. The '--rm' option will remove the container upon termination. If the Docker container is successfully started, its desktop environment can be accessed using a web browser by accessing `https://localhost:6080`.
 
 
-### Manual Installation (Alternative)
+### Option 2: Native Linux Machine
 
+ Hardware Requirements
+
+- A computer with at least 16GB RAM and 20GB free disk space
+- When using Docker, ensure your system meets Docker requirements and has adequate resources allocated to Docker
+
+#### Software
 If you prefer to install the components manually on Ubuntu 24.04, you'll need:
 
 1. **ROS2 Jazzy** - The Robot Operating System (ROS)
@@ -57,21 +82,5 @@ If you prefer to install the components manually on Ubuntu 24.04, you'll need:
 
 Detailed installation instructions for all required software can be found in the [Setup](setup.html) page.
 
-## Hardware Requirements
 
-- A computer with at least 16GB RAM and 20GB free disk space
-- When using Docker, ensure your system meets Docker requirements and has adequate resources allocated to Docker
-
-## Knowledge Prerequisites
-
-This tutorial assumes basic familiarity with:
-- ROS2 concepts (nodes, topics, tf2)
-- 3D Slicer interface
-- Basic understanding of medical image-guided interventions
-
-If you're new to these concepts, we recommend reviewing the following resources before starting:
-- [ROS2 Tutorials](https://docs.ros.org/en/jazzy/Tutorials.html)
-- [3D Slicer Documentation](https://slicer.readthedocs.io/en/latest/user_guide/getting_started.html)
-- [SlicerROS2 Documentation](https://slicer-ros2.readthedocs.io/)
-
-[⬅️ Back to Table of Contents](index.html) | [Next: Overview ➡️](overview.html) | [Jump to Setup ↗️](setup.html)
+[⬅️ Back to ISMR 2025 Workshop Page](index.html)
