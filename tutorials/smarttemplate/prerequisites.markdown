@@ -30,6 +30,31 @@ For the easiest setup, we recommend using our pre-configured Docker image which 
 docker pull ghcr.io/maribernardes/smart_template_demo:ros2
 ```
 
+
+
+# Option 1: Download and Run the Docker image (Recommended) 
+
+
+Pull the image using the following command:
+~~~~
+$ docker pull rosmed/docker-ubuntu-vnc-desktop-slicerros2-lw:ismr2025
+~~~~
+
+Please note that this Docker image is a lightweight version and only contains a binary package of 3D Slicer. If you plan to use the Docker image for  3D Slicer module development, you will need a full Docker image with 3D Slicer build files, which can be obtained by:
+
+~~~~
+$ docker pull rosmed/docker-ubuntu-vnc-desktop-slicerros2:ismr2025
+~~~~
+
+To execute the docker image, run the following command:
+~~~~
+$ docker run -it --rm -p 6080:80 rosmed/docker-ubuntu-vnc-desktop-slicerros2-lw:ismr2025
+~~~~
+(in case of using the full Docker image, specify `rosmed/docker-ubuntu-vnc-desktop-slicerros2:ismr2025` instead).
+
+In this example, the HTTP port (port 80) on the docker container will be mapped to port 6080 on the host computer. The '--rm' option will remove the container upon termination. If the Docker container is successfully started, its desktop environment can be accessed using a web browser by accessing `https://localhost:6080`.
+
+
 ### Manual Installation (Alternative)
 
 If you prefer to install the components manually on Ubuntu 24.04, you'll need:
