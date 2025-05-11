@@ -36,13 +36,13 @@ This tutorial demonstrates how to integrate a virtual version of the **SmartTemp
    - Interfaces
    - Robot Registration
 
-6. [Tutorial Steps](tutorial_steps.html)
-   - Preparation: Launch SmartTemplate and 3D Slicer
-   - Step 1: Load MR images and register ZFrame fiducials
-   - Step 2: Load SmartTemplate robot in 3DSlicer
-   - Step 3: Register SmartTemplate to the scanner
-   - Step 4: Make a straight needle insertion using the robot GUI
-   - Step 5: Make a targeted insertion using SlicerROS2 publishers
-   - Step 6: Read needle position using SlicerROS2 subscriber
-   - Step 7: Send a robot command using SlicerROS2 publishers
+6. Tutorial Steps
+   - [Step 0: Preparation - Launch SmartTemplate and 3D Slicer](0-preparation.html)
+   - [Step 1: Load MR images and register ZFrame fiducials](1-load-images.html)
+   - [Step 2: Load SmartTemplate robot in 3DSlicer](2-load-robot.html)
+   - [Step 3: Register SmartTemplate to the scanner](3-register-smarttemplate.html)
+   - [Step 4: Make a straight needle insertion using the robot GUI](4-straight-needle-insertion.html)
+   - [Step 5: Make a targeted insertion using SlicerROS2 publishers](5-targeted-insertion.html)
+   - [Step 6: Read needle position using SlicerROS2 subscriber](6-read-needle-position.html)
+   - [Step 7: Send a robot command using SlicerROS2 publishers](7-send-robot-command.html)
 

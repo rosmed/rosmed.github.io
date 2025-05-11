@@ -55,7 +55,7 @@ If you prefer to install the components manually on Ubuntu 24.04, you'll need:
 4. **Additional modules** - For specialized functionality like Z-frame registration
 5. **SmartTemplate Demo Repository** - The robot description and control code
 
-Detailed installation instructions for all required software can be found in the [Setup](setup.html) page.
+Detailed installation instructions for all required software can be found in the [Setup](setup) page.
 
 ## Hardware Requirements
 

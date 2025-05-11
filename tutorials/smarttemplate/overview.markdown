@@ -43,4 +43,4 @@ In this tutorial, you will:
 - **Select a target** in the prostate using the 3D Slicer medical imaging software
 - From within 3D Slicer, **command the robot's motion** to align and insert the needle along a straight-line trajectory to the target
 
-[⬅️ Back to Prerequisites](prerequisites.html) | [Next: SmartTemplate Robot ➡️](robot.html)
+[⬅️ Back to Prerequisites](prerequisites) | [Next: SmartTemplate Robot ➡️](robot) | [Back to Table of Contents ↩️](index)

@@ -66,4 +66,4 @@ _Other required Slicer Modules for this tutorial:_
 - SlicerDevelopmentToolbox: [https://github.com/QIICR/SlicerDevelopmentToolbox.git](https://github.com/QIICR/SlicerDevelopmentToolbox.git)
 - ZFrameRegistration (modified to include different ZFrame model selection): [https://github.com/maribernardes/ZFrameRegistration-3DSlicer.git](https://github.com/maribernardes/ZFrameRegistration-3DSlicer.git)
 
-[⬅️ Back to Prerequisites](prerequisites.html) | [Jump to Tutorial Steps ➡️](tutorial_steps.html)
+[⬅️ Back to Prerequisites](prerequisites) | [Jump to Tutorial Steps ➡️](0-preparation) | [Back to Table of Contents ↩️](index)

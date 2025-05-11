@@ -29,4 +29,4 @@ __Examples of URDF tags:__
 - `materials.xacro`: Defines colors and visual properties for robot components. We kept this one simple for our intended use.
 - `zframe.xacro`: Specifies the ZFrame position and orientation, defined within `<custom_parameters>` tags.
 
-[⬅️ Back to SmartTemplate Robot](robot.html) | [Next: Virtual SmartTemplate ROS2 Node ➡️](ros2_node.html)
+[⬅️ Back to SmartTemplate Robot](robot) | [Next: Virtual SmartTemplate ROS2 Node ➡️](ros2_node) | [Back to Table of Contents ↩️](index)

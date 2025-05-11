@@ -45,4 +45,4 @@ world
  
  
 
-[⬅️ Back to Overview](overview.html) | [Next: SmartTemplate Description Package ➡️](description.html)
+[⬅️ Back to Overview](overview) | [Next: SmartTemplate Description Package ➡️](description) | [Back to Table of Contents ↩️](index)

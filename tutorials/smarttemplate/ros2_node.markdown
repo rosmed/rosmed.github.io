@@ -52,4 +52,4 @@ It is defined inside the robot's URDF under <custom_parameters>:
 
 ![Z-Frame](images/image1.gif)
 
-[⬅️ Back to SmartTemplate Description Package](description.html) | [Next: Tutorial Steps ➡️](tutorial_steps.html)
+[⬅️ Back to SmartTemplate Description Package](description) | [Next: Tutorial Steps ➡️](0-preparation) | [Back to Table of Contents ↩️](index)
