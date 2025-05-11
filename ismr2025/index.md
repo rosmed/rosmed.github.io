@@ -77,7 +77,7 @@ Researchers, engineers, and students working in the field of medical robotics an
 
 ## Prerequisites
 
-See [the prerequisites](Prerequisites)
+See [the prerequisites](prerequisites)
 
 *Instructions and materials will be provided here.*
 
