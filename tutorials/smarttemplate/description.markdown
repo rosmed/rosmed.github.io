@@ -1,10 +1,10 @@
 ---
 layout: page
-title: SmartTemplate Description Package - MRI-Guided Robot-Assisted Prostate Biopsy
+title: Tutorial on MRI-Guided Robot-Assisted Prostate Biopsy 
 permalink: /tutorials/smarttemplate/description.html
 ---
 
-# SmartTemplate Description Package
+# ROS Robot Description Package for SmartTemplate
 
 Before proceeding with the tutorial steps, it is essential to understand the SmartTemplate robot description provided in the `smart_template_description` package. This package contains the Unified Robot Description Format (URDF) files that define the robot's structure, kinematics, joint limits, and sensor configurations.
 

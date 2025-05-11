@@ -1,12 +1,11 @@
 ---
 layout: page
-title: Overview - MRI-Guided Robot-Assisted Prostate Biopsy
+title: Tutorial on MRI-Guided Robot-Assisted Prostate Biopsy
 permalink: /tutorials/smarttemplate/overview.html
 ---
 
-# Overview
 
-## Objectives
+# Overview
 
 This tutorial demonstrates how to integrate a virtual version of the **SmartTemplate** robotic system with **SlicerROS2** for planning and monitoring MRI-guided robot-assisted prostate biopsies. This tutorial provides a simplified but functional framework to understand the real-world integration of medical imaging (3D Slicer) and robotics (ROS 2) for image-guided interventions.
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tutorial Steps - MRI-Guided Robot-Assisted Prostate Biopsy
+title: Tutorial on MRI-Guided Robot-Assisted Prostate Biopsy
 permalink: /tutorials/smarttemplate/tutorial_steps.html
 ---
 
@@ -8,20 +8,21 @@ permalink: /tutorials/smarttemplate/tutorial_steps.html
 
 ## Preparation: Launch SmartTemplate and 3D Slicer
 
-- Download the tutorial provided files:
-  - Two MR image files:
-    - AX_T1_VIBE_fs_tra_320.nrrd
-    - COR_TSE_T2_COVER_ZFRAME.nrrd
-  - ReachableVolume.mrk.json
-  - python_console_commands.txt
-- On the terminal, source the ROS2 workspace contains your SmartTemplate_demo build:
+Files are available on [the tutorial GitHub repository](https://github.com/rosmed/ismr2025). 
+The following files for this tutorial are under the `smarttemlplate_example` directory.  
+- AX_T1_VIBE_fs_tra_320.nrrd
+- COR_TSE_T2_COVER_ZFRAME.nrrd
+- ReachableVolume.mrk.json
+- python_console_commands.txt
+
+On the terminal, source the ROS2 workspace contains your SmartTemplate_demo build:
 
 ```bash
 source path_to_ros2_ws/install/setup.bash
 ```
+Note that, if you are running [the tutorial Docker image](prerequisites), `path_to_ros2_ws` is `/root/ros2_ws`.
 
-- Now, run the Slicer application from the command line.
-- In another terminal window, source your ROS2 workspace again and launch the robot:
+Now, run the Slicer application from the command line. In another terminal window, source your ROS2 workspace again and launch the robot:
 
 ```bash
 source path_to_ros2_ws/install/setup.bash
@@ -30,11 +31,11 @@ ros2 launch smart_template_demo robot.launch.py
 
 ## Step 1: Load MR images and register ZFrame fiducials
 
-- Load MR images in 3DSlicer (drag the provided files and drop at the 3D Slicer interface)
-- Open "ZFrameRegistrationWithROI" module
+First, load MR images in 3DSlicer (drag the provided files and drop at the 3D Slicer interface). Then open "ZFrameRegistrationWithROI" module
 
 ![ZFrameRegistrationWithROI module](images/image2.jpg)
 
+To register the fiducial marker model to the MR image:
 - Select the horizontal ZFrame model
 - Select the "COR TSE T2 COVER ZFrame" volume
 - Select index of slices 9 to 12
@@ -43,77 +44,78 @@ ros2 launch smart_template_demo robot.launch.py
 
 ![ZFrame registration](images/image3.jpeg)
 
-- Observe the resultant Linear Transform node that was created to represent the transform from ZFrame to Scanner coordinates:
+Observe the resultant Linear Transform node that was created to represent the transform from ZFrame to Scanner coordinates:
 
 ![Transform node](images/image4.jpg) ![Transform coordinates](images/image5.jpg)
 
 ## Step 2: Load SmartTemplate robot in 3DSlicer
 
-- Open the "ROS2" module in Slicer:
+Open the "ROS2" module in Slicer:
 
 ![ROS2 module](images/image6.jpg)
 
-- Click the "+ Add new robot" button:
+Click the "+ Add new robot" button:
 
 ![Add new robot](images/image7.jpg)
 
-- Configure parameters and click button "Load robot"
-  - Robot name: smart_template
-  - Parameter node name: /robot_state_publisher
-  - Parameter name: robot_description
-  - Fixed frame: world
+Configure parameters and click button "Load robot"
+ - Robot name: smart_template
+ - Parameter node name: /robot_state_publisher
+ - Parameter name: robot_description
+ - Fixed frame: world
 
 ![Robot parameters](images/image8.jpg)
 
-- Observe the SmartTemplate robot loaded in the 3D view:
+Observe the SmartTemplate robot loaded in the 3D view:
 
 ![SmartTemplate loaded](images/image9.jpg)
 
-- Using the SmartTemplate GUI, move the robot using the arrow buttons and observe the respective motion in Slicer
+Using the SmartTemplate GUI, move the robot using the arrow buttons and observe the respective motion in Slicer
 
 ![SmartTemplate GUI](images/image10.png)
 
 ## Step 3: Register SmartTemplate to the scanner (world)
 
-- Open the python console (click the button in the menu bar)
+Open the python console (click the button in the menu bar)
 
 ![Python console](images/image11.jpg)
 
-- Use the provided python commands in the console. They will:
-  - Get the robot node from the scene
-  - Get the `robot_description` from the ROS2 topic publisher by SmartTemplate
-  - Recover ZframeToRobot information from the URDF custom parameters
-  - Use the ZframeToScanner registration to calculate the final RobotToScanner transform (robot world pose)
-  - Create a ROS2 publisher and publish to the `\world_listener` topic (which is subscribed by SmartTemplate to send a `tf_static_broadcast` to update the tf tree)
-- In the ROS2 terminal where the SmartTemplate was launched, you can read an indication that the `world_pose_listener` node was triggered by the `\world_pose` topic published by SlicerROS2, and this caused the `tf_static_broadcaster` to update the world transform:
+Use the provided python commands in the console. They will:
+- Get the robot node from the scene
+- Get the `robot_description` from the ROS2 topic publisher by SmartTemplate
+- Recover ZframeToRobot information from the URDF custom parameters
+- Use the ZframeToScanner registration to calculate the final RobotToScanner transform (robot world pose)
+- Create a ROS2 publisher and publish to the `\world_listener` topic (which is subscribed by SmartTemplate to send a `tf_static_broadcast` to update the tf tree)
+
+In the ROS2 terminal where the SmartTemplate was launched, you can read an indication that the `world_pose_listener` node was triggered by the `\world_pose` topic published by SlicerROS2, and this caused the `tf_static_broadcaster` to update the world transform:
 
 ```
 [INFO] [<timestamp_value>] [world_pose_listener]: Updated static transform world -> base_link published.
 ```
 
-- The SmartTemplate pose will automatically update to the registered pose with respect to the world (scanner). Also, observe the publisher we created in the SlicerROS2 GUI and the topic message just sent:
+The SmartTemplate pose will automatically update to the registered pose with respect to the world (scanner). Also, observe the publisher we created in the SlicerROS2 GUI and the topic message just sent:
 
 ![Robot registration](images/image12.jpg) ![Topic message](images/image13.jpg)
 
 ## Step 4: Make a straight needle insertion using the robot GUI
 
-- Open the "Models" module
+Open the "Models" module
 
 ![Models module](images/image14.jpg)
 
-- Select the `needle_link` model and edit its color and Slice Visibility:
+Select the `needle_link` model and edit its color and Slice Visibility:
 
 ![Needle link properties](images/image15.jpg)
 
-- Now, turn on the visualization of the provided "AX T1 VIBE" image so that you can see it in the axial, coronal, sagittal and 3D viewers:
+Now, turn on the visualization of the provided "AX T1 VIBE" image so that you can see it in the axial, coronal, sagittal and 3D viewers:
 
 ![Image visualization](images/image16.jpeg)
 
-- Using the SmartTemplate GUI, change the insertion value from 5.0 to 100.0 mm and click the + button to insert the needle. Observe the insertion as it progresses by scrolling through the MRI volume slices and rotating the 3D view:
+Using the SmartTemplate GUI, change the insertion value from 5.0 to 100.0 mm and click the + button to insert the needle. Observe the insertion as it progresses by scrolling through the MRI volume slices and rotating the 3D view:
 
 ![Needle insertion](images/image17.png)
 
-- Now use the SmartTemplate GUI to fully retract the needle by clicking the "RETRACT" button and observe the updates in the 3D Slicer viewers
+Now use the SmartTemplate GUI to fully retract the needle by clicking the "RETRACT" button and observe the updates in the 3D Slicer viewers
 
 ## Step 5: Make a targeted insertion using SlicerROS2 publishers
 

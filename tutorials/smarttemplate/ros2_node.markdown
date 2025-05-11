@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Virtual SmartTemplate ROS2 Node - MRI-Guided Robot-Assisted Prostate Biopsy
+title: Tutorial on MRI-Guided Robot-Assisted Prostate Biopsy
 permalink: /tutorials/smarttemplate/ros2_node.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Prerequisites - MRI-Guided Robot-Assisted Prostate Biopsy
+title: Tutorial on MRI-Guided Robot-Assisted Prostate Biopsy
 permalink: /tutorials/smarttemplate/prerequisites.html
 ---
 
