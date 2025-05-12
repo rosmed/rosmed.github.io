@@ -52,4 +52,4 @@ To register the robot with the MRI image, we need to know two things:
 ![Z-Frame](images/image1.gif)
 
 
-[⬅️ Back to SmartTemplate Robot](robot) | [Next: Virtual SmartTemplate ROS2 Node ➡️](ros2_node) | [Back to Table of Contents ↩️](index)
+[⬅️ Back to SmartTemplate Robot](robot) | [Next: SmartTemplate ROS2 Nodes ➡️](ros2_node) | [Back to Table of Contents ↩️](index)
