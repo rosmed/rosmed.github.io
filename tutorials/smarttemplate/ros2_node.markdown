@@ -33,29 +33,6 @@ The node is implemented in Python using rclpy and provides the following interfa
 | /desired_position | geometry_msgs/PoseStamped | Target pose to align the robot tip to, typically in the **world** or **scanner** frame |
 | /desired_command | std_msgs/String | Predefined motion commands: HOME, RETRACT, or ABORT |
 
-## Robot Registration
-
-The **Z-Frame** is a special marker that is visible on MRI scans. It helps us register the robot's position in the scanner coordinate system.
-
-- It is rigidly attached to the robot during setup at a fixed and known position.
-- It shows up clearly in the MR image and has a known geometry.
-- By detecting it in the image, we can figure out where the robot is relative to the scanner.
-
-To register the robot with the MRI image, we need to know two things:
-
-1. **ZFrame to Scanner transform:** This transform is calculated from the MRI image after detecting the ZFrame (using ZFrameRegistration module).
-2. **ZFrame to Robot transform:** This is a fixed transform based on how the Z-Frame is mounted on the robot.
-
-It is defined inside the robot's URDF under <custom_parameters>:
-
-~~~~
-<zframe_position value="..."/>
-<zframe_orientation value="..."/>
-~~~~
-
-![Z-Frame](images/image1.gif)
-
-
 ## World Pose Listener
 
 In addition, the smart_template_demo package includes the world_pose_listener node, which listens to the /world_pose topic. When a new pose is received, it triggers a TF static broadcast to update the base_link frame with respect to the world frame. This is crucial for maintaining the correct TF tree structure during simulated motion.
