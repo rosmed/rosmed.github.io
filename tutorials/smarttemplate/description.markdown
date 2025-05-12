@@ -29,4 +29,27 @@ __Examples of URDF tags:__
 - `materials.xacro`: Defines colors and visual properties for robot components. We kept this one simple for our intended use.
 - `zframe.xacro`: Specifies the ZFrame position and orientation, defined within `<custom_parameters>` tags.
 
+## Robot Registration
+
+The **Z-Frame** is a special marker that is visible on MRI scans. It helps us register the robot's position in the scanner coordinate system.
+
+- It is rigidly attached to the robot during setup at a fixed and known position.
+- It shows up clearly in the MR image and has a known geometry.
+- By detecting it in the image, we can figure out where the robot is relative to the scanner.
+
+To register the robot with the MRI image, we need to know two things:
+
+1. **ZFrame to Scanner transform:** This transform is calculated from the MRI image after detecting the ZFrame (using ZFrameRegistration module).
+2. **ZFrame to Robot transform:** This is a fixed transform based on how the Z-Frame is mounted on the robot. It is defined inside the robot's URDF under <custom_parameters>:
+
+~~~~
+<custom_parameters>
+  <zframe_position value="..."/>
+  <zframe_orientation value="..."/>
+</custom_parameters>
+~~~~
+
+![Z-Frame](images/image1.gif)
+
+
 [⬅️ Back to SmartTemplate Robot](robot) | [Next: Virtual SmartTemplate ROS2 Node ➡️](ros2_node) | [Back to Table of Contents ↩️](index)
