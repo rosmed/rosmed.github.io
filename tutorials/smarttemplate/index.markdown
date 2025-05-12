@@ -31,10 +31,12 @@ This tutorial demonstrates how to integrate a virtual version of the **SmartTemp
 4. [SmartTemplate Description Package](description.html)
    - What is URDF?
    - Key URDF Files
-
-5. [Virtual SmartTemplate ROS2 Node](ros2_node.html)
-   - Interfaces
    - Robot Registration
+
+5. [SmartTemplate ROS2 Nodes](ros2_node.html)
+   - Virtual Template
+   - World Pose Listener
+
 
 6. Tutorial Steps
    - [Step 0: Preparation - Launch SmartTemplate and 3D Slicer](0-preparation.html)
