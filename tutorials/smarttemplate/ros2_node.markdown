@@ -4,7 +4,9 @@ title: Tutorial on MRI-Guided Robot-Assisted Prostate Biopsy
 permalink: /tutorials/smarttemplate/ros2_node.html
 ---
 
-# Virtual SmartTemplate ROS2 Node
+# SmartTemplate ROS2 Nodes
+
+## Virtual Template
 
 To support this tutorial, we use a **ROS2 node** called virtual_template. It simulates the behavior of the SmartTemplate robot. It does **not control real hardware**, but instead emulates the robot's motion logic based on simplified kinematics.
 
@@ -13,7 +15,7 @@ To support this tutorial, we use a **ROS2 node** called virtual_template. It sim
 - **Motion emulation**: holds internal state for current and desired joint values. Moves the joints gradually toward the target position in small steps.
 - **State publishers:** Periodically publishes the simulated joint states and end-effector (needle tip) pose
 
-## Interfaces
+### Interfaces
 
 The node is implemented in Python using rclpy and provides the following interfaces:
 
@@ -38,7 +40,8 @@ The **Z-Frame** is a special marker that is visible on MRI scans. It helps us re
 - It is rigidly attached to the robot during setup at a fixed and known position.
 - It shows up clearly in the MR image and has a known geometry.
 - By detecting it in the image, we can figure out where the robot is relative to the scanner.
-- To register the robot with the MRI image, we need to know two things:
+
+To register the robot with the MRI image, we need to know two things:
 
 1. **ZFrame to Scanner transform:** This transform is calculated from the MRI image after detecting the ZFrame (using ZFrameRegistration module).
 2. **ZFrame to Robot transform:** This is a fixed transform based on how the Z-Frame is mounted on the robot.
@@ -51,5 +54,10 @@ It is defined inside the robot's URDF under <custom_parameters>:
 ~~~~
 
 ![Z-Frame](images/image1.gif)
+
+
+## World Pose Listener
+
+In addition, the smart_template_demo package includes the world_pose_listener node, which listens to the /world_pose topic. When a new pose is received, it triggers a TF static broadcast to update the base_link frame with respect to the world frame. This is crucial for maintaining the correct TF tree structure during simulated motion.
 
 [⬅️ Back to SmartTemplate Description Package](description) | [Next: Tutorial Steps ➡️](0-preparation) | [Back to Table of Contents ↩️](index)
