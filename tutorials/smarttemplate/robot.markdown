@@ -34,7 +34,7 @@ world
 - **horizontal_joint**: Aligns the guide laterally (X-axis)
 - **insertion_joint**: Controls needle insertion depth (Y-axis), i.e., into the patient
 
-![SmartTemplate Robot](images/image9.jpg)
+![SmartTemplate Robot](images/000_SmartTemplate.png)
 
 
 ## References {#references}
