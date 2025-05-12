@@ -183,4 +183,4 @@ pubCommand.Publish('HOME')
 
 ![Home command](images/image25.jpg)
 
-[⬅️ Back to Virtual SmartTemplate ROS2 Node](ros2_node.html) | [Back to Table of Contents ↩️](index.html)
+[⬅️ Back to SmartTemplate ROS2 Nodes](ros2_node.html) | [Back to Table of Contents ↩️](index.html)
