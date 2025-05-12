@@ -83,7 +83,7 @@ See [the prerequisites](prerequisites)
 
 ## Session 3 (Part 1): Creating and loading the visual/kinematic of a custom robot in 3D Slicer
 
-In this tutorial, we will explore the basic features of SlicerROS2, including loading and visualizing URDF data in 3D Slicer, and connecting it to ROS Control.
+In this tutorial, we will explore the basic features of SlicerROS2, including loading and visualizing URDF data in 3D Slicer, and connecting it to ROS via topics (publishers and subscribers).
 - [MRI-Guided Robot-Assisted Prostate Biopsy with SmartTemplate](/tutorials/smarttemplate/)
 
 ## Session 3 (Part 2): Integration of 3D Slicer with AI-based segmentation, ROS2, and AMBF 
