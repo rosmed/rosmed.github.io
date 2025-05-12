@@ -30,7 +30,7 @@ world
 | horizontal_joint | prismatic | X (1,0,0) | vertical_link | horizontal_link | ±0.03 |
 | insertion_joint | prismatic | Y (0,1,0) | horizontal_link | needle_link | 0.000 → 0.115 |
 
-- **vertical_joint**: Adjusts height of the needle guide above the perineum (Z-axis / A-P)
+- **vertical_joint**: Adjusts height of the needle guide above the perineum (Z-axis / P-A)
 - **horizontal_joint**: Aligns the guide laterally (X-axis / L-R)
 - **insertion_joint**: Controls needle insertion depth (Y-axis / I-S), i.e., into the patient
 
