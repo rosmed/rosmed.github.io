@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Building your own ultrasound-guided virtual fixture with Slicer and AMBF"
+permalink: /tutorials/ultrasound_ai_ambf_integration/
 ---
 
 # Preparation: Install Required Modules
