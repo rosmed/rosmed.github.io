@@ -89,7 +89,7 @@ In this tutorial, we will explore the basic features of SlicerROS2, including lo
 ## Session 3 (Part 2): Integration of 3D Slicer with AI-based segmentation, ROS2, and AMBF 
 
 This tutorial demonstrates a more advanced use-case scenario, where an anatomical model is created in 3D Slicer and used in a dynamic simulator (AMBF) to simulate the physical interaction between a manipulator and the anatomy.
-
+- [Building your own ultrasound based virtual fixture with AMBF and SlicerROS2](/tutorials/ultrasound_ai_ambf_intgration/)
 
 
 # Links
