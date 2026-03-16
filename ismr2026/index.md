@@ -4,10 +4,12 @@ title: ISMR26 Workshop/ SlicerROS2 as an In Silico Testing Environment for Medic
 permalink: /ismr2026/
 ---
 
-# Date/Venue
- - Event Date: April 22 (Half-Day Workshop)
- - Event Time: 9:00AM - 12:30PM
- - Venue: The University of Tennessee, Knoxville (Building/Room TBD)
+![ISMRPhoto](/images/ismr2024.jpg){:class="img-responsive" width="400px"}
+
+
+## Event Date: April 22, 2026 (Half-Day Workshop, 9:00AM - 12:30PM)
+
+## Venue: The University of Tennessee, Knoxville (Building/Room TBD)
 
 # Table of Contents
 
@@ -41,27 +43,23 @@ Researchers, engineers, and students working in medical robotics and image-guide
 
 # Time Table
 
-<style>
-    table th:first-of-type { width: 20%; }
-    table th:nth-of-type(2) { width: 55%; }
-    table th:nth-of-type(3) { width: 25%; }
-</style>
-
-| Time   | Agenda                                                                           | Speaker         |
-|--------|----------------------------------------------------------------------------------|:---------------:|
-| 9:00   | **Session 1: Showcasing Medical Robotics Research with Open Source Software and In Silico Simulation Tools (1.5 hours)** | |
-|        | Overview of open-source platforms for image-guided robotic surgical systems      | TBD             |
-|        | Interoperability among 3D Slicer, ROS2, AMBF, NVIDIA Isaac, Gazebo, and SOFA     | Adnan Munawar   |
-|        | TBD                                                                              | Rafael Palomar  |
-|        | TBD                                                                              | Ruofeng Wei     |
-| 10:00  | **Session 2: Hands-On Tutorial on In Silico Medical Robot Testing (Part 1)**     | Junichi Tokuda  |
-|        | In silico evaluation of an example surgical robot in a virtual patient using 3D Slicer, ROS2, and Gazebo ||
-| 11:00  | **Session 3: Hands-On Tutorial on In Silico Medical Robot Testing (Part 2)**     | Laura Connolly  |
+| Time  | Agenda                                                                                          | Speaker        |
+|-------|-------------------------------------------------------------------------------------------------|:--------------:|
+| 9:00  | **Session 1: Showcasing Medical Robotics Research with Open Source Software and In Silico Simulation Tools** | |
+|       | Overview of open-source platforms for image-guided robotic surgical systems                     | TBD            |
+|       | Interoperability among 3D Slicer, ROS2, AMBF, NVIDIA Isaac, Gazebo, and SOFA                   | Adnan Munawar  |
+|       | TBD                                                                                             | Rafael Palomar |
+|       | TBD                                                                                             | Ruofeng Wei    |
+| 10:30 | **Session 2: Hands-On Tutorial on In Silico Medical Robot Testing (Part 1)**                    | Junichi Tokuda |
+|       | In silico evaluation of an example surgical robot in a virtual patient using 3D Slicer, ROS2, and Gazebo | |
+| 11:30 | **Session 3: Hands-On Tutorial on In Silico Medical Robot Testing (Part 2)**                    | Laura Connolly |
+| 12:30 | Closing                                                                                         |                |
 
 
-- [Materials](#materials)
+# Materials
 
 We will post materials here a week before the event.
+
 
 # Links
 
