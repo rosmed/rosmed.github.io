@@ -4,13 +4,17 @@ title: ISMR26 Workshop/ SlicerROS2 as an In Silico Testing Environment for Medic
 permalink: /ismr2026/
 ---
 
-__Event Date: TBD (Half-Day Workshop)__
+# Date/Venue
+ - Event Date: April 22 (Half-Day Workshop)
+ - Event Time: 9:00AM - 12:30PM
+ - Venue: The University of Tennessee, Knoxville (Building/Room TBD)
 
 # Table of Contents
 
 - [Overview](#overview)
 - [Intended Audience](#intended-audience)
 - [Time Table](#time-table)
+- [Materials](#materials)
 - [Links](#links)
 - [Past Workshops](#past-workshops)
 - [Organizers](#organizers)
@@ -45,14 +49,19 @@ Researchers, engineers, and students working in medical robotics and image-guide
 
 | Time   | Agenda                                                                           | Speaker         |
 |--------|----------------------------------------------------------------------------------|:---------------:|
-| TBD    | **Session 1: Showcasing Medical Robotics Research with Open Source Software and In Silico Simulation Tools (1.5 hours)** | |
+| 9:00   | **Session 1: Showcasing Medical Robotics Research with Open Source Software and In Silico Simulation Tools (1.5 hours)** | |
 |        | Overview of open-source platforms for image-guided robotic surgical systems      | TBD             |
-|        | Interoperability among 3D Slicer, ROS2, AMBF, NVIDIA Isaac, Gazebo, and SOFA    | Adnan Munawar   |
+|        | Interoperability among 3D Slicer, ROS2, AMBF, NVIDIA Isaac, Gazebo, and SOFA     | Adnan Munawar   |
 |        | TBD                                                                              | Rafael Palomar  |
 |        | TBD                                                                              | Ruofeng Wei     |
-| TBD    | **Session 2: Hands-On Tutorial on In Silico Medical Robot Testing (1.5 hours)** | |
-|        | In silico evaluation of an example surgical robot in a virtual patient using 3D Slicer, ROS2, and Gazebo | TBD |
+| 10:00  | **Session 2: Hands-On Tutorial on In Silico Medical Robot Testing (Part 1)**     | Junichi Tokuda  |
+|        | In silico evaluation of an example surgical robot in a virtual patient using 3D Slicer, ROS2, and Gazebo ||
+| 11:00  | **Session 3: Hands-On Tutorial on In Silico Medical Robot Testing (Part 2)**     | Laura Connolly  |
 
+
+- [Materials](#materials)
+
+We will post materials here a week before the event.
 
 # Links
 
