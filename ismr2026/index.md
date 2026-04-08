@@ -47,9 +47,6 @@ Researchers, engineers, and students working in medical robotics and image-guide
 |-------|-------------------------------------------------------------------------------------------------|:--------------:|
 | 9:00  | **Session 1: Showcasing Medical Robotics Research with Open Source Software and In Silico Simulation Tools** | |
 |       | Overview of open-source platforms for image-guided robotic surgical systems                     | TBD            |
-|       | Interoperability among 3D Slicer, ROS2, AMBF, NVIDIA Isaac, Gazebo, and SOFA                   | Adnan Munawar  |
-|       | TBD                                                                                             | Rafael Palomar |
-|       | TBD                                                                                             | Ruofeng Wei    |
 | 10:30 | **Session 2: Hands-On Tutorial on In Silico Medical Robot Testing (Part 1)**                    | Junichi Tokuda |
 |       | In silico evaluation of an example surgical robot in a virtual patient using 3D Slicer, ROS2, and Gazebo | |
 | 11:30 | **Session 3: Hands-On Tutorial on In Silico Medical Robot Testing (Part 2)**                    | Laura Connolly |
@@ -88,6 +85,10 @@ We will post materials here a week before the event.
 - [**Anton Deguet**](https://malonecenter.jhu.edu/people/anton-deguet/), Johns Hopkins University, Baltimore, MD, USA
 - [**Axel Krieger**](https://me.jhu.edu/faculty/axel-krieger/), Johns Hopkins University, Baltimore, MD, USA
 - [**Pedro Moreira**](https://tokuda-lab.bwh.harvard.edu/team/pedro-moreira/), Brigham and Women's Hospital and Harvard Medical School, Boston, MA, USA
+
+# Acknowledgements
+
+This work is supported in part by NIH (R01EB020667, R01EB034359, R01EB036015, R01CA235134, P41EB028741).
 
 
 # Contact
