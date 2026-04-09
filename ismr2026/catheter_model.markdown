@@ -21,7 +21,7 @@ $ python3 <path to the script>/catheter_urdf_generator.py --N 12 --D 0.003 --L1 
 ~~~~
 The URDF can be published in the ROS network using the following command:
 ~~~~
-$ ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$( xacro /home/junichi/ros2_ws/src/my_catheter/urdf/my_catheter.xacro )"
+$ ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$( xacro /home/user/ros2_ws/src/my_catheter/urdf/my_catheter.xacro )"
 ~~~~
 To visualize using RViz and control the joint angles with the joint_state_publisher_gui, open a new terminal and use the following commands:
 ~~~~

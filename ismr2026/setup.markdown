@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SlicerROS2 Setup for ISMR2026
+title: SlicerROS2 Setup for ISMR2026 -- OS Environment
 permalink: /ismr2026/setup.html
 ---
 
@@ -76,6 +76,12 @@ To biuld the ROSMED image, run the following command (assuming that the base ima
 $ git clone https://github.com/rosmed/vastai-docker-image
 $ cd vastai-docker-image
 $ docker build --build-arg VAST_BASE=rosmed/linux-desktop-slim:cuda-12.9-ubuntu24.04-2026-03-24-slim -t rosmed/linux-desktop-rosmed:cuda-12.9-ubuntu24.04-2026-03-25 -f derivatives/linux-desktop-rosmed/Dockerfile derivatives/linux-desktop-rosmed
+~~~~
+
+To push the image:
+
+~~~~
+$ docker push rosmed/linux-desktop-rosmed:cuda-12.9-ubuntu24.04-2026-03-25
 ~~~~
 
 
