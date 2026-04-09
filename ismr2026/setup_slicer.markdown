@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SlicerROS2 Setup for ISMR2026 -- 3D Slicer Extensions
-permalink: /ismr2026/setup.html
+permalink: /ismr2026/slicer_setup.html
 ---
 
 
