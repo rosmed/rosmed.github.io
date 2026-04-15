@@ -1,3 +1,10 @@
+---
+layout: page
+title: ISMR26 Workshop/ SlicerROS2 as an In Silico Testing Environment for Medical Robotics Research
+permalink: /ismr2026/tutorial_index.html
+---
+
+
 # ISMR2026 Tutorial
 
 
