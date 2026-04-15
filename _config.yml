@@ -35,13 +35,13 @@ plugins:
   - jemoji
 
 header_pages:
-#  - index.markdown
-  - tutorials.markdown
-  - software.markdown
-  - hardware.markdown
-  - events.markdown
-  - team.markdown
-  - refs.markdown
+#  - index.md
+  - tutorials.md
+  - software.md
+  - hardware.md
+  - events.md
+  - team.md
+  - refs.md
 
 # Google Analytics 4
 google_analytics_4: 'G-0XYP6TJ9ET'
