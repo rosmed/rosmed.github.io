@@ -13,7 +13,7 @@ For the ISMR2026 workshop, we will use Vast.ai to run the Linux desktop environm
 ## Step 1: Open the ISMR2026 Tutorial Template
 
 Click the following link to open the tutorial template in the Vast.ai Console:
-[ISMR2026 Tutorial Template](https://cloud.vast.ai?ref_id=424992&template_id=6072a53b0c32f0ac80aebee5462852ad)
+[ISMR2026 Tutorial Template](https://cloud.vast.ai?ref_id=424992&template_id=8dc667bcbe3627327750f6dc1af8bc8c)
 
 Alternatively, log in to Vast.ai, navigate to **Templates** in the left sidebar, and find the **ISMR2026 Tutorial** template. It is tagged with Cuda 12.9, SSH, and Jupyter.
 
