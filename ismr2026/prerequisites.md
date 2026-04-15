@@ -26,15 +26,42 @@ You can use either a pre-configured Docker image, or a native Linux machine (Ubu
 
 ### Option 1: Use the Linux desktop environment on the cloud through vast.ai
 
-Vast.ai is a low-cost, public cloud-based marketplace for renting GPUs, often described as an "Airbnb for GPUs." It allows users to rent underutilized GPUs from data centers or private individuals for AI and other computing that require GPUs. Users can launch a new Linux instance with preloaded software packages from a "template." The template for this tutorial can be found at [ISMR2026 Tutorial Template](https://cloud.vast.ai?ref_id=424992&template_id=6072a53b0c32f0ac80aebee5462852ad).
+Vast.ai is a low-cost, public cloud-based marketplace for renting GPUs, often described as an "Airbnb for GPUs." It allows users to rent underutilized GPUs from data centers or private individuals for AI and other computing that require GPUs. Users can launch a new Linux instance with preloaded software packages from a "template."
 
-To create a new instance using this template:
+The Linux desktop environment can be created and used in a browser (e.g., Chrome, Safari). Follow the steps below to set up your vast.ai account before the tutorial.
 
-1. Open the above link.
-2. Select a machine from the list by clicking the `RENT` button. Besides the price, choose a machine with a decent spec in nearby area. Performance, especially the loading time depends on the machine.
-3. The instance starts as soon as the machine is selected. Open the `Instances` page (by clicking "instances" on the left menu) and wait until the blue button becomes `Open`.
-4. Click the `Open` button. The browser opens a new Window (Make sure that your browser allows a new pop-up window before this) with a list of applications.
-5. Click the `Launch Application` button in either `Selkies Low Latency Desktop` or `Apache Guacamole Desktop (VNC)`. Either button opens a new window with the desktop GUI, though Selkies may offer better performance because it uses a newer mechanism (WebRTC). If Selkies does not work, try VNC. It may take for a while before the desktop environment becomes ready.
+#### Step 1: Go to the vast.ai website
+
+Navigate to [vast.ai](https://vast.ai) and click the **Console** button in the top-right corner.
+
+![vast.ai homepage](images/vastai_setup_1_top.png)
+
+#### Step 2: Open the Console
+
+The Console shows available GPU machines for rent. You will need to log in (or create an account) before renting a machine. Click the **Login** button in the top-right corner.
+
+![vast.ai console](images/vastai_setup_2_console.png)
+
+#### Step 3: Log in or Sign Up
+
+If you already have an account, enter your credentials. If not, click **Sign Up** at the bottom of the login dialog to create a free account. You can also sign in with Google or GitHub.
+
+![Log in dialog](images/vastai_setup_3_sign_up.png)
+
+#### Step 4: Access the ISMR2026 Tutorial Template
+
+After logging in, open the tutorial template by clicking this link: [ISMR2026 Tutorial Template](https://cloud.vast.ai?ref_id=424992&template_id=6072a53b0c32f0ac80aebee5462852ad). The left panel of the Console will show the **ISMR2026 Tutorial** template selected, and the main panel will list available GPU machines you can rent.
+
+![Console with ISMR2026 template loaded](images/vastai_setup_4_login.png)
+
+#### Step 5: Add Credits to Your Account
+
+You must add credits before renting a machine. In the left sidebar, click **Billing**, then click **Add Credit** to add funds to your account. A few dollars is typically sufficient for the tutorial duration.
+
+![Billing page](images/vastai_setup_5_billing.png)
+
+Once your account is funded, you are ready to launch an instance. See [Launching a Container on Vast.ai](container.html) for detailed instructions on renting a machine and starting the desktop environment.
+
 
 ### Option 2: Native Linux Machine
 
