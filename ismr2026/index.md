@@ -55,8 +55,7 @@ Researchers, engineers, and students working in medical robotics and image-guide
 
 # Materials
 
-We will post materials here a week before the event.
-
+- [Prerequisite](/ismr2026/prerequisites)
 
 # Links
 
