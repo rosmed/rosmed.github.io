@@ -7,6 +7,9 @@ permalink: /ismr2026/tutorial_index.html
 
 # ISMR2026 Tutorial
 
+<video autoplay muted loop playsinline style="width:50%;border-radius:6px;margin-bottom:1em;">
+  <source src="images/slicerros2_cath_sim.mp4" type="video/mp4">
+</video>
 
 ## Tutorial Workflow
 - [Prerequisite](/ismr2026/prerequisites)
