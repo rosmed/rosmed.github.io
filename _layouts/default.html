@@ -16,6 +16,38 @@
 
     {%- include footer.html -%}
 
+    <!-- Lightbox -->
+    <div id="lightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;cursor:zoom-out;align-items:center;justify-content:center;">
+      <img id="lightbox-img" style="max-width:95vw;max-height:95vh;object-fit:contain;box-shadow:0 4px 32px rgba(0,0,0,0.6);">
+    </div>
+    <script>
+      (function() {
+        var lb = document.getElementById('lightbox');
+        var lbImg = document.getElementById('lightbox-img');
+
+        document.querySelectorAll('.post-content img, .page-content img').forEach(function(img) {
+          img.style.cursor = 'zoom-in';
+          img.addEventListener('click', function() {
+            lbImg.src = img.src;
+            lbImg.alt = img.alt;
+            lb.style.display = 'flex';
+          });
+        });
+
+        lb.addEventListener('click', function() {
+          lb.style.display = 'none';
+          lbImg.src = '';
+        });
+
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') {
+            lb.style.display = 'none';
+            lbImg.src = '';
+          }
+        });
+      })();
+    </script>
+
   </body>
 
 </html>
