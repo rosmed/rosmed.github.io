@@ -24,7 +24,7 @@ The workflow has five main stages:
 Open a terminal in the Linux desktop and run the startup script:
 
 ```bash
-cd ~/workspace
+cd  # Change the current directory to home
 ./start-slicer-ros2.bash
 ```
 
@@ -121,19 +121,9 @@ In the Segmentations panel, the full list of segmented structures is shown. To i
 
 ### Step 14: Select the Structures You Need
 
-Scroll through the segment list and select the anatomical structures relevant to your application. For a cardiovascular model, select the heart, aorta, pulmonary vein, and major vessels. The 3D view updates to show only the selected structures.
+Scroll through the segment list and select the anatomical structures relevant to your application. For this tutorial, select the heart, aorta, pulmonary vein, and major vessels, though the aorta is the only structure we need for the catheter simulation. The 3D view updates to show only the selected structures.
 
 ![Segment list with heart selected and 3D view showing the heart](images/anatom2_15_select_segments.png)
-
-### Step 15: Switch to Segment Editor
-
-From the Modules menu, navigate to **Segment Editor** (or click the **Segment Editor** button in the toolbar).
-
-![Modules menu navigating to Segment Editor](images/anatom2_16_open_editor.png)
-
-Continue selecting additional segments as needed. The 3D view will update as you add structures.
-
-![Segment Editor with multiple vessel segments selected, showing 3D heart and vessel model](images/anatom2_17_select_segments.png)
 
 ---
 
@@ -141,9 +131,15 @@ Continue selecting additional segments as needed. The 3D view will update as you
 
 Hollowing the segments converts solid volumetric segmentations into thin-shell surface models, which are more suitable for 3D printing or visualization.
 
+### Step 15: Switch to Segment Editor
+
+From the Modules menu, navigate to **Segment Editor** (or click the **Segment Editor** button in the toolbar).
+
+![Modules menu navigating to Segment Editor](images/anatom2_16_open_editor.png)
+
 ### Step 16: Open the Hollow Effect
 
-In the Segment Editor, select the **heart** segment from the list. Then click the **Hollow** effect button in the effects toolbar.
+In the Segment Editor, select any segment that are visible (i.e., one selected in the previous step in the Segmentations) from the list. Then click the **Hollow** effect button in the effects toolbar.
 
 ![Segment Editor with heart selected and Hollow effect panel open](images/anatom2_18_open_hollow.png)
 
@@ -151,14 +147,14 @@ In the Segment Editor, select the **heart** segment from the list. Then click th
 
 Set the following parameters:
 - **Use current segment as**: inside surface
-- **Shell thickness**: 1.00 mm
-- Check **Apply to visible segments** to hollow all visible segments at once
+- **Shell thickness**: 3.00 mm
+- Check **Apply to visible segments** to hollow all visible segments at once 
 
 ![Hollow effect panel showing inside surface and 1mm shell thickness settings](images/anatom2_19_hollow.png)
 
 ### Step 18: Set Apply to Visible Segments
 
-In the **Apply to visible segments** dropdown, select **Visible** to process all currently visible segments.
+Select the **Apply to visible segments** checkbox to process all currently visible segments.
 
 ![Apply to visible segments dropdown set to Visible](images/anatom2_20_apply_visible.png)
 
@@ -230,7 +226,7 @@ The models folder contains one node per exported segment (heart, aorta, pulmonar
 
 ### Step 27: Delete the CT Volume and Segmentation Nodes
 
-Right-click the **CTChest** volume node and select **Delete**.
+Right-click the **CTChest** volume node and **CTChest segmentation**, and select **Delete**. Do not delete **Chest segmentation-models**.
 
 ![Right-click context menu on CTChest node showing Delete option](images/anatom2_30_delete_nodes.png)
 
@@ -260,21 +256,21 @@ Right-click the now-empty **CTChest segmentation-models** folder and select **De
 
 ### Step 30: Rename the Model Nodes
 
-Right-click each model node and select **Rename** to give it a clean, descriptive name (e.g., `heart`, `aorta`, `pulmonary_vein`).
+To avoid ' ' (space) in the file names, replace the all spaces in the node names with '_' (underscore). To do so, right-click each model node and select **Rename**.
 
 ![Right-click context menu on a model node showing Rename option](images/anatom2_36_rename_nodes.png)
 
-Enter the new name in the rename dialog and click **OK**.
+Edit the name to replace the space(s) with underscore(s) in the rename dialog and click **OK**.
 
 ![Rename dialog with new name left_atrial_appendage entered](images/anatom2_37_rename_nodes.png)
 
-Repeat for each model node. When finished, the scene tree will show all models with clean names, and the 3D view will display the complete anatomical model.
+Repeat for each model node with a name that contains any underscore.
 
 ![Scene tree with all models renamed and 3D view showing the complete vascular model](images/anatom2_38_open_save.png)
 
 ---
 
-## Part 7: Save as STL Files
+## Part 7: Save the Slicer scene
 
 ### Step 31: Open the Save Dialog
 

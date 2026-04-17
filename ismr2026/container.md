@@ -10,12 +10,18 @@ For the ISMR2026 workshop, we will use Vast.ai to run the Linux desktop environm
 
 > **Before you start:** Make sure you have a Vast.ai account and have added credits. See [Prerequisites](prerequisites.html) for account setup instructions.
 
+
+> **For ISMR2026 Participants:** We will add you to the 'ismr2026' team on vast.ai, which allows us to share virtual Linux environments using the workshop's credit. Please send your e-mail address with the conference organizer (tokuda@bwh.harvard.edu). 
+
+Make sure you have a Vast.ai account and have added credits. See [Prerequisites](prerequisites.html) for account setup instructions.
+
+
 ## Step 1: Open the ISMR2026 Tutorial Template
 
 Click the following link to open the tutorial template in the Vast.ai Console:
 [ISMR2026 Tutorial Template](https://cloud.vast.ai?ref_id=424992&template_id=8dc667bcbe3627327750f6dc1af8bc8c)
 
-Alternatively, log in to Vast.ai, navigate to **Templates** in the left sidebar, and find the **ISMR2026 Tutorial** template. It is tagged with Cuda 12.9, SSH, and Jupyter.
+Alternatively, log in to Vast.ai, navigate to **Templates** in the left sidebar, and find the **ISMR2026 Tutorial** template.
 
 ![ISMR2026 Tutorial template on the Templates page](images/vastai_1_template.png)
 
@@ -23,15 +29,22 @@ Alternatively, log in to Vast.ai, navigate to **Templates** in the left sidebar,
 
 After opening the template link, the Console search page will load with the ISMR2026 Tutorial template already selected in the left panel. The main area lists available GPU machines with their specs and hourly prices.
 
-Choose a machine near your location with a reasonable price. Click the **RENT** button next to your chosen machine to launch an instance.
+
+Increase **Container Size** under the **Change Template** button to 64GB. Choose a machine near your location with a reasonable price. Click the **RENT** button next to your chosen machine to launch an instance.
+
+> **For better experience:** A machine with higher network bandwidth can save time for starting up the container. We recommend to turn the "Show Secure Cloud Only" option to limit the list to machines in datacenters.  
+
 
 ![Console search page with ISMR2026 template loaded and GPU list](images/vastai_2_search.png)
 
 ## Step 3: Wait for the Instance to Start
 
-After clicking RENT, you will be taken to the **Instances** page. Your new instance will appear with a **Creating...** button while the container is being set up. The status bar at the bottom will show "Status: not running."
+After clicking RENT, you will be taken to the **Instances** page. Your new instance will appear with a **Creating...** button while the container is being set up. 
 
-This process typically takes a few minutes. You can refresh the page to check progress.
+This process typically takes a few minutes to hours, depending on the machine you chose. You can refresh the page to check progress.
+
+> **To save time:** You can rent multiple machines initially, and use the one which becomes available first. You can destroy the rest. 
+
 
 ![Instances page showing instance being created](images/vastai_3_check_instance.png)
 
@@ -39,9 +52,12 @@ This process typically takes a few minutes. You can refresh the page to check pr
 
 Once the container is ready, the button changes from **Creating...** to **Open**, and the status will show the container is running.
 
-Click the **Open** button. Make sure your browser allows pop-up windows, as the Instance Portal will open in a new window.
+Click the **Open** button. 
 
 ![Instances page with the Open button active and instance running](images/vastai_4_open.png)
+
+> **If you don't see a new browser window:** Make sure your browser allows pop-up windows, as the Instance Portal will open in a new window.
+
 
 ## Step 5: Launch the Desktop Application
 

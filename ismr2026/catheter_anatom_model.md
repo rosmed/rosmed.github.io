@@ -19,13 +19,14 @@ In this tutorial, we combine the anatomical models created in [Creating an Anato
 Navigate to the ROS2 workspace source directory and run the catheter generator with the `--slicer-scene` flag pointing to the anatomy scene saved in the previous tutorial:
 
 ```bash
+ls ~/Documents/anatomy_scene # Check the MRML file name
 cd ~/ros2_ws/src
 python3 ~/flexible_catheter_simulation/catheter_generator.py \
     --controller \
-    --N 50 --D 0.003 --L1 0.04 --L2 0.5 \
-    --K 10.0 --Ef 0.0005 --R 0.5 \
+    --N 50 --D 0.003 --L1 0.04 --L2 0.5 --L3 0.01 \
+    --K 10.0 --Kd 0.1 --Kf 0.01 --M 0.5 \
     --output control_catheter_test \
-    --slicer-scene ~/Documents/anatomy_scene/2026-04-16-Scene.mrel
+    --slicer-scene ~/Documents/anatomy_scene/2026-04-16-Scene.mrml # Replace the MRML file name with the one found above
 ```
 
 The `--slicer-scene` argument reads the anatomy scene file and includes the STL meshes (heart, aorta, vessels, etc.) as static entities in the Gazebo world. The script prints the list of anatomy files it found and includes them as `anatomy_link_*` bodies in the generated package.
@@ -43,7 +44,7 @@ cd ..
 colcon build
 ```
 
-Wait for the build to complete, then launch the simulation.
+Wait for the build to complete, then launch the simulation (see below).
 
 ---
 
@@ -74,7 +75,7 @@ Continue zooming to see the catheter and anatomy detail. The catheter starts abo
 
 ![Further zoomed Gazebo and RViz views showing catheter and anatomy alignment](images/catheter_anatom_6_gazebo_zoom.png)
 
-In RViz, the anatomy is rendered as colored surface models with the catheter visible as a thin line entering from below.
+In RViz, the anatomy is rendered as colored surface models with the catheter visible as a thin line entering from below. In Gazebo, the anatomy may be hidden under the ground (z=0) and invisible until bringing the view point below the ground. 
 
 ![RViz zoomed view showing heart and vessels with catheter entering from below](images/catheter_anatom_7_rviz_zoom.png)
 
@@ -89,7 +90,7 @@ The catheter spawns at the world origin by default, which may place it inside or
 Stop the current simulation (Ctrl+C in the launch terminal), then relaunch with the offset:
 
 ```bash
-ros2 launch control_catheter_test control_catheter_test_launch.py initial_z:=-0.5
+ros2 launch control_catheter_test control_catheter_test_launch.py initial_z:=-0.9
 ```
 
 ![Terminal showing the relaunch command with initial_z:=-0.5 argument](images/catheter_anatom_8_launch_catheter_w_offset.png)
@@ -116,7 +117,7 @@ A / D   → CCW    / CW       (Z rot)
 Q       → Quit
 ```
 
-Press **W** repeatedly to advance the catheter upward into the anatomy. Use the rotation and translation keys to steer it toward the target vessel. The RViz view will show the catheter bending and advancing through the anatomical structures in real time.
+Use `↑`, `↓`, `←`, `→` keys to align the catheter to the aorta entry (the red large vessel). Once it is aligned, press **W** repeatedly to advance the catheter upward into the anatomy. The RViz view will show the catheter bending and advancing through the anatomical structures in real time.
 
 ![RViz showing catheter inserted into the heart anatomy from below, bending inside the vessel](images/catheter_anatom_10_align_catheter.png)
 
@@ -126,9 +127,10 @@ Press **W** repeatedly to advance the catheter upward into the anatomy. Use the 
 
 ### Step 8: Source the Workspace and Start Slicer
 
-Open a new terminal, source the workspace, and start 3D Slicer:
+Open a new terminal, source `~/ros2_ws/install/setup.bash`, and start 3D Slicer:
 
 ```bash
+cd # Move to the home directory
 source ros2_ws/install/setup.bash
 ./start-slicer-ros2.bash
 ```
@@ -164,7 +166,7 @@ After loading, the form fields become grayed out and the Slicer 3D view displays
 
 ### Step 11: Adjust the View Angle
 
-Rotate the 3D view to get a good perspective on the catheter inside the anatomy. You can see the heart, aorta, and vessels rendered as solid surface models, with the catheter model running through them.
+Rotate the 3D view to get a good perspective on the catheter inside the anatomy. You can see the heart, aorta, and other vessels rendered as solid surface models, with the catheter model running through the aorta.
 
 ![Slicer 3D view showing heart and vessels with catheter entering from below at a good viewing angle](images/catheter_anatom_16_view_angle.png)
 
@@ -182,11 +184,13 @@ The Models module lists all nodes in the scene, including:
 - `anatomy_link_heart_model`, `anatomy_link_aorta_model`, `anatomy_link_pulmonary_vein_model`, and other vessel models
 - `base_origin_model`, `bending_link_*_model` nodes for each catheter segment
 
-![Models module showing the full list of anatomy and catheter model nodes](images/catheter_anatom_18_select_models.png)
 
 ### Step 13: Adjust Anatomy Opacity
 
-Select an anatomy model node (e.g. a bending link or an anatomy mesh) and adjust the **Opacity** slider in the Display panel. Reducing the opacity of the anatomy models makes the catheter path visible through the vessel walls.
+Select an anatomy model node (i.e., `anatomy_link_*_model`) and adjust the **Opacity** slider in the Display panel to `0.5`. The Display panel is below the node list, and may need to be scrolled down to be visible. Reducing the opacity of the anatomy models makes the catheter path visible through the vessel walls.
+
+![Models module showing the full list of anatomy and catheter model nodes](images/catheter_anatom_18_select_models.png)
+
 
 ![Models module with a model selected and the Opacity slider visible in the Display panel](images/catheter_anatom_19_change_opacity.png)
 
@@ -196,11 +200,11 @@ Select an anatomy model node (e.g. a bending link or an anatomy mesh) and adjust
 
 ### Step 14: Insert the Catheter
 
-With Slicer open and the robot loaded, return to the teleop terminal and use the keyboard to advance and steer the catheter. The 3D Slicer view updates in real time as the catheter moves, showing the insertion path through the anatomy.
+With Slicer open and the robot loaded, return to the teleop terminal and use the keyboard to advance the catheter. The 3D Slicer view updates in real time as the catheter moves, showing the insertion path through the anatomy.
 
 ![Slicer 3D view showing catheter inserted into the anatomy with teleop terminal visible](images/catheter_anatom_20_insert.png)
 
-Continue steering to navigate deeper into the anatomy. The catheter segments bend dynamically as it advances through the vessel geometry.
+Continue inserting to navigate deeper into the anatomy. The catheter segments bend dynamically as it collide with the vessel wall.
 
 ![Slicer 3D view showing catheter advanced further into the anatomy from a different angle](images/catheter_anatom_21_insert.png)
 

@@ -25,6 +25,7 @@ The workflow has four main stages:
 Open a terminal in the Linux desktop and clone the repository:
 
 ```bash
+cd  # Move to the home directory
 git clone https://github.com/rosmed/flexible_catheter_simulation
 ```
 
@@ -47,33 +48,40 @@ source install/setup.bash
 
 ### Step 3: Install Required Python Packages and Generate the Catheter Model
 
-Install the required Python dependencies, then run the catheter generator script to create the ROS2 package:
-
+Install the required Python dependencies: 
 ```bash
 pip install numpy
 pip install catkin-pkg
-cd src
+```
+
+![Terminal showing pip install and the catheter_generator.py command with parameters](images/catheter_4_install_numpy.png)
+
+
+Run the catheter generator script to create the ROS2 package:
+```bash
+cd src  # Move to the home directory
 python3 ~/flexible_catheter_simulation/catheter_generator.py \
     --controller \
-    --N 12 --D 0.003 --L1 0.18 --L2 0.5 \
-    --K 1.0 --Kd 0.0001 --Ef 0.0005 --R 0.5 \
+    --N 12 --D 0.003 --L1 0.20 --L2 0.5 --L3 0.05 --K 0.2 --M 0.5 \ 
     --output control_catheter_test
 ```
 
 The key parameters are:
-- `--N`: number of segments
-- `--D`: segment diameter (m)
-- `--L1`, `--L2`: proximal and distal segment lengths (m)
-- `--K`: joint stiffness
-- `--Kd`: joint damping
-- `--Ef`: external force coefficient
-- `--R`: radius of the catheter cross-section (m)
+- `--N`:  Number of segments
+- `--D`:  Segment diameter (m)
+- `--L1`: Base link length (m)
+- `--L2`: Bending section total lengths (m)
+- `--L3`: Tip link length (m)
+- `--K`:  Joint spring stiffness (Nm/rad)
+- `--M`:  Total catheter mass (Kg)
+- `--Kd`: Joint damping coefficient
+- `--Kf`: Joint friction coefficient
 
-![Terminal showing pip install and the catheter_generator.py command with parameters](images/catheter_4_install_numpy.png)
+
+![Terminal showing the generated package files and the start of colcon build](images/catheter_5_generate_catheter.png)
 
 The script generates a complete ROS2 package named `control_catheter_test` containing the URDF, launch files, world file, and teleop script.
 
-![Terminal showing the generated package files and the start of colcon build](images/catheter_5_generate_catheter.png)
 
 ---
 
@@ -84,7 +92,7 @@ The script generates a complete ROS2 package named `control_catheter_test` conta
 From the `ros2_ws` directory, build the workspace:
 
 ```bash
-cd ..
+cd .. # Move to ~/ros2_ws 
 colcon build
 ```
 
@@ -111,7 +119,7 @@ source install/setup.bash
 Open a new terminal tab (use **New Tab** in Konsole), navigate to the workspace, and source it:
 
 ```bash
-cd ros2_ws
+cd ros2_ws # Move to ~/ros2_ws 
 source install/setup.bash
 ```
 
@@ -129,15 +137,15 @@ ros2 launch control_catheter_test control_catheter_test_launch.py
 
 ![First terminal showing the ros2 launch command](images/catheter_10_launch_catheter.png)
 
-Gazebo Sim and RViz will open. Gazebo shows the 3D simulation environment and RViz shows the robot model topic.
+Gazebo Sim and RViz will open. 
 
 ![Gazebo Sim and RViz windows opening side by side](images/catheter_11_rviz_gazebo.png)
 
-Arrange and resize the windows so both are visible. In Gazebo you will see the simulation world; in RViz, the **RobotModel** display should show Status: Ok.
+Arrange and resize the windows so both are visible. 
 
 ![Windows resized to show Gazebo and RViz side by side](images/catheter_12_window_resize.png)
 
-Zoom in on the Gazebo view to see the catheter model. In the RViz 3D view, the catheter appears as a thin curved line.
+Zoom in on both Gazebo and RViz to see the catheter model.
 
 ![Zoomed-in views showing the catheter in Gazebo and RViz](images/catheter_13_zoom.png)
 
@@ -170,7 +178,7 @@ Catheter Keyboard Teleop
 
 ### Step 9: Control the Catheter
 
-Click on the teleop terminal to give it keyboard focus, then use the keys shown to move and bend the catheter. Both Gazebo and RViz will update in real time as you press keys.
+Click on the teleop terminal to give it keyboard focus, then use the keys shown to move the catheter base (at the bottom). Both Gazebo and RViz will update in real time as you press keys. As the catheter base moves quickly, the catheter bends slightly on both Gazebo and RViz.
 
 ![Gazebo and RViz showing catheter bending in response to teleop input](images/catheter_16_teleop_press_key.png)
 
@@ -186,8 +194,8 @@ You can regenerate the catheter model with different parameters and rebuild. Sto
 cd ~/ros2_ws/src
 python3 ~/flexible_catheter_simulation/catheter_generator.py \
     --controller \
-    --N 0.38 --D 0.003 --L1 0.18 --L2 0.5 \
-    --K 1.0 --Kd 0.0001 --Ef 0.0005 --R 0.5 \
+    --N 30 --D 0.003 --L1 0.10 --L2 0.5 --L3 0.05 \
+    --K 1.0 --Kd 0.0001 --Kf 0.0005 --M 0.5 \
     --output control_catheter_test
 ```
 
@@ -213,7 +221,7 @@ ros2 launch control_catheter_test control_catheter_test_launch.py
 
 ![Terminal showing the relaunch command after rebuild](images/catheter_19_launch_catheter.png)
 
-Relaunch the teleop in the second terminal as before. Both Gazebo and RViz will show the updated catheter model.
+Relaunch the teleop in the second terminal as before and press keys to move the catheter base. The shaft of the catheter looks more flexible than Step 9. 
 
 ![Gazebo, RViz, and teleop terminal all visible with updated catheter model](images/catheter_20_teleop.png)
 
@@ -274,7 +282,7 @@ The 3D view will now show the catheter robot model as a line, matching the pose 
 
 ![Slicer 3D only view showing the catheter model](images/catheter_28_change_view.png)
 
-### Step 19: Control the Catheter from All Three Viewers
+### Step 19: Compare the Catheter Shape on All Three Viewers
 
 Click the teleop terminal and use the keyboard controls to move the catheter. Gazebo, RViz, and 3D Slicer will all update simultaneously, showing the catheter pose in real time across all three environments.
 

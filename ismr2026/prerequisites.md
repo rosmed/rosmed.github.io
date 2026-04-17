@@ -22,13 +22,15 @@ If you're new to these concepts, we recommend reviewing the following resources 
 
 ## Computer Environment
 
-You can use either a pre-configured Docker image, or a native Linux machine (Ubuntu 24.04).
+You can use either a pre-configured virtual Linux desktop environment available on [vast.ai](https://vast.ai/), or a native Linux machine (Ubuntu 24.04).
 
-### Option 1: Use the Linux desktop environment on the cloud through vast.ai
+### Option 1: Use the virtual Linux desktop environment on the cloud through vast.ai
 
 Vast.ai is a low-cost, public cloud-based marketplace for renting GPUs, often described as an "Airbnb for GPUs." It allows users to rent underutilized GPUs from data centers or private individuals for AI and other computing that require GPUs. Users can launch a new Linux instance with preloaded software packages from a "template."
 
 The Linux desktop environment can be created and used in a browser (e.g., Chrome, Safari). Follow the steps below to set up your vast.ai account before the tutorial.
+
+> **For ISMR2026 Participants:** We will add you to the 'ismr2026' team on vast.ai, which allows us to share virtual Linux environments using the workshop's credit. Please send your e-mail address with the conference organizer (tokuda@bwh.harvard.edu). 
 
 #### Step 1: Go to the vast.ai website
 
