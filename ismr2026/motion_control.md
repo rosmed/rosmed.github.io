@@ -204,11 +204,11 @@ In the Data module, click the **Transform hierarchy** tab to expose the scene's 
 
 ### Step 24: Drag Each Model onto Its Target Transform
 
-Expand the robot transform tree and drag each loaded model onto the corresponding goal transform:
-- End-effector mesh → `tool0_goal_transform`
-- Spine model → `world_goal_transform`
+Expand the robot transform tree and drag each loaded end-effector model onto the corresponding goal transform:
+- ur5_stylus → `ros2:tf2_lookup:wrist_3_linkToFlange`
+- ur5_stylus_goal → `tool0_goal_transform`
 
-Once the models are reparented, they follow the robot as its pose updates.
+Once the models are reparented, they follow the robot as its pose updates. Note that in practice these should be added through the urdf file, this is a quick workaround for the purpose of this tutorial.
 
 ![Transform hierarchy showing the expanded goal-transform tree with models attached](images/interactive_session_25_drag_models_to_transforms.png)
 
