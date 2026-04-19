@@ -52,7 +52,8 @@ If you already have an account, enter your credentials. If not, click **Sign Up*
 
 #### Step 4: Access the ISMR2026 Tutorial Template
 
-After logging in, open the tutorial template by clicking this link: [ISMR2026 Tutorial Template](https://cloud.vast.ai?ref_id=424992&template_id=6072a53b0c32f0ac80aebee5462852ad). The left panel of the Console will show the **ISMR2026 Tutorial** template selected, and the main panel will list available GPU machines you can rent.
+After logging in, open the tutorial template by clicking this link: [ISMR2026 Tutorial Template v2](https://cloud.vast.ai?ref_id=440803&template_id=957841858d260f6ed9dbdf35e7d74217).
+ The left panel of the Console will show the **ISMR2026 Tutorial** template selected, and the main panel will list available GPU machines you can rent.
 
 ![Console with ISMR2026 template loaded](images/vastai_setup_4_login.png)
 
