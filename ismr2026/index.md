@@ -47,12 +47,16 @@ Researchers, engineers, and students working in medical robotics and image-guide
 
 | Time  | Agenda                                                                                          | Speaker        |
 |-------|-------------------------------------------------------------------------------------------------|:--------------:|
-| 9:00  | **Session 1: Showcasing Medical Robotics Research with Open Source Software and In Silico Simulation Tools** | |
-|       | Overview of open-source platforms for image-guided robotic surgical systems                     | TBD            |
-| 10:30 | **Session 2: Hands-On Tutorial on In Silico Medical Robot Testing (Part 1)**                    | Junichi Tokuda |
-|       | In silico evaluation of an example surgical robot in a virtual patient using 3D Slicer, ROS2, and Gazebo | |
-| 11:30 | **Session 3: Hands-On Tutorial on In Silico Medical Robot Testing (Part 2)**                    | Laura Connolly |
-| 12:30 | Closing                                                                                         |                |
+| 9:00  | **Introduction, Logistics, Tutorial Preparation**                                               |                |
+|       | **Session 1: Showcasing Medical Robotics Research with Open Source Software and In Silico Simulation Tools** | |
+| 9:15  | 3D Slicer as a platform for image-guided robot-assisted needle insertion                        | Junichi Tokuda |
+| 9:30  | SlicerCR: Open-Source Continuum Robot Visualization and Control Architecture in 3D Slicer       | Yue Chen       |
+|       | **Session 2: Hands-On Tutorial on In Silico Medical Robot Testing (Part 1)**                    |                |
+| 9:45  | In silico evaluation of a flexible catheter in a virtual patient using 3D Slicer, ROS2, and Gazebo | Junichi Tokuda|
+| 10:30 | **Coffee Break**                                                                                |                |
+|       | **Session 3: Hands-On Tutorial on In Silico Medical Robot Testing (Part 2)**                    |                |
+| 11:00 | ROS2 Motion Planning and Control with SlicerROS2                                                | Laura Connolly |
+| 12:00 | Closing                                                                                         |                |
 
 
 # Materials
