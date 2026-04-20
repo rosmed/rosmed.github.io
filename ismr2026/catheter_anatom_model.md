@@ -130,9 +130,8 @@ Use `↑`, `↓`, `←`, `→` keys to align the catheter to the aorta entry (th
 Open a new terminal, source `~/ros2_ws/install/setup.bash`, and start 3D Slicer:
 
 ```bash
-cd # Move to the home directory
-source ros2_ws/install/setup.bash
-./start-slicer-ros2.bash
+source ~/ros2_ws/install/setup.bash 
+ros2 launch slicer_ros2_module slicer.launch.py 
 ```
 
 ![Terminal showing source and start-slicer-ros2.bash commands with simulation running in background](images/catheter_anatom_11_source.png)

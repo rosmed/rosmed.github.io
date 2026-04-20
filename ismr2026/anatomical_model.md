@@ -24,8 +24,8 @@ The workflow has five main stages:
 Open a terminal in the Linux desktop and run the startup script:
 
 ```bash
-cd  # Change the current directory to home
-./start-slicer-ros2.bash
+source ~/ros2_ws/install/setup.bash 
+ros2 launch slicer_ros2_module slicer.launch.py 
 ```
 
 ![Terminal showing the start-slicer-ros2.bash command](images/anatom2_1_open_slicer.png)

@@ -18,7 +18,7 @@ The detailed instruction can be found on [the SlicerNNInteractive GitHub reposit
 
 The 3D Slicer Extension is available on the ExtensionsManager and can be installed with the following steps:
 
-1. Open 3D Slicer. On the ISMR2026 vast.ai container, run `./start-slicer-ros2.bash` under `/home/user` on the terminal.
+1. Open 3D Slicer. On the ISMR2026 vast.ai container, run `source ~/ros2_ws/install/setup.bash; ros2 launch slicer_ros2_module slicer.launch.py` on the terminal.
 2. Open the Extensions Manager (`View` -> `Extensions Manager`).
 3. Open the `Install Extensions` tab, and go to the `Segmentation` category.
 4. Find `nnInteractive`. (Can be found by typing "nnInteractive" in the search box at the top right corner of the Extensions Manager window.)
