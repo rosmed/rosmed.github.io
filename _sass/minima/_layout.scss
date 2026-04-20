@@ -9,7 +9,7 @@
   background-size: 36px 36px;
   border-top: none;
   border-bottom: 3px solid $accent-color;
-  min-height: $spacing-unit * 2.2;
+  min-height: $spacing-unit * 1.5;
   position: relative;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
@@ -18,10 +18,11 @@
   @include relative-font-size(1.75);
   font-family: $display-font-family;
   font-weight: 700;
-  line-height: $base-line-height * $base-font-size * 2.6;
+  line-height: $base-line-height * $base-font-size * 1.6;
   letter-spacing: 0.3px;
   margin-bottom: 0;
-  padding-top: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   float: left;
 
   &,
@@ -39,15 +40,21 @@
   position: absolute;
   top: calc(50% - 26px);
   right: $spacing-unit / 2;
-  background-color: darken($header-bg, 4%);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 52px;
   border-radius: 6px;
-  text-align: right;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   z-index: 10;
+  transition: width 0s;
 
   .nav-trigger {
     display: none;
+  }
+
+  // Show border/background only when open
+  &:has(input:checked) {
+    width: auto;
+    background-color: darken($header-bg, 4%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   }
 
   label[for="nav-trigger"] {
@@ -76,12 +83,22 @@
   }
 
   input ~ .trigger {
-    display: none;
+    padding-top: 52px;
+    padding-bottom: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.9);
+    transform-origin: top right;
+    max-height: 0;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.2s ease,
+                max-height 0.25s ease;
   }
 
   input:checked ~ .trigger {
-    display: block;
-    padding-top: 52px;
+    opacity: 1;
+    transform: scale(1);
+    max-height: 500px;
     padding-bottom: 8px;
   }
 
