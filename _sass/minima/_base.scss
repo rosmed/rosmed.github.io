@@ -159,24 +159,31 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
-  border-radius: 4px;
-  background-color: #f4f6f9;
+  border-radius: 6px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 }
 
 code {
   padding: 2px 6px;
+  background-color: rgba($brand-color, 0.08);
+  border: 1px solid rgba($brand-color, 0.18);
+  color: darken($brand-color, 15%);
 }
 
 pre {
-  padding: 10px 14px;
+  padding: 16px 20px;
   overflow-x: auto;
+  background-color: #1a1f2e;
+  border: 1px solid #2d3448;
+  color: #cdd6f4;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
 
   > code {
     border: 0;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
     background: none;
+    color: inherit;
+    font-size: inherit;
   }
 }
 

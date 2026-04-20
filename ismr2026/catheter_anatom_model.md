@@ -219,4 +219,4 @@ In this tutorial, you:
 - Connected 3D Slicer to the simulation via SlicerROS2
 - Navigated the catheter through the anatomical models using keyboard teleop, visualized simultaneously across Gazebo, RViz, and Slicer
 
-[Back to Workshop Page](index.html) | [Go to Next Step](motion_control.html)
+<div class="tutorial-nav"><a href="index.html" class="btn-secondary">Back to Workshop Page</a><a href="motion_control.html" class="btn-primary">Go to Next Step →</a></div>

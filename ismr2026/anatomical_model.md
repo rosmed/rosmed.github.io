@@ -322,4 +322,4 @@ The STL files are now saved to `~/Documents/anatomy_scene/` and are ready to be 
 
 ---
 
-[Back to Workshop Page](index.html) | [Go to Next Step](catheter_model.html)
+<div class="tutorial-nav"><a href="index.html" class="btn-secondary">Back to Workshop Page</a><a href="catheter_model.html" class="btn-primary">Go to Next Step →</a></div>

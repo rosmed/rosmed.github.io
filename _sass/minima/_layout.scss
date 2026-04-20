@@ -36,115 +36,68 @@
 }
 
 .site-nav {
-  float: right;
-  line-height: $base-line-height * $base-font-size * 2.6;
+  position: absolute;
+  top: calc(50% - 26px);
+  right: $spacing-unit / 2;
+  background-color: darken($header-bg, 4%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  text-align: right;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  z-index: 10;
 
   .nav-trigger {
     display: none;
   }
 
+  label[for="nav-trigger"] {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
   .menu-icon {
+    display: block;
+    width: 52px;
+    height: 52px;
+    line-height: 0;
+    padding-top: 16px;
+    text-align: center;
+    pointer-events: none;
+
+    > svg {
+      fill: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  input ~ .trigger {
     display: none;
   }
 
+  input:checked ~ .trigger {
+    display: block;
+    padding-top: 52px;
+    padding-bottom: 8px;
+  }
+
   .page-link {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.8125rem;
-    font-weight: 500;
-    letter-spacing: 0.08em;
+    display: block;
+    padding: 6px 16px;
+    color: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 1rem;
     line-height: $base-line-height;
-    position: relative;
-    padding-bottom: 4px;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: $accent-color;
-      transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &:not(:last-child) {
-      margin-right: 22px;
-    }
+    white-space: nowrap;
 
     &:hover {
       color: #ffffff;
       text-decoration: none;
-
-      &::after {
-        width: 100%;
-      }
-    }
-  }
-
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: darken($header-bg, 4%);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 6px;
-    text-align: right;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-
-    label[for="nav-trigger"] {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 36px;
-      z-index: 2;
-      cursor: pointer;
-    }
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        fill: rgba(255, 255, 255, 0.9);
-      }
-    }
-
-    input ~ .trigger {
-      clear: both;
-      display: none;
-    }
-
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 8px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 6px 12px;
-      color: rgba(255, 255, 255, 0.9);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-size: 0.8rem;
-
-      &::after {
-        display: none;
-      }
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-
-      &:hover {
-        color: #ffffff;
-      }
     }
   }
 }
@@ -354,6 +307,55 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
+
+  img {
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba($brand-color, 0.1);
+    display: block;
+    margin: $spacing-unit / 2 0;
+  }
+
+  .tutorial-nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: $spacing-unit * 1.5;
+    padding-top: $spacing-unit;
+    border-top: 1px solid rgba($brand-color, 0.15);
+
+    a {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 0.9375rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+
+      &.btn-secondary {
+        border: 2px solid $brand-color;
+        color: $brand-color;
+        background: transparent;
+
+        &:hover {
+          background: $brand-color;
+          color: #fff;
+        }
+      }
+
+      &.btn-primary {
+        background: $brand-color;
+        color: #fff;
+        border: 2px solid $brand-color;
+
+        &:hover {
+          background: darken($brand-color, 10%);
+          border-color: darken($brand-color, 10%);
+        }
+      }
+    }
+  }
 
   h1 {
     @include relative-font-size(1.875);

@@ -92,4 +92,4 @@ You are now ready to proceed with the tutorial.
 
 > **Important:** Remember to **destroy your instance** when you are done to avoid ongoing charges. On the Instances page, click the trash can icon to destroy the instance. Simply stopping the instance will still incur storage charges.
 
-[Back to Workshop Page](index.html) | [Go to Next Step](anatomical_model.html)
+<div class="tutorial-nav"><a href="index.html" class="btn-secondary">Back to Workshop Page</a><a href="anatomical_model.html" class="btn-primary">Go to Next Step →</a></div>

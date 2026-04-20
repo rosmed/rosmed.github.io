@@ -61,7 +61,20 @@ Researchers, engineers, and students working in medical robotics and image-guide
 
 # Materials
 
+The tutorial sessions will follow the workflow outlined in the following pages. Participants are expected to perform in silico testing using SlicerROS2 using a cloud-based Linux desktop environment provided by this workshop. The all materials of this hands-on tutorial, including source codes and instructions, are all open-sourced and provided free of charge. 
+
+## Preparation
 - [Prerequisite](/ismr2026/prerequisites)
+- [Launching a container on vast.ai](/ismr2026/container)
+
+## Session 2
+- [Creating an anatomical model on 3D Slicer](/ismr2026/anatomical_model)
+- [Creating and testing a catheter model on ROS/Gazebo/3D Slicer](/ismr2026/catheter_model)
+- [Creating and testing catheter and anatomical model](/ismr2026/catheter_anatom_model)
+
+## Session 3
+- [Motion Control with SlicerROS2l](/ismr2026/motion_control)
+
 
 # Links
 
@@ -90,6 +103,12 @@ Researchers, engineers, and students working in medical robotics and image-guide
 - [**Anton Deguet**](https://malonecenter.jhu.edu/people/anton-deguet/), Johns Hopkins University, Baltimore, MD, USA
 - [**Axel Krieger**](https://me.jhu.edu/faculty/axel-krieger/), Johns Hopkins University, Baltimore, MD, USA
 - [**Pedro Moreira**](https://tokuda-lab.bwh.harvard.edu/team/pedro-moreira/), Brigham and Women's Hospital and Harvard Medical School, Boston, MA, USA
+
+# Contributors
+- [**Ruofeng Wei**](https://tokuda-lab.bwh.harvard.edu/team/ruofeng-wei/)(Brigham and Women's Hospital and Harvard Medical School, Boston, MA, USA) wrote a script to generate a flexible catheter model for in silico testing. 
+- [**Kaito Hara-Lee**](https://labs.cs.queensu.ca/perklab/members/kaito-hara-lee/)(Queen's University, Kingston, ON, Canada) - developed the ROS2 Motion Control module for 3D Slicer.
+
+
 
 # Acknowledgements
 

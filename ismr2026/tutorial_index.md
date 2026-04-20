@@ -17,6 +17,7 @@ permalink: /ismr2026/tutorial_index.html
 - [Creating an anatomical model on 3D Slicer](/ismr2026/anatomical_model)
 - [Creating and testing a catheter model on ROS/Gazebo/3D Slicer](/ismr2026/catheter_model)
 - [Creating and testing catheter and anatomical model](/ismr2026/catheter_anatom_model)
+- [Motion Control with SlicerROS2l](/ismr2026/motion_control)
 
 
 ## Appendix 

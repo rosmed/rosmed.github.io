@@ -85,4 +85,4 @@ If you prefer to install the components manually on Ubuntu 24.04, you'll need:
 Detailed installation instructions for all required software can be found in the [Setup](setup.html) page.
 
 
-[Back to Workshop Page](index.html) | [Go to Next Step](container.html)
+<div class="tutorial-nav"><a href="index.html" class="btn-secondary">Back to Workshop Page</a><a href="container.html" class="btn-primary">Go to Next Step →</a></div>
