@@ -240,4 +240,4 @@ In this session, you:
 - Added a spine anatomical model and custom end-effector to the Slicer scene
 - Used the module to plan robot motions relative to the anatomical model
 
-[Back to Tutorial Index](tutorial_index.html) | [Back to Workshop page](index.html)
+[Back to Workshop Page](index.html)

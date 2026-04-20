@@ -322,4 +322,4 @@ The STL files are now saved to `~/Documents/anatomy_scene/` and are ready to be 
 
 ---
 
-[Back to Tutorial Index](tutorial_index.html) | [Back to Workshop page](index.html)
+[Back to Workshop Page](index.html) | [Go to Next Step](catheter_model.html)

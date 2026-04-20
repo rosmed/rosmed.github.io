@@ -85,4 +85,4 @@ If you prefer to install the components manually on Ubuntu 24.04, you'll need:
 Detailed installation instructions for all required software can be found in the [Setup](setup.html) page.
 
 
-[⬅️ Back to ISMR 2025 Workshop Page](index.html)
+[Back to Workshop Page](index.html) | [Go to Next Step](container.html)

@@ -297,4 +297,4 @@ Click the teleop terminal and use the keyboard controls to move the catheter. Ga
 3. [SlicerROS2 Tutorials](https://rosmed.github.io/tutorials/)
 4. [Flexible Catheter Simulation Repository](https://github.com/rosmed/flexible_catheter_simulation)
 
-[Back to Tutorial Index](tutorial_index.html) | [Back to Workshop page](index.html)
+[Back to Workshop Page](index.html) | [Go to Next Step](catheter_anatom_model.html)
