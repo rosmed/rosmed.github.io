@@ -234,10 +234,9 @@ Relaunch the teleop in the second terminal as before and press keys to move the 
 Open a new terminal and start Slicer (keep the Gazebo simulation and teleop running):
 
 ```bash
-./start-slicer-ros2.bash
+source ~/ros2_ws/install/setup.bash
+ros2 launch slicer_ros2_module slicer.launch.py
 ```
-
-![Terminal running start-slicer-ros2.bash with Gazebo and teleop visible in background](images/catheter_21_start_slicer.png)
 
 ### Step 14: Open the ROS2 Module in Slicer
 

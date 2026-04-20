@@ -133,9 +133,6 @@ Open a new terminal, source `~/ros2_ws/install/setup.bash`, and start 3D Slicer:
 source ~/ros2_ws/install/setup.bash 
 ros2 launch slicer_ros2_module slicer.launch.py 
 ```
-
-![Terminal showing source and start-slicer-ros2.bash commands with simulation running in background](images/catheter_anatom_11_source.png)
-
 Wait for Slicer to fully launch.
 
 ![Terminal showing Slicer startup output with simulation continuing in background](images/catheter_anatom_12_launch_slicer.png)
