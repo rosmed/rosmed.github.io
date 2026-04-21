@@ -73,7 +73,7 @@ The tutorial sessions will follow the workflow outlined in the following pages. 
 - [Creating and testing catheter and anatomical model](/ismr2026/catheter_anatom_model)
 
 ## Session 3
-- [Motion Control with SlicerROS2l](/ismr2026/motion_control)
+- [Motion Control with SlicerROS2](/ismr2026/motion_control)
 
 
 # Links
