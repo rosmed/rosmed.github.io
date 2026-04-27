@@ -119,7 +119,7 @@ The tutorial sessions will follow the workflow outlined in the following pages. 
 
 # Acknowledgements
 
-This work is supported in part by NIH (R01EB020667, R01EB034359, R01EB036015, R01CA235134, P41EB028741).
+This work is supported in part by NIH grants (R01EB020667, R01EB034359, R01EB036015, R01CA235134) and [NIH-funded National Center for Image Guided Therapy at Brigham and Women's Hospital (P41EB028741)](https://www.ncigt.org).
 
 
 # Contact
