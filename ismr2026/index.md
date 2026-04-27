@@ -4,6 +4,13 @@ title: ISMR26 Workshop/ SlicerROS2 as an In Silico Testing Environment for Medic
 permalink: /ismr2026/
 ---
 
+
+![ISMRPhoto](images/ISMR2026-Chen.jpg){:class="img-responsive" width="400px"}
+![ISMRPhoto](images/ISMR2026-Tokuda.jpg){:class="img-responsive" width="400px"}
+![ISMRPhoto](images/ISMR2026-Connolly.jpg){:class="img-responsive" width="400px"}
+
+
+
 <video autoplay muted loop playsinline style="height:450px;width:auto;border-radius:4px;margin-bottom:1em;">
   <source src="images/slicerros2_cath_sim.mp4" type="video/mp4">
 </video>
