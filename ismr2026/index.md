@@ -16,9 +16,9 @@ permalink: /ismr2026/
 </video>
 
 
-## Event Date: April 22, 2026 (Half-Day Workshop, 9:00AM - 12:30PM)
-
-## Venue: The University of Tennessee, Knoxville (Building/Room TBD)
+# Event Details
+- Date: April 22, 2026 (Half-Day Workshop, 9:00AM - 12:30PM)
+- Venue: UT Conference Center 4F, 600 Henley Street, Knoxville, TN (The University of Tennessee, Knoxville)
 
 # Table of Contents
 
