@@ -6,7 +6,7 @@ permalink: /events/
 
 # Upcoming events
 
-TO BE ANNOUNCED
+- [EMBC 2026: Prototyping Image-Guided Medical Robotic Systems: A Hands-On Workshop and Tutorial (July 26, 2026)](/embc2026/)
 
 # Past events
 - [ISMR 2026: Workshop on SlicerROS2 as an In Silico Testing Environment for Medical Robotics Research](/ismr2026/)

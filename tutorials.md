@@ -18,7 +18,31 @@ Online Tutorials
 Upcoming workshops
 -----------------
 
-### ISMR 2025 Tutorial - Open-Source Software for Intelligent Image-Guided Medical Robots (TBD, 2025)
+### EMBC 2026 Tutorial - Prototyping Image-Guided Medical Robotic Systems: A Hands-On Workshop and Tutorial (July 26, 2026)
+- [EMBC 2026 Workshop page](/embc2026/)
+- Software: 3D Slicer, SlicerROS2, MoveIt!
+- Agenda:
+  - Foundations of Image-Guided Medical Robotics
+  - Follow-along: Building a navigation-ready surgical scene
+  - Follow-along: Robot registration to the patient / phantom
+  - Follow-along: Motion planning with SlicerROS2 and MoveIt
+  - Follow-along: Designing an Exemplary 3D Slicer Task Module for a Cobot
+  - Hands-on rotation with robots
+
+------------------------------------------
+
+Past workshops
+--------------
+
+### ISMR 2026 Tutorial - SlicerROS2 as an In Silico Testing Environment for Medical Robotics Research (April 22, 2026)
+- [ISMR 2026 Workshop page](/ismr2026/)
+- Software: 3D Slicer, ROS2, SlicerROS2, AMBF, Gazebo
+- Agenda:
+  - Showcasing Medical Robotics Research with Open Source Software and In Silico Simulation Tools
+  - In silico evaluation of a flexible catheter in a virtual patient using 3D Slicer, ROS2, and Gazebo
+  - ROS2 Motion Planning and Control with SlicerROS2
+
+### ISMR 2025 Tutorial - Open-Source Software for Intelligent Image-Guided Medical Robots (May 14, 2025)
 - [ISMR 2025 Workshop page](/ismr2025/)
 - Software: 3D Slicer, ROS2, SlicerROS2, AMBF, Gazebo (Ignition), dVRK, MoveIt!
 - Agenda:
@@ -27,11 +51,6 @@ Upcoming workshops
   - Demonstrations of Integrated Systems:
     - Ultrasound-based virtual fixtures for breast-conserving surgery
     - Image-guided needle insertion with 3D Slicer, ROS2, and MoveIt!
-
-------------------------------------------
-
-Past workshops
---------------
 
 ### ISMR 2024 Tutorial - SlicerROS2 (June 3, 2024)
 - [ISMR 2024 Workshop page](/ismr2024/index)
