@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Follow-along; Motion planning with SlicerROS2 and MoveIt
+title: "Follow-along: Motion planning with SlicerROS2 and MoveIt"
 permalink: /embc2026/tutorial_part3.html
 ---
 

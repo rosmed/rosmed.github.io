@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Follow-along; Robot registration to the patient / phantom
+title: "Follow-along: Robot registration to the patient / phantom"
 permalink: /embc2026/tutorial_part2.html
 ---
 

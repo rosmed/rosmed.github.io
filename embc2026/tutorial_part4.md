@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Follow-along; Designing an Exemplary 3D Slicer Task Module for a Cobot  | Lueder A. Kahrs |
+title: "Follow-along: Designing an Exemplary 3D Slicer Task Module for a Cobot" 
 permalink: /embc2026/tutorial_part3.html
 ---
 
-# Tutorial Part 3: Designing an Exemplary 3D Slicer Task Module for a Cobot  | Lueder A. Kahrs |
+# Tutorial Part 3: Designing an Exemplary 3D Slicer Task Module for a Cobot  
 
 ## Overview
 

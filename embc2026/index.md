@@ -1,12 +1,12 @@
 ---
 layout: page
-title: EMBC26 Workshop / Prototyping Image-Guided Medical Robotic Systems; A Hands-On Workshop and Tutorial
+title: "EMBC26 Workshop / Prototyping Image-Guided Medical Robotic Systems: A Hands-On Workshop and Tutorial"
 permalink: /embc2026/
 ---
 
-<!-- <div style="position:relative;padding-bottom:56.25%;height:0;max-width:800px;border-radius:4px;overflow:hidden;margin-bottom:1em;">
+<div style="position:relative;padding-bottom:56.25%;height:0;max-width:800px;border-radius:4px;overflow:hidden;margin-bottom:1em;">
   <iframe src="https://www.youtube.com/embed/7v0s-cNiC9A" title="YouTube video player" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div> -->
+</div>
 
 
 # Event Details

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Follow-along; Building a navigation-ready surgical scene
+title: "Follow-along: Building a navigation-ready surgical scene"
 permalink: /embc2026/tutorial_part1.html
 ---
 
