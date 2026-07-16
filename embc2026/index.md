@@ -55,7 +55,7 @@ Researchers, engineers, and students working in medical robotics and image-guide
 
 # Materials
 
-The tutorial sessions will follow the workflow outlined in the following pages. Participants are expected to perform in silico testing using SlicerROS2 using a cloud-based Linux desktop environment provided by this workshop. The all materials of this hands-on tutorial, including source codes and instructions, are all open-sourced and provided free of charge. 
+The tutorial sessions will follow the workflow outlined in the following pages. Participants are expected to perform the follow-along sessions in SlicerROS2 using a cloud-based Linux desktop environment provided by this workshop. The all materials of this hands-on tutorial, including source codes and instructions, are all open-sourced and provided free of charge. 
 
 ## Preparation
 - [Prerequisite](/embc2026/prerequisites)
@@ -65,6 +65,7 @@ The tutorial sessions will follow the workflow outlined in the following pages. 
 - [Tutorial Part 1](/embc2026/tutorial_part1)
 - [Tutorial Part 2](/embc2026/tutorial_part2)
 - [Tutorial Part 3](/embc2026/tutorial_part3)
+- [Tutorial Part 4](/embc2026/tutorial_part4)
 
 
 # Links

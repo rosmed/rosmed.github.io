@@ -14,4 +14,6 @@ In this portion of the workshop, users will get to try the new "Motion control" 
 
 TBD
 
+<div class="tutorial-nav"><a href="tutorial_part2.html" class="btn-secondary">Back to Part 1</a><a href="tutorial_part4.html" class="btn-primary">Go to Next Step →</a></div>
+
 <div class="tutorial-nav"><a href="tutorial_part2.html" class="btn-secondary">Back to Part 2</a><a href="index.html" class="btn-primary">Back to Workshop Page</a></div>

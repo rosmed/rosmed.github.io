@@ -14,4 +14,5 @@ TBD - overview of this part of the tutorial.
 
 TBD
 
-<div class="tutorial-nav"><a href="tutorial_part2.html" class="btn-secondary">Back to Part 2</a><a href="index.html" class="btn-primary">Back to Workshop Page</a></div>
+<div class="tutorial-nav"><a href="tutorial_part3.html" class="btn-secondary">Back to Part 2</a><a href="index.html" class="btn-primary">Back to Workshop Page</a></div>
+
