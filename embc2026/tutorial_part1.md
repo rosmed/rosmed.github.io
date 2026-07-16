@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Tutorial Part 1 - EMBC2026
+title: Follow-along; Building a navigation-ready surgical scene
 permalink: /embc2026/tutorial_part1.html
 ---
 
-# Tutorial Part 1: TBD Title
+# Tutorial Part 1: Building a navigation-ready surgical scene
 
 ## Overview
 
-TBD - overview of this part of the tutorial.
+In this portion of the workshop, participants will get experience loading and visualizing a medical image and segmenting the image to target specific anatomy.
 
 ## Step 1: TBD
 

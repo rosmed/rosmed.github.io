@@ -1,9 +1,8 @@
 ---
 layout: page
-title: EMBC26 Workshop/ Prototyping Image-Guided Medical Robotic Systems: A Hands-On Workshop and Tutorial
+title: EMBC26 Workshop / Prototyping Image-Guided Medical Robotic Systems; A Hands-On Workshop and Tutorial
 permalink: /embc2026/
 ---
-
 
 <!-- <div style="position:relative;padding-bottom:56.25%;height:0;max-width:800px;border-radius:4px;overflow:hidden;margin-bottom:1em;">
   <iframe src="https://www.youtube.com/embed/7v0s-cNiC9A" title="YouTube video player" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -52,7 +51,7 @@ Researchers, engineers, and students working in medical robotics and image-guide
 | 2:55 – 3:10 pm  | Break                                                               | —               |
 | 3:10 – 3:45 pm  | Follow-along: Motion planning with SlicerROS2 and MoveIt                | Kaito Hara-Lee  |
 | 3:45 – 4:15 pm  | Follow-along: Designing an Exemplary 3D Slicer Task Module for a Cobot  | Lueder A. Kahrs |
-| 4:15 – 5:00 pm  | Hands-on rotation with robots (3 groups x 15 minutes)   | Everyone        |
+| 4:15 – 5:00 pm  | Hands-on rotation with robots (Participants will be split into 3 groups and rotate through stations)   | Everyone        |
 
 # Materials
 
@@ -84,8 +83,8 @@ TBD
 - [**Junichi Tokuda**](https://tokuda-lab.bwh.harvard.edu/team/junichi-tokuda/), Brigham and Women's Hospital and Harvard Medical School, Boston, MA, USA ([tokuda@bwh.harvard.edu](mailto:tokuda@bwh.harvard.edu))
 - [**Laura Connolly**](https://labs.cs.queensu.ca/perklab/members/laura-connolly/), Johns Hopkins University, Baltimore, MD, USA
 - [**Pedro Moreira**](https://tokuda-lab.bwh.harvard.edu/team/pedro-moreira/), Brigham and Women's Hospital and Harvard Medical School, Boston, MA, USA ([plopesdafrotamoreira@bwh.harvard.edu](mailto:plopesdafrotamoreira@bwh.harvard.edu))
-- **Lueder A. Kahrs**, University of Toronto, Toronto, ON, Canada ([lueder.kahrs@utoronto.ca](mailto:lueder.kahrs@utoronto.ca))
-- **Kaito Hara-Lee**, Queen's University, Kingston, ON, Canada
+- [**Lueder A. Kahrs**](https://bme.utoronto.ca/faculty-research/core-faculty/lueder-kahrs/), University of Toronto, Toronto, ON, Canada ([lueder.kahrs@utoronto.ca](mailto:lueder.kahrs@utoronto.ca))
+- [**Kaito Hara-Lee**](https://labs.cs.queensu.ca/perklab/members/kaito-hara-lee/), Queen's University, Kingston, ON, Canada
 - **Michelle Song**, Johns Hopkins University, Baltimore, MD, USA ([msong33@jh.edu](mailto:msong33@jh.edu))
 - [**Simon Leonard**](https://www.cs.jhu.edu/~sleonard/), Johns Hopkins University, Baltimore, MD, USA ([sleonard@jhu.edu](mailto:sleonard@jhu.edu))
 - [**Lidia Al-Zogbi**](https://www.vanderbilt.edu/vise/visepeople/lidia-al-zogbi/), Vanderbilt University, Nashville, TN, USA ([lalzogb1@jhu.edu](mailto:lalzogb1@jhu.edu))

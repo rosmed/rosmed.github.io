@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Tutorial Part 3 - EMBC2026
+title: Follow-along; Motion planning with SlicerROS2 and MoveIt
 permalink: /embc2026/tutorial_part3.html
 ---
 
-# Tutorial Part 3: TBD Title
+# Tutorial Part 3: Motion planning with SlicerROS2 and MoveIt
 
 ## Overview
 
-TBD - overview of this part of the tutorial.
+In this portion of the workshop, users will get to try the new "Motion control" module in SlicerROS2 to define trajectories relative to patient images. 
 
 ## Step 1: TBD
 

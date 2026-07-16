@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Tutorial Part 2 - EMBC2026
+title: Follow-along; Robot registration to the patient / phantom
 permalink: /embc2026/tutorial_part2.html
 ---
 
-# Tutorial Part 2: TBD Title
+# Tutorial Part 2: Robot registration to the patient / phantom
 
 ## Overview
 
-TBD - overview of this part of the tutorial.
+In this portion of the tutorial, participants will learn how to register a robot to a phantom of patient anatomy.
 
 ## Step 1: TBD
 
