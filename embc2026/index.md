@@ -81,8 +81,8 @@ TBD
 
 # Organizers
 
+- [**Laura Connolly**](https://malonecenter.jhu.edu/people/laura-connolly/), Johns Hopkins University, Baltimore, MD, USA
 - [**Junichi Tokuda**](https://tokuda-lab.bwh.harvard.edu/team/junichi-tokuda/), Brigham and Women's Hospital and Harvard Medical School, Boston, MA, USA ([tokuda@bwh.harvard.edu](mailto:tokuda@bwh.harvard.edu))
-- [**Laura Connolly**](https://labs.cs.queensu.ca/perklab/members/laura-connolly/), Johns Hopkins University, Baltimore, MD, USA
 - [**Pedro Moreira**](https://tokuda-lab.bwh.harvard.edu/team/pedro-moreira/), Brigham and Women's Hospital and Harvard Medical School, Boston, MA, USA ([plopesdafrotamoreira@bwh.harvard.edu](mailto:plopesdafrotamoreira@bwh.harvard.edu))
 - [**Lueder A. Kahrs**](https://bme.utoronto.ca/faculty-research/core-faculty/lueder-kahrs/), University of Toronto, Toronto, ON, Canada ([lueder.kahrs@utoronto.ca](mailto:lueder.kahrs@utoronto.ca))
 - [**Kaito Hara-Lee**](https://labs.cs.queensu.ca/perklab/members/kaito-hara-lee/), Queen's University, Kingston, ON, Canada
@@ -101,7 +101,7 @@ This work is supported in part by NIH grants (R01EB020667, R01EB034359, R01EB036
 
 # Contact
 
-[Junichi Tokuda, Ph.D.](https://tokuda-lab.bwh.harvard.edu/team/junichi-tokuda/)
+[Laura Connolly, Ph.D.](https://malonecenter.jhu.edu/people/laura-connolly/)
 
-Associate Professor of Radiology
-Brigham and Women's Hospital / Harvard Medical School
+Malone Postdoctoral Fellow
+Johns Hopkins University
