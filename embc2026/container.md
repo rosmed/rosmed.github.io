@@ -15,6 +15,8 @@ For the EMBC2026 workshop, we will use Vast.ai to run the Linux desktop environm
 
 Make sure you have a Vast.ai account and have added credits. See [Prerequisites](prerequisites.html) for account setup instructions.
 
+> **Note:** The screenshots below still show the old "ismr2026" template and team name. The actual template and team you'll use are named "embc2026" — the steps are otherwise identical.
+
 
 ## Step 1: Open the EMBC2026 Tutorial Template
 

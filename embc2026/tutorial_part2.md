@@ -121,4 +121,4 @@ In this session, you:
 
 [Back to Workshop Page](https://rosmed.github.io/ismr2026/index.html)
 
-<div class="tutorial-nav"><a href="tutorial_part1.md" class="btn-secondary">Back to Part 1</a><a href="tutorial_part3.md" class="btn-primary">Go to Next Step →</a></div>
+<div class="tutorial-nav"><a href="tutorial_part1.html" class="btn-secondary">Back to Part 1</a><a href="tutorial_part3.html" class="btn-primary">Go to Next Step →</a></div>
