@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Follow-along: Designing an Exemplary 3D Slicer Task Module for a Cobot" 
-permalink: /embc2026/tutorial_part3.html
+permalink: /embc2026/tutorial_part4.html
 ---
 
 # Tutorial Part 3: Designing an Exemplary 3D Slicer Task Module for a Cobot  

@@ -6,28 +6,28 @@ permalink: /embc2026/container.html
 
 # Launching a Container on Vast.ai
 
-For the ISMR2026 workshop, we will use Vast.ai to run the Linux desktop environment hosted on a cloud computing service and access it through a web browser. Vast.ai has a mechanism to share a Docker container among its users and deploy it on a selected GPU server. The ISMR2026 uses this mechanism to distribute a pre-built Linux environment with 3D Slicer and ROS packages required for the tutorial.
+For the EMBC2026 workshop, we will use Vast.ai to run the Linux desktop environment hosted on a cloud computing service and access it through a web browser. Vast.ai has a mechanism to share a Docker container among its users and deploy it on a selected GPU server. The EMBC2026 uses this mechanism to distribute a pre-built Linux environment with 3D Slicer and ROS packages required for the tutorial.
 
 > **Before you start:** Make sure you have a Vast.ai account and have added credits. See [Prerequisites](prerequisites.html) for account setup instructions.
 
 
-> **For ISMR2026 Participants:** We will add you to the 'ismr2026' team on vast.ai, which allows us to share virtual Linux environments using the workshop's credit. Please send your e-mail address with the conference organizer (tokuda@bwh.harvard.edu). 
+> **For EMBC2026 Participants:** We will add you to the 'ismr2026' team on vast.ai, which allows us to share virtual Linux environments using the workshop's credit. Please send your e-mail address with the conference organizer (lconnol8@jh.edu). 
 
 Make sure you have a Vast.ai account and have added credits. See [Prerequisites](prerequisites.html) for account setup instructions.
 
 
-## Step 1: Open the ISMR2026 Tutorial Template
+## Step 1: Open the EMBC2026 Tutorial Template
 
 Click the following link to open the tutorial template in the Vast.ai Console:
-[ISMR2026 Tutorial Template](https://cloud.vast.ai?ref_id=424992&template_id=8dc667bcbe3627327750f6dc1af8bc8c)
+[EMBC 2026 Workshop v2](hhttps://cloud.vast.ai?ref_id=424992&template_id=56a83a573a004facc87da03e871b0784).
 
-Alternatively, log in to Vast.ai, navigate to **Templates** in the left sidebar, and find the **ISMR2026 Tutorial** template.
+Alternatively, log in to Vast.ai, navigate to **Templates** in the left sidebar, and find the **EMBC2026 Tutorial** template.
 
-![ISMR2026 Tutorial template on the Templates page](images/vastai_1_template.png)
+![EMBC026 Tutorial template on the Templates page](images/vastai_1_template.png)
 
 ## Step 2: Select a Machine and Rent
 
-After opening the template link, the Console search page will load with the ISMR2026 Tutorial template already selected in the left panel. The main area lists available GPU machines with their specs and hourly prices.
+After opening the template link, the Console search page will load with the EMBC2026 Tutorial template already selected in the left panel. The main area lists available GPU machines with their specs and hourly prices.
 
 
 Increase **Container Size** under the **Change Template** button to 64GB. Choose a machine near your location with a reasonable price. Click the **RENT** button next to your chosen machine to launch an instance.
@@ -35,7 +35,7 @@ Increase **Container Size** under the **Change Template** button to 64GB. Choose
 > **For better experience:** A machine with higher network bandwidth can save time for starting up the container. We recommend to turn the "Show Secure Cloud Only" option to limit the list to machines in datacenters.  
 
 
-![Console search page with ISMR2026 template loaded and GPU list](images/vastai_2_search.png)
+![Console search page with EMBC2026 template loaded and GPU list](images/vastai_2_search.png)
 
 ## Step 3: Wait for the Instance to Start
 
