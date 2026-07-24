@@ -30,7 +30,7 @@ Vast.ai is a low-cost, public cloud-based marketplace for renting GPUs, often de
 
 The Linux desktop environment can be created and used in a browser (e.g., Chrome, Safari). Follow the steps below to set up your vast.ai account before the tutorial.
 
-> **For ISMR2026 Participants:** We will add you to the 'ismr2026' team on vast.ai, which allows us to share virtual Linux environments using the workshop's credit. Please send your e-mail address with the conference organizer (tokuda@bwh.harvard.edu). 
+> **For EMBC2026 Participants:** We will add you to the 'ismr2026' team on vast.ai, which allows us to share virtual Linux environments using the workshop's credit. Please send your e-mail address with the conference organizer (lconnol8@jh.edu). 
 
 #### Step 1: Go to the vast.ai website
 
@@ -50,12 +50,12 @@ If you already have an account, enter your credentials. If not, click **Sign Up*
 
 ![Log in dialog](images/vastai_setup_3_sign_up.png)
 
-#### Step 4: Access the ISMR2026 Tutorial Template
+#### Step 4: Access the EMBC2026 Tutorial Template
 
-After logging in, open the tutorial template by clicking this link: [ISMR2026 Tutorial Template v2](https://cloud.vast.ai?ref_id=440803&template_id=957841858d260f6ed9dbdf35e7d74217).
- The left panel of the Console will show the **ISMR2026 Tutorial** template selected, and the main panel will list available GPU machines you can rent.
+After logging in, open the tutorial template by clicking this link: [EMBC 2026 Workshop v2](hhttps://cloud.vast.ai?ref_id=424992&template_id=56a83a573a004facc87da03e871b0784).
+ The left panel of the Console will show the **EMBC 2026 Workshop v2** template selected, and the main panel will list available GPU machines you can rent.
 
-![Console with ISMR2026 template loaded](images/vastai_setup_4_login.png)
+![Console with EMBC2026 template loaded](images/vastai_setup_4_login.png)
 
 #### Step 5: Add Credits to Your Account
 
