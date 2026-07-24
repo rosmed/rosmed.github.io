@@ -17,6 +17,7 @@ permalink: /embc2026/tutorial_index.html
 - [Tutorial Part 1](/embc2026/tutorial_part1)
 - [Tutorial Part 2](/embc2026/tutorial_part2)
 - [Tutorial Part 3](/embc2026/tutorial_part3)
+- [Tutorial Part 4](/embc2026/tutorial_part4)
 
 
 ## Appendix 
