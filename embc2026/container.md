@@ -21,7 +21,7 @@ Make sure you have a Vast.ai account and have added credits. See [Prerequisites]
 ## Step 1: Open the EMBC2026 Tutorial Template
 
 Click the following link to open the tutorial template in the Vast.ai Console:
-[EMBC 2026 Workshop v2](hhttps://cloud.vast.ai?ref_id=424992&template_id=56a83a573a004facc87da03e871b0784).
+[EMBC 2026 Workshop v2](https://cloud.vast.ai?ref_id=424992&template_id=56a83a573a004facc87da03e871b0784).
 
 Alternatively, log in to Vast.ai, navigate to **Templates** in the left sidebar, and find the **EMBC2026 Tutorial** template.
 

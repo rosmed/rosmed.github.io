@@ -52,7 +52,7 @@ If you already have an account, enter your credentials. If not, click **Sign Up*
 
 #### Step 4: Access the EMBC2026 Tutorial Template
 
-After logging in, open the tutorial template by clicking this link: [EMBC 2026 Workshop v2](hhttps://cloud.vast.ai?ref_id=424992&template_id=56a83a573a004facc87da03e871b0784).
+After logging in, open the tutorial template by clicking this link: [EMBC 2026 Workshop v2](https://cloud.vast.ai?ref_id=424992&template_id=56a83a573a004facc87da03e871b0784).
  The left panel of the Console will show the **EMBC 2026 Workshop v2** template selected, and the main panel will list available GPU machines you can rent.
 
 ![Console with EMBC2026 template loaded](images/vastai_setup_4_login.png)
