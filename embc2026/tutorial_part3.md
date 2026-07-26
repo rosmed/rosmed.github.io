@@ -94,9 +94,9 @@ The **Robot** dropdown at the top of the module now shows **`ros2:robot:robot1`*
 
 ### Step 66: Use the Selected Robot
 
-Make sure **ros2:robot:robot1** is selected in the **Robot** dropdown, then press **Use Selected Robot**.
+Make sure **`ros2:robot:robot1`** is selected in the **Robot** dropdown, then press **Use Selected Robot**.
 
-![Robot tab with ros2:robot:robot1 selected and the Use Selected Robot button ready to press](images/embc_66_use_selected_robot.png)
+![Robot tab with `ros2:robot:robot1` selected and the Use Selected Robot button ready to press](images/embc_66_use_selected_robot.png)
 
 ### Step 67: Confirm the Robot Controls Appear
 
