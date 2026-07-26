@@ -88,9 +88,9 @@ Leave the default **Robot Name** (`robot1`), **Parameter Node Name**, and **Para
 
 ### Step 65: Confirm the Robot Loads
 
-The **Robot** dropdown at the top of the module now shows **ros2:robot:robot1**, and the robot model appears in the 3D view.
+The **Robot** dropdown at the top of the module now shows **`ros2:robot:robot1`**, and the robot model appears in the 3D view.
 
-![Motion Control module with ros2:robot:robot1 selected and the robot visible in the 3D view](images/embc_65_confirm_robot_loads.png)
+![Motion Control module with `ros2:robot:robot1` selected and the robot visible in the 3D view](images/embc_65_confirm_robot_loads.png)
 
 ### Step 66: Use the Selected Robot
 
